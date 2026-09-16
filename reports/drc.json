@@ -1,0 +1,190 @@
+{
+  "violations": [
+    {
+      "rule": "hole_clearance",
+      "severity": "error",
+      "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2056 mm)",
+      "items": [
+        {
+          "description": "Track [GND] on In1.Cu, length 6.8354 mm",
+          "uuid": "51b7655f-0318-41e6-a7ce-3062dfd1f782",
+          "pos": {
+            "x": 37.9244,
+            "y": 2.6823
+          }
+        },
+        {
+          "description": "NPTH pad of J2",
+          "uuid": "49b60fe5-2395-49c4-a4a7-1683512b0e7a",
+          "pos": {
+            "x": 38.555,
+            "y": 8.99
+          }
+        }
+      ],
+      "signature": "hole_clearance:Track [GND] on In1.Cu, length 6.8354 mm"
+    }
+  ],
+  "unconnected": [
+    {
+      "rule": "unconnected_items",
+      "severity": "error",
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 1 [USB_DP_A] of R21 on F.Cu",
+          "uuid": "75b66c6a-7f45-4548-a615-779f506dff37",
+          "pos": {
+            "x": 35.01,
+            "y": 6.65
+          }
+        },
+        {
+          "description": "Pad A6 [USB_DP_A] of J2 on F.Cu",
+          "uuid": "fb4bb8c2-d579-4637-aa90-d19e67ecff71",
+          "pos": {
+            "x": 39.655,
+            "y": 6.65
+          }
+        }
+      ],
+      "signature": "unconnected_items:Pad 1 [USB_DP_A] of R21 on F.Cu"
+    },
+    {
+      "rule": "unconnected_items",
+      "severity": "error",
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "Pad 1 [USB_DP_B] of R22 on F.Cu",
+          "uuid": "08f9b8ce-c23c-4955-8977-08884e9803da",
+          "pos": {
+            "x": 35.01,
+            "y": 4.45
+          }
+        },
+        {
+          "description": "Pad B6 [USB_DP_B] of J2 on F.Cu",
+          "uuid": "a9585d14-9815-4beb-909c-2ef5e01b8c1b",
+          "pos": {
+            "x": 39.655,
+            "y": 4.45
+          }
+        }
+      ],
+      "signature": "unconnected_items:Pad 1 [USB_DP_B] of R22 on F.Cu"
+    }
+  ],
+  "schematicParity": [],
+  "counts": {
+    "errors": 1,
+    "warnings": 0,
+    "unconnected": 2
+  },
+  "raw": {
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-16T19:04:58",
+    "ignored_checks": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ],
+    "included_severities": [
+      "error"
+    ],
+    "kicad_version": "10.99.0",
+    "schematic_parity": [],
+    "source": "board.kicad_pcb",
+    "unconnected_items": [
+      {
+        "description": "Missing connection between items",
+        "items": [
+          {
+            "description": "Pad 1 [USB_DP_A] of R21 on F.Cu",
+            "pos": {
+              "x": 35.01,
+              "y": 6.65
+            },
+            "uuid": "75b66c6a-7f45-4548-a615-779f506dff37"
+          },
+          {
+            "description": "Pad A6 [USB_DP_A] of J2 on F.Cu",
+            "pos": {
+              "x": 39.655,
+              "y": 6.65
+            },
+            "uuid": "fb4bb8c2-d579-4637-aa90-d19e67ecff71"
+          }
+        ],
+        "severity": "error",
+        "type": "unconnected_items"
+      },
+      {
+        "description": "Missing connection between items",
+        "items": [
+          {
+            "description": "Pad 1 [USB_DP_B] of R22 on F.Cu",
+            "pos": {
+              "x": 35.01,
+              "y": 4.45
+            },
+            "uuid": "08f9b8ce-c23c-4955-8977-08884e9803da"
+          },
+          {
+            "description": "Pad B6 [USB_DP_B] of J2 on F.Cu",
+            "pos": {
+              "x": 39.655,
+              "y": 4.45
+            },
+            "uuid": "a9585d14-9815-4beb-909c-2ef5e01b8c1b"
+          }
+        ],
+        "severity": "error",
+        "type": "unconnected_items"
+      }
+    ],
+    "violations": [
+      {
+        "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2056 mm)",
+        "items": [
+          {
+            "description": "Track [GND] on In1.Cu, length 6.8354 mm",
+            "pos": {
+              "x": 37.9244,
+              "y": 2.6823
+            },
+            "uuid": "51b7655f-0318-41e6-a7ce-3062dfd1f782"
+          },
+          {
+            "description": "NPTH pad of J2",
+            "pos": {
+              "x": 38.555,
+              "y": 8.99
+            },
+            "uuid": "49b60fe5-2395-49c4-a4a7-1683512b0e7a"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      }
+    ]
+  }
+}

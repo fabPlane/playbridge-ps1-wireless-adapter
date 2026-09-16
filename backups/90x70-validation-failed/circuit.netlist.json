@@ -1,0 +1,1125 @@
+{
+  "netlist": {
+    "components": [
+      {
+        "ref": "U1",
+        "value": "ESP32-WROOM-32",
+        "footprint": "PlayBridge:ESP32-WROOM-32_D0.3mm"
+      },
+      {
+        "ref": "U2",
+        "value": "AP63203WU-7 3.3V 2A PS1 BUCK",
+        "footprint": "PlayBridge:TSOT-23-6",
+        "fields": {
+          "MPN": "AP63203WU-7",
+          "Datasheet": "https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf"
+        }
+      },
+      {
+        "ref": "L1",
+        "value": "4.7uH >=2.5A SHIELDED",
+        "footprint": "PlayBridge:L_Sunlord_SWPA4030S"
+      },
+      {
+        "ref": "C13",
+        "value": "100nF 25V BST",
+        "footprint": "PlayBridge:C_0603_1608Metric"
+      },
+      {
+        "ref": "U3",
+        "value": "AP2112K-3.3 USB LDO",
+        "footprint": "PlayBridge:SOT-23-5"
+      },
+      {
+        "ref": "U4",
+        "value": "TPS2113APW POWER MUX",
+        "footprint": "PlayBridge:TSSOP-8_3x3mm_P0.65mm"
+      },
+      {
+        "ref": "U5",
+        "value": "CH340C USB-UART",
+        "footprint": "PlayBridge:SOIC-16_3.9x9.9mm_P1.27mm"
+      },
+      {
+        "ref": "U6",
+        "value": "USBLC6-2SC6 ESD",
+        "footprint": "PlayBridge:SOT-23-6"
+      },
+      {
+        "ref": "J1",
+        "value": "PS1 ALI PLUG INTERNAL 3X3 PADS 1:DATA 2:CMD 3:8V 4:GND 5:NC 6:ATT 7:CLK 8:NC 9:ACK",
+        "footprint": "PlayBridge:PS1_Ali_InternalWire_3x3_P2.0_D0.8mm",
+        "fields": {
+          "Pinout": "J1.1=PS1 DATA, J1.2=COMMAND, J1.3=~8V, J1.4=GND, J1.5=PS1 3.3V NC, J1.6=ATT, J1.7=CLOCK, J1.8=NC, J1.9=ACK",
+          "Orientation": "3x3 pad topology is numbered row-major 1-2-3 / 4-5-6 / 7-8-9 as viewed at the PS1 male mating face; the plug solder/wire view is mirrored. Pad 1 is square. The 2.00 mm PCB pad pitch is for internal wires and is not the plug contact pitch.",
+          "Assembly Note": "Use the Micha213 BlueRetro-compatible straight-pin Ali PS1/PS2 male plug rigidly captured by the Ali-case-derived enclosure. Very short individual conductors remain entirely inside the shell. Continuity-test every mating contact to the numbered PCB pad; never trust colors. Pins 5 and 8 remain open."
+        }
+      },
+      {
+        "ref": "J2",
+        "value": "USB-C USB2 AMPHENOL 12401610E4-2A",
+        "footprint": "PlayBridge:USB_C_Receptacle_Amphenol_12401610E4-2A",
+        "fields": {
+          "MPN": "12401610E4-2A",
+          "Pinout": "A4/A9/B4/B9=VBUS; A6 joins B6/D+ through R21 0R; A7 joins B7/D- through R22 0R; A5=CC1; B5=CC2; A1/A12/B1/B12/SH=GND; A8/B8=SBU NC",
+          "Datasheet": "https://www.amphenol-cs.com/product-series/usb-type-c.html",
+          "Placement Constraint": "USER SIDE edge only. Cable-entry mouth must cross the board outline and face outward, away from PCB interior. Rear SMT/contact-tail side faces inward toward U6/R14/R15/U5. Reject any placement whose opening faces across the PCB. Verify in a true edge/side render before routing."
+        }
+      },
+      { "ref": "R14", "value": "5.1k USB-C CC1 Rd", "footprint": "PlayBridge:R_0603_1608Metric" },
+      { "ref": "R15", "value": "5.1k USB-C CC2 Rd", "footprint": "PlayBridge:R_0603_1608Metric" },
+      { "ref": "R21", "value": "0R USB D+ A/B JOIN", "footprint": "PlayBridge:R_0402_1005Metric" },
+      { "ref": "R22", "value": "0R USB D- A/B JOIN", "footprint": "PlayBridge:R_0402_1005Metric" },
+      { "ref": "TP1", "value": "3V3 TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm" },
+      { "ref": "TP2", "value": "GND TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm" },
+      { "ref": "TP3", "value": "UART TX TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm" },
+      { "ref": "TP4", "value": "UART RX TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm" },
+      {
+        "ref": "Q1",
+        "value": "2N7002 DATA OD",
+        "footprint": "PlayBridge:SOT-23"
+      },
+      {
+        "ref": "Q2",
+        "value": "2N7002 ACK OD",
+        "footprint": "PlayBridge:SOT-23"
+      },
+      {
+        "ref": "Q3",
+        "value": "MMBT3904 AUTO-BOOT",
+        "footprint": "PlayBridge:SOT-23"
+      },
+      {
+        "ref": "Q4",
+        "value": "MMBT3904 AUTO-RESET",
+        "footprint": "PlayBridge:SOT-23"
+      },
+      {
+        "ref": "SW1",
+        "value": "RESET",
+        "footprint": "PlayBridge:SW_SPST_CK_RS282G05A3"
+      },
+      {
+        "ref": "SW2",
+        "value": "BOOT",
+        "footprint": "PlayBridge:SW_SPST_CK_RS282G05A3"
+      },
+      {
+        "ref": "D1",
+        "value": "STATUS GREEN",
+        "footprint": "PlayBridge:LED_0603_1608Metric"
+      },
+      {
+        "ref": "R1",
+        "value": "1k PS CMD SERIES",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R2",
+        "value": "10k",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R3",
+        "value": "1k PS CLK SERIES",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R4",
+        "value": "10k",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R5",
+        "value": "1k PS ATT SERIES",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R6",
+        "value": "10k",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R7",
+        "value": "100",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R8",
+        "value": "100k",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R9",
+        "value": "100",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R10",
+        "value": "100k",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R11",
+        "value": "10k EN PULLUP",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R12",
+        "value": "10k BOOT PULLUP",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R13",
+        "value": "1k LED LIMIT",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R16",
+        "value": "1k UART DIV TOP",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R17",
+        "value": "2k UART DIV BOTTOM",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R18",
+        "value": "10k DTR BASE",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R19",
+        "value": "10k RTS BASE",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "R20",
+        "value": "700 MUX ILIM",
+        "footprint": "PlayBridge:R_0603_1608Metric"
+      },
+      {
+        "ref": "C1",
+        "value": "22uF 16V",
+        "footprint": "PlayBridge:C_1206_3216Metric"
+      },
+      {
+        "ref": "C2",
+        "value": "22uF",
+        "footprint": "PlayBridge:C_1206_3216Metric"
+      },
+      {
+        "ref": "C3",
+        "value": "10uF",
+        "footprint": "PlayBridge:C_0805_2012Metric"
+      },
+      {
+        "ref": "C4",
+        "value": "100nF",
+        "footprint": "PlayBridge:C_0603_1608Metric"
+      },
+      {
+        "ref": "C5",
+        "value": "1uF",
+        "footprint": "PlayBridge:C_0603_1608Metric"
+      },
+      {
+        "ref": "C6",
+        "value": "4.7uF",
+        "footprint": "PlayBridge:C_0805_2012Metric"
+      },
+      {
+        "ref": "C7",
+        "value": "100nF",
+        "footprint": "PlayBridge:C_0603_1608Metric"
+      },
+      {
+        "ref": "C8",
+        "value": "100nF",
+        "footprint": "PlayBridge:C_0603_1608Metric"
+      },
+      {
+        "ref": "C9",
+        "value": "22uF 6.3V BUCK OUTPUT",
+        "footprint": "PlayBridge:C_0805_2012Metric"
+      },
+      {
+        "ref": "C10",
+        "value": "100nF",
+        "footprint": "PlayBridge:C_0603_1608Metric"
+      },
+      {
+        "ref": "C11",
+        "value": "1uF",
+        "footprint": "PlayBridge:C_0603_1608Metric"
+      },
+      {
+        "ref": "C12",
+        "value": "1uF EN RESET DELAY",
+        "footprint": "PlayBridge:C_0603_1608Metric"
+      },
+      {
+        "ref": "F1",
+        "value": "750mA RESETTABLE PS1 INPUT",
+        "footprint": "PlayBridge:Fuse_1206_3216Metric"
+      },
+      {
+        "ref": "D2",
+        "value": "SMBJ12A PS1 TVS",
+        "footprint": "PlayBridge:D_SMA"
+      },
+      {
+        "ref": "D3",
+        "value": "BAT54 CMD 3V3 CLAMP",
+        "footprint": "PlayBridge:D_SOD-323"
+      },
+      {
+        "ref": "D4",
+        "value": "BAT54 CLK 3V3 CLAMP",
+        "footprint": "PlayBridge:D_SOD-323"
+      },
+      {
+        "ref": "D5",
+        "value": "BAT54 ATT 3V3 CLAMP",
+        "footprint": "PlayBridge:D_SOD-323"
+      }
+    ],
+    "nets": [
+      {
+        "name": "PS_8V_RAW",
+        "nodes": [
+          {
+            "ref": "J1",
+            "pin": "3"
+          },
+          {
+            "ref": "F1",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "PS_8V",
+        "nodes": [
+          {
+            "ref": "F1",
+            "pin": "2"
+          },
+          {
+            "ref": "U2",
+            "pin": "3"
+          },
+          {
+            "ref": "U2",
+            "pin": "2"
+          },
+          {
+            "ref": "C1",
+            "pin": "1"
+          },
+          {
+            "ref": "D2",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "PS_3V3",
+        "nodes": [
+          {
+            "ref": "U2",
+            "pin": "1"
+          },
+          {
+            "ref": "L1",
+            "pin": "2"
+          },
+          {
+            "ref": "C2",
+            "pin": "1"
+          },
+          {
+            "ref": "C9",
+            "pin": "1"
+          },
+          {
+            "ref": "U4",
+            "pin": "8"
+          },
+          {
+            "ref": "U4",
+            "pin": "3"
+          }
+        ]
+      },
+      {
+        "name": "USB_5V",
+        "nodes": [
+          { "ref": "J2", "pin": "A4" },
+          { "ref": "J2", "pin": "A9" },
+          { "ref": "J2", "pin": "B4" },
+          { "ref": "J2", "pin": "B9" },
+          {
+            "ref": "U3",
+            "pin": "1"
+          },
+          {
+            "ref": "U3",
+            "pin": "3"
+          },
+          {
+            "ref": "U5",
+            "pin": "16"
+          },
+          {
+            "ref": "U6",
+            "pin": "5"
+          },
+          {
+            "ref": "C5",
+            "pin": "1"
+          },
+          {
+            "ref": "C7",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "USB_3V3",
+        "nodes": [
+          {
+            "ref": "U3",
+            "pin": "5"
+          },
+          {
+            "ref": "C6",
+            "pin": "1"
+          },
+          {
+            "ref": "C10",
+            "pin": "1"
+          },
+          {
+            "ref": "U4",
+            "pin": "6"
+          }
+        ]
+      },
+      {
+        "name": "3V3",
+        "nodes": [
+          {
+            "ref": "U4",
+            "pin": "7"
+          },
+          {
+            "ref": "U1",
+            "pin": "2"
+          },
+          {
+            "ref": "C3",
+            "pin": "1"
+          },
+          {
+            "ref": "C4",
+            "pin": "1"
+          },
+          {
+            "ref": "C11",
+            "pin": "1"
+          },
+          {
+            "ref": "R11",
+            "pin": "1"
+          },
+          {
+            "ref": "R12",
+            "pin": "1"
+          },
+          {
+            "ref": "R13",
+            "pin": "1"
+          },
+          {
+            "ref": "TP1",
+            "pin": "1"
+          },
+          {
+            "ref": "D3",
+            "pin": "1"
+          },
+          {
+            "ref": "D4",
+            "pin": "1"
+          },
+          {
+            "ref": "D5",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "GND",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "1"
+          },
+          {
+            "ref": "U1",
+            "pin": "15"
+          },
+          {
+            "ref": "U1",
+            "pin": "38"
+          },
+          {
+            "ref": "U1",
+            "pin": "39"
+          },
+          {
+            "ref": "U2",
+            "pin": "4"
+          },
+          {
+            "ref": "U3",
+            "pin": "2"
+          },
+          {
+            "ref": "U4",
+            "pin": "2"
+          },
+          {
+            "ref": "U4",
+            "pin": "5"
+          },
+          {
+            "ref": "U5",
+            "pin": "1"
+          },
+          {
+            "ref": "U5",
+            "pin": "15"
+          },
+          {
+            "ref": "U6",
+            "pin": "2"
+          },
+          {
+            "ref": "J1",
+            "pin": "4"
+          },
+          { "ref": "J2", "pin": "A1" },
+          { "ref": "J2", "pin": "A12" },
+          { "ref": "J2", "pin": "B1" },
+          { "ref": "J2", "pin": "B12" },
+          { "ref": "J2", "pin": "SH" },
+          {
+            "ref": "TP2",
+            "pin": "1"
+          },
+          {
+            "ref": "Q1",
+            "pin": "2"
+          },
+          {
+            "ref": "Q2",
+            "pin": "2"
+          },
+          {
+            "ref": "SW1",
+            "pin": "2"
+          },
+          {
+            "ref": "SW2",
+            "pin": "2"
+          },
+          {
+            "ref": "R2",
+            "pin": "2"
+          },
+          {
+            "ref": "R4",
+            "pin": "2"
+          },
+          {
+            "ref": "R6",
+            "pin": "2"
+          },
+          {
+            "ref": "R8",
+            "pin": "2"
+          },
+          {
+            "ref": "R10",
+            "pin": "2"
+          },
+          {
+            "ref": "R17",
+            "pin": "2"
+          },
+          {
+            "ref": "R20",
+            "pin": "2"
+          },
+          { "ref": "R14", "pin": "2" },
+          { "ref": "R15", "pin": "2" },
+          {
+            "ref": "C1",
+            "pin": "2"
+          },
+          {
+            "ref": "C2",
+            "pin": "2"
+          },
+          {
+            "ref": "C3",
+            "pin": "2"
+          },
+          {
+            "ref": "C4",
+            "pin": "2"
+          },
+          {
+            "ref": "C5",
+            "pin": "2"
+          },
+          {
+            "ref": "C6",
+            "pin": "2"
+          },
+          {
+            "ref": "C7",
+            "pin": "2"
+          },
+          {
+            "ref": "C8",
+            "pin": "2"
+          },
+          {
+            "ref": "C9",
+            "pin": "2"
+          },
+          {
+            "ref": "C10",
+            "pin": "2"
+          },
+          {
+            "ref": "C11",
+            "pin": "2"
+          },
+          {
+            "ref": "D2",
+            "pin": "2"
+          },
+          {
+            "ref": "C12",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "BUCK_SW",
+        "nodes": [
+          { "ref": "U2", "pin": "5" },
+          { "ref": "L1", "pin": "1" },
+          { "ref": "C13", "pin": "1" }
+        ]
+      },
+      {
+        "name": "BUCK_BST",
+        "nodes": [
+          { "ref": "U2", "pin": "6" },
+          { "ref": "C13", "pin": "2" }
+        ]
+      },
+      {
+        "name": "MUX_ILIM",
+        "nodes": [
+          {
+            "ref": "U4",
+            "pin": "4"
+          },
+          {
+            "ref": "R20",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "USB_DP_RAW",
+        "nodes": [
+          { "ref": "J2", "pin": "B6" },
+          { "ref": "R21", "pin": "2" },
+          {
+            "ref": "U6",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "USB_DM_RAW",
+        "nodes": [
+          { "ref": "J2", "pin": "B7" },
+          { "ref": "R22", "pin": "2" },
+          {
+            "ref": "U6",
+            "pin": "3"
+          }
+        ]
+      },
+      {
+        "name": "USB_DP_A",
+        "nodes": [
+          { "ref": "J2", "pin": "A6" },
+          { "ref": "R21", "pin": "1" }
+        ]
+      },
+      {
+        "name": "USB_DM_A",
+        "nodes": [
+          { "ref": "J2", "pin": "A7" },
+          { "ref": "R22", "pin": "1" }
+        ]
+      },
+      {
+        "name": "USB_CC1",
+        "nodes": [
+          { "ref": "J2", "pin": "A5" },
+          { "ref": "R14", "pin": "1" }
+        ]
+      },
+      {
+        "name": "USB_CC2",
+        "nodes": [
+          { "ref": "J2", "pin": "B5" },
+          { "ref": "R15", "pin": "1" }
+        ]
+      },
+      {
+        "name": "USB_DP",
+        "nodes": [
+          {
+            "ref": "U6",
+            "pin": "6"
+          },
+          {
+            "ref": "U5",
+            "pin": "5"
+          }
+        ]
+      },
+      {
+        "name": "USB_DM",
+        "nodes": [
+          {
+            "ref": "U6",
+            "pin": "4"
+          },
+          {
+            "ref": "U5",
+            "pin": "6"
+          }
+        ]
+      },
+      {
+        "name": "CH340_V3",
+        "nodes": [
+          {
+            "ref": "U5",
+            "pin": "4"
+          },
+          {
+            "ref": "C8",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "PS_CMD",
+        "nodes": [
+          {
+            "ref": "J1",
+            "pin": "2"
+          },
+          {
+            "ref": "R1",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "CMD_IN",
+        "nodes": [
+          {
+            "ref": "R1",
+            "pin": "2"
+          },
+          {
+            "ref": "R2",
+            "pin": "1"
+          },
+          {
+            "ref": "U1",
+            "pin": "10"
+          },
+          {
+            "ref": "D3",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "PS_CLK",
+        "nodes": [
+          {
+            "ref": "J1",
+            "pin": "7"
+          },
+          {
+            "ref": "R3",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "CLK_IN",
+        "nodes": [
+          {
+            "ref": "R3",
+            "pin": "2"
+          },
+          {
+            "ref": "R4",
+            "pin": "1"
+          },
+          {
+            "ref": "U1",
+            "pin": "11"
+          },
+          {
+            "ref": "D4",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "PS_ATT",
+        "nodes": [
+          {
+            "ref": "J1",
+            "pin": "6"
+          },
+          {
+            "ref": "R5",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "ATT_IN",
+        "nodes": [
+          {
+            "ref": "R5",
+            "pin": "2"
+          },
+          {
+            "ref": "R6",
+            "pin": "1"
+          },
+          {
+            "ref": "U1",
+            "pin": "12"
+          },
+          {
+            "ref": "D5",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "DATA_GATE",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "8"
+          },
+          {
+            "ref": "R7",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "DATA_DRIVE",
+        "nodes": [
+          {
+            "ref": "R7",
+            "pin": "2"
+          },
+          {
+            "ref": "R8",
+            "pin": "1"
+          },
+          {
+            "ref": "Q1",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "PS_DATA",
+        "nodes": [
+          {
+            "ref": "Q1",
+            "pin": "3"
+          },
+          {
+            "ref": "J1",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "ACK_GATE",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "9"
+          },
+          {
+            "ref": "R9",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "ACK_DRIVE",
+        "nodes": [
+          {
+            "ref": "R9",
+            "pin": "2"
+          },
+          {
+            "ref": "R10",
+            "pin": "1"
+          },
+          {
+            "ref": "Q2",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "PS_ACK",
+        "nodes": [
+          {
+            "ref": "Q2",
+            "pin": "3"
+          },
+          {
+            "ref": "J1",
+            "pin": "9"
+          }
+        ]
+      },
+      {
+        "name": "EN",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "3"
+          },
+          {
+            "ref": "R11",
+            "pin": "2"
+          },
+          {
+            "ref": "SW1",
+            "pin": "1"
+          },
+          {
+            "ref": "Q4",
+            "pin": "3"
+          },
+          {
+            "ref": "C12",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "BOOT",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "25"
+          },
+          {
+            "ref": "R12",
+            "pin": "2"
+          },
+          {
+            "ref": "SW2",
+            "pin": "1"
+          },
+          {
+            "ref": "Q3",
+            "pin": "3"
+          }
+        ]
+      },
+      {
+        "name": "STATUS_LED",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "26"
+          },
+          {
+            "ref": "D1",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "LED_A",
+        "nodes": [
+          {
+            "ref": "R13",
+            "pin": "2"
+          },
+          {
+            "ref": "D1",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "CH_TX_5V",
+        "nodes": [
+          {
+            "ref": "U5",
+            "pin": "2"
+          },
+          {
+            "ref": "R16",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "UART_RX",
+        "nodes": [
+          {
+            "ref": "R16",
+            "pin": "2"
+          },
+          {
+            "ref": "R17",
+            "pin": "1"
+          },
+          {
+            "ref": "U1",
+            "pin": "34"
+          },
+          {
+            "ref": "TP4",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "UART_TX",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "35"
+          },
+          {
+            "ref": "U5",
+            "pin": "3"
+          },
+          {
+            "ref": "TP3",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "USB_DTR",
+        "nodes": [
+          {
+            "ref": "U5",
+            "pin": "13"
+          },
+          {
+            "ref": "R18",
+            "pin": "1"
+          },
+          {
+            "ref": "Q4",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "AUTO_BOOT",
+        "nodes": [
+          {
+            "ref": "R18",
+            "pin": "2"
+          },
+          {
+            "ref": "Q3",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "USB_RTS",
+        "nodes": [
+          {
+            "ref": "U5",
+            "pin": "14"
+          },
+          {
+            "ref": "R19",
+            "pin": "1"
+          },
+          {
+            "ref": "Q3",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "AUTO_RESET",
+        "nodes": [
+          {
+            "ref": "R19",
+            "pin": "2"
+          },
+          {
+            "ref": "Q4",
+            "pin": "1"
+          }
+        ]
+      }
+    ]
+  },
+  "board": {
+    "widthMm": 90,
+    "heightMm": 70,
+    "rules": {
+      "clearanceMm": 0.2,
+      "trackWidthMm": 0.2,
+      "viaDiameterMm": 0.6,
+      "viaDrillMm": 0.3,
+      "minDrillMm": 0.2,
+      "holeClearanceMm": 0.19
+    }
+  }
+}

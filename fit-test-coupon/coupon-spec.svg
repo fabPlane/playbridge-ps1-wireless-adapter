@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260mm" height="150mm" viewBox="0 0 260 150">
+ <style>text{font:4px Arial;fill:#111}.title{font-size:7px;font-weight:bold}.warn{fill:#b00020;font-weight:bold}.board{fill:#b51d2b;fill-opacity:.25;stroke:#9b1020;stroke-width:.7}.center{fill:none;stroke:#333;stroke-width:.4}.datum{stroke:#1670a8;stroke-width:.4;stroke-dasharray:2 1}.keep{fill:none;stroke:#d07000;stroke-width:.5;stroke-dasharray:3 1}</style>
+ <text x="10" y="12" class="title">PS1 9-bare-male-pin fit coupon — parameterized layout</text>
+ <text x="10" y="20" class="warn">PROVISIONAL / NOT FOR ORDER — NO DIMENSION MAY BE SCALED FROM THIS DRAWING</text>
+ <rect x="25" y="40" width="210" height="55" rx="2" class="board"/>
+ <line x1="25" y1="40" x2="235" y2="40" class="datum"/><text x="180" y="37">CONSOLE-SIDE PCB EDGE DATUM</text>
+ <line x1="130" y1="30" x2="130" y2="108" class="datum"/><text x="132" y="31">FIELD CL</text>
+ <g>
+  <g class="center"><circle cx="70" cy="50" r="3"/><circle cx="85" cy="50" r="3"/><circle cx="100" cy="50" r="3"/></g>
+  <g class="center"><circle cx="115" cy="50" r="3"/><circle cx="130" cy="50" r="3"/><circle cx="145" cy="50" r="3"/></g>
+  <g class="center"><circle cx="160" cy="50" r="3"/><circle cx="175" cy="50" r="3"/><circle cx="190" cy="50" r="3"/></g>
+ </g>
+ <rect x="62" y="34" width="46" height="30" rx="8" class="keep"/><rect x="107" y="34" width="46" height="30" rx="8" class="keep"/><rect x="152" y="34" width="46" height="30" rx="8" class="keep"/>
+ <text x="67" y="73">9</text><text x="82" y="73">8 NC</text><text x="97" y="73">7</text><text x="112" y="73">6</text><text x="127" y="73">5</text><text x="142" y="73">4</text><text x="157" y="73">3</text><text x="172" y="73">2</text><text x="187" y="73">1</text>
+ <text x="55" y="86">PLASTIC DIVISION</text><text x="112" y="86">PLASTIC DIVISION</text><text x="165" y="86">PLASTIC DIVISION</text>
+ <text x="10" y="112">CONTACT CENTERS: 0,4,8,12,16,20,24,28,32 mm — UNIFORM 4.00 mm PITCH / 32.00 mm SPAN.</text>
+ <text x="10" y="122">PROVISIONAL PIN: 0.64 x 0.64 mm SQUARE, GOLD PLATED; APPROX. 8.0 mm PROJECTION.</text>
+ <text x="10" y="130" class="warn">MPN, TAIL, PRODUCTION DRILL, PLATING THICKNESS AND ASSEMBLY METHOD ARE TBD.</text>
+ <text x="10" y="140" class="warn">UNPOWERED FIT TEST FIRST. STOP IF A PIN BINDS, DEFLECTS OR DAMAGES A CONSOLE SOCKET.</text>
+</svg>

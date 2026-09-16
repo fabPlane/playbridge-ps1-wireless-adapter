@@ -1,0 +1,8 @@
+.fabdesk/
+renders/
+exports/
+.DS_Store
+~*.lck
+*.kicad_prl
+AGENTS.md
+CLAUDE.md

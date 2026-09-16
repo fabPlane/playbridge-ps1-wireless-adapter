@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "prj_mu0y4j8z9ad21b5026",
+  "name": "wireless-pc-to-ps1-controller-bridge",
+  "createdAt": "2026-09-14T07:53:18.705Z",
+  "updatedAt": "2026-09-16T06:59:57.284Z",
+  "board": {
+    "layers": 4,
+    "widthMm": 50,
+    "heightMm": 48
+  },
+  "router": "capacity",
+  "agent": {},
+  "allowedDrcWarnings": []
+}
