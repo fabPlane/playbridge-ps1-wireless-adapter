@@ -30,6 +30,28 @@ The PCB design is electrically complete, but physical PS1-contact validation is 
 - `docs/images/current/` — latest reviewed images only
 - `docs/images/archive/` — superseded and diagnostic images kept for design history
 
+## Help wanted: source the nine PS1 male contacts
+
+We need an orderable manufacturer part number for the nine individual metal contacts at `J1`. These are not a standard 2.54 mm pin header and not a complete donor plug.
+
+| Requirement | Current target |
+| --- | --- |
+| Quantity | 9 identical straight male contacts per board; all nine positions physically populated |
+| Contact arrangement | One row on continuous 4.00 mm centers |
+| First-to-last span | 32.00 mm across eight equal gaps |
+| Mating cross-section | Nominal 0.64 × 0.64 mm square, as used in the successful fit check |
+| Projection beyond PCB edge | 16.00 mm total |
+| Console insertion section | Outermost 8.00 mm |
+| Printed-nose support section | Inner 8.00 mm between PCB edge and insertion section |
+| Current provisional PCB land | 1.00 mm finished plated hole with 1.70 mm pad; final hole must follow the selected contact datasheet and assembly tolerance |
+| Contact finish | Gold-plated mating area preferred; supplier must state base material and plating thickness |
+| Tip | Smooth/chamfered or rounded entry; no sharp burrs that could damage the console socket |
+| Assembly | Must support repeatable PCB assembly and retention; loose hand-cut jumper wires are not the production solution |
+
+When proposing a part, please provide the manufacturer, exact MPN, dimensioned drawing/datasheet, cross-section, total length and tail geometry, plating specification, recommended PCB hole/tolerance, retention method, packaging, supplier link, stock/lead time, and any JLCPCB/LCSC part number. JLCPCB in-stock assembly availability is preferred, but a readily obtainable external part is also useful for fit testing.
+
+The mating view is `9 8 7 | 6 5 4 | 3 2 1`. Pin 5 is physically present but electrically isolated as `PS_3V5_CONSOLE`; pin 8 is physically present and NC. Any candidate must pass the connector-only fit coupon test before it is approved for populated-board production.
+
 ## Important mechanical note
 
 The nine PS1 contacts use 4.00 mm pitch and a 32.00 mm first-to-last center span. A printed guide carrying all nine nominal 0.64 mm square pins was successfully inserted into a spare original PS1 controller port. Each pin projects 16.00 mm beyond the PCB edge: the inner 8.00 mm is reserved for printed-nose capture/alignment/support and only the outer 8.00 mm is the console mating section. The final contact manufacturer part number, production hole/tolerance, retention method and plating have not been released.
