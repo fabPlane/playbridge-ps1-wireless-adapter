@@ -13,7 +13,7 @@ This coupon precedes the PlayBridge PCB. It contains only:
 
 No active circuitry, donor plug, cable, internal wires, or female socket array is included. The coupon uses the measured 4.00 mm pitch and must not substitute an ordinary 2.54 mm header.
 
-The measured contact centers are fixed at `0,4,8,12,16,20,24,28,32 mm`. The provisional mating profile is 0.64 × 0.64 mm square, gold plated, with approximately 8.0 mm projecting beyond the console-facing PCB/enclosure datum. Exact pin MPN, tail geometry, production drill, retention, plating thickness and assembly method remain TBD. Each revision must be marked PROVISIONAL and tested on an unpowered console before electrical continuity tests.
+The measured contact centers are fixed at `0,4,8,12,16,20,24,28,32 mm`. A printed guide carrying all nine 0.64 mm square pins was inserted together into a spare original PS1 controller port, so the pitch/span and insertion concept have passed an initial physical fit check. The outer 8.0 mm is the console mating section; the inner 8.0 mm is reserved for nose capture and support. Exact pin MPN, tail geometry, production drill/tolerance, retention, plating thickness and assembly method remain TBD. Pin 5 is `PS_3V5_CONSOLE` and measured 3.58 V to pin 4/GND; it remains isolated on the PlayBridge MVP. Pin 8 is NC.
 
 Acceptance:
 

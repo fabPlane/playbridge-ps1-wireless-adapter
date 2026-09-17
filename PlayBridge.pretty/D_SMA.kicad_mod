@@ -8,6 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -2.5 0)
 		(layer "F.SilkS")
+		(hide yes)
 		(uuid "78f18f7d-f8a5-43e4-98c1-400155beaace")
 		(effects
 			(font

@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:PlayBridge.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12_INTERIOR_FANOUT_V14_C165948_MODEL.kicad_mod
 (footprint "USB_C_Receptacle_HRO_TYPE-C-31-M-12_INTERIOR_FANOUT_V14_C165948_MODEL"
+========
+(footprint "USB_C_Receptacle_HRO_TYPE-C-31-M-12_INTERIOR_FANOUT_V16_C165948_MODEL"
+>>>>>>>> 431a14f (Checkpoint routed 55x52 PlayBridge board and reviewed renders):PlayBridge.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12_INTERIOR_FANOUT_V16_C165948_MODEL.kicad_mod
   (version 20240108)
   (generator "pcbnew")
   (layer "F.Cu")
@@ -21,6 +25,7 @@
       (gr_poly (pts (xy 2.375 0.78) (xy 2.525 0.78) (xy 0.075 0) (xy -0.075 0)) (width 0) (fill yes))
       (gr_poly (pts (xy -0.1 0) (xy 0.1 0) (xy 1.5 2.42) (xy 1.26 2.42)) (width 0) (fill yes))
       (gr_rect (start 2.15 0.78) (end 2.75 2.23) (width 0) (fill yes))))
+<<<<<<<< HEAD:PlayBridge.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12_INTERIOR_FANOUT_V14_C165948_MODEL.kicad_mod
   (pad "A4_B9" smd custom (at -4.1 -5.55) (size 0.6 0.6) (layers "F.Cu")
     (options (clearance outline) (anchor circle))
     (primitives
@@ -32,6 +37,19 @@
     (primitives
       (gr_poly (pts (xy -1.725 0.78) (xy -1.575 0.78) (xy 0.075 0) (xy -0.075 0)) (width 0) (fill yes))
       (gr_rect (start -1.95 0.78) (end -1.35 2.23) (width 0) (fill yes))))
+========
+  (pad "A4_B9" smd custom (at -6 -6.55) (size 0.6 0.6) (layers "F.Cu")
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts (xy 3.475 1.78) (xy 3.625 1.78) (xy 0.075 0) (xy -0.075 0)) (width 0) (fill yes))
+      (gr_rect (start 3.25 1.78) (end 3.85 3.23) (width 0) (fill yes))))
+  (pad "A8" smd rect (at 1.25 -4.045) (size 0.3 1.45) (layers "F.Cu" "F.Mask" "F.Paste"))
+  (pad "A9_B4" smd custom (at 6 -6.55) (size 0.6 0.6) (layers "F.Cu")
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts (xy -3.625 1.78) (xy -3.475 1.78) (xy 0.075 0) (xy -0.075 0)) (width 0) (fill yes))
+      (gr_rect (start -3.85 1.78) (end -3.25 3.23) (width 0) (fill yes))))
+>>>>>>>> 431a14f (Checkpoint routed 55x52 PlayBridge board and reviewed renders):PlayBridge.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12_INTERIOR_FANOUT_V16_C165948_MODEL.kicad_mod
   (pad "A12_B1" smd custom (at 5.7 -5.55) (size 0.6 0.6) (layers "F.Cu")
     (options (clearance outline) (anchor circle))
     (primitives
@@ -116,5 +134,9 @@
   (pad "S1" thru_hole oval (at 4.32 -3.13) (size 1 2.1) (drill oval 0.6 1.7) (property pad_prop_mechanical) (layers "*.Cu" "*.Mask"))
   (pad "S1" thru_hole oval (at 4.32 1.05) (size 1 1.6) (drill oval 0.6 1.2) (property pad_prop_mechanical) (layers "*.Cu" "*.Mask"))
   (model "${KIPRJMOD}/PlayBridge.3dshapes/HRO_TYPE-C-31-M-12_C165948.step"
+<<<<<<<< HEAD:PlayBridge.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12_INTERIOR_FANOUT_V14_C165948_MODEL.kicad_mod
     (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+========
+    (offset (xyz -4.45 -3.65 0)) (scale (xyz 1 1 1)) (rotate (xyz -90 0 0)))
+>>>>>>>> 431a14f (Checkpoint routed 55x52 PlayBridge board and reviewed renders):PlayBridge.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12_INTERIOR_FANOUT_V16_C165948_MODEL.kicad_mod
 )

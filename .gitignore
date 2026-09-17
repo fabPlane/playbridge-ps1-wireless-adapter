@@ -1,6 +1,7 @@
 .fabdesk/
 renders/
 exports/
+backups/*/
 .DS_Store
 ~*.lck
 *.kicad_prl

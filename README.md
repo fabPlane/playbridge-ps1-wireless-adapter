@@ -13,9 +13,9 @@ The PCB design is electrically complete, but physical PS1-contact validation is 
 - Seven active PS1 contacts; pins 5 and 8 intentionally isolated
 - Routing: complete, with zero unconnected items
 - ERC: zero errors and zero warnings
-- DRC: zero errors and zero warnings
+- DRC: zero errors and zero unconnected items; 25 physical warnings remain documented
 - USB-C breakout and full-board routing are complete
-- The PS1 metal contacts and printed alignment shell still require physical fit validation
+- The nine-pin 4.00 mm spacing/insertion concept passed a physical guide fit; the final contact MPN, assembly tolerances, retention and printed alignment shell still require manufacturing validation
 
 ## Repository layout
 
@@ -32,6 +32,8 @@ The PCB design is electrically complete, but physical PS1-contact validation is 
 
 ## Important mechanical note
 
-The nine PS1 contacts are currently provisional: 4.00 mm pitch, 32.00 mm first-to-last center span, nominal 0.64 mm square contact and 1.00 mm plated holes. Each pin projects 16.00 mm beyond the PCB edge: the inner 8.00 mm is reserved for printed-nose capture/alignment/support and only the outer 8.00 mm is the console mating section. The final contact manufacturer part number, retention method, plating and mating fit have not been released for production.
+The nine PS1 contacts use 4.00 mm pitch and a 32.00 mm first-to-last center span. A printed guide carrying all nine nominal 0.64 mm square pins was successfully inserted into a spare original PS1 controller port. Each pin projects 16.00 mm beyond the PCB edge: the inner 8.00 mm is reserved for printed-nose capture/alignment/support and only the outer 8.00 mm is the console mating section. The final contact manufacturer part number, production hole/tolerance, retention method and plating have not been released.
 
-Do not order assembled boards until contact fit testing and the fabrication release checklist are complete.
+J1 pin 5 is `PS_3V5_CONSOLE`, measured at 3.58 V relative to pin 4/GND with the console powered and ESP32 disconnected. It remains intentionally isolated from board 3V3 and every USB/console power path to avoid backfeed. Pin 8 is the only true console NC.
+
+This checkpoint is suitable for team review and prototype-output preparation, but it is not yet an approved assembly release. Resolve or formally accept the remaining DRC warnings, finish J1 contact sourcing/assembly validation, and verify the production-board USB-C 3D transform before ordering assembled boards.

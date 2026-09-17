@@ -3,10 +3,10 @@
   "id": "prj_mu0y4j8z9ad21b5026",
   "name": "wireless-pc-to-ps1-controller-bridge",
   "createdAt": "2026-09-14T07:53:18.705Z",
-  "updatedAt": "2026-09-17T07:06:25.017Z",
+  "updatedAt": "2026-09-17T10:07:23.593Z",
   "board": {
     "layers": 4,
-    "widthMm": 50,
+    "widthMm": 55,
     "heightMm": 52
   },
   "router": "capacity",

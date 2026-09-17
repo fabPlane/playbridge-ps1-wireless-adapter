@@ -16,7 +16,7 @@ The product has no donor plug, cable, internal wires, or female socket contacts.
 - Maximum assembled envelope: 42 × 42 mm; PCB must fit the measured internal cavity.
 - Manufacturing solder mask: **red**.
 
-Position 8 is physically present and electrically NC. Position 5 remains electrically TBD until the PS1 pinout and power path are verified from authoritative documentation and bench measurement.
+Position 8 is physically present and is the only true console NC. Position 5 is `PS_3V5_CONSOLE`: it measured 3.58 V relative to pin 4/GND with the console powered and the ESP32 disconnected. The self-powered MVP intentionally leaves pin 5 electrically isolated to prevent backfeed; it must never be tied directly to board 3V3 or USB-derived power.
 
 ## Gate status
 
@@ -24,12 +24,12 @@ Position 8 is physically present and electrically NC. Position 5 remains electri
 | --- | --- |
 | Electrical gender | Nine bare male pins mating with the console's female port contacts |
 | Nine positions and plastic 3+3+3 divisions | Proven by user photo |
-| Electrical center pitch/span | Measured: continuous 4.00 mm; 32.00 mm first-to-last |
+| Electrical center pitch/span | Measured and physically fit-checked with all nine pins together: continuous 4.00 mm; 32.00 mm first-to-last |
 | Pin projection | 16.00 mm beyond PCB edge: inner 8.00 mm capture/support plus outer 8.00 mm console insertion; coupon confirmation required |
 | Console contact/opening size | Approximately 1.00 mm; exact mating profile/tolerance still required |
 | Exact male pin MPN, production drill and assembly process | Not selected |
 | Production footprint | Not created |
-| Fit-test coupon | Parameterized specification only; NOT FOR ORDER |
+| Fit-test status | Nine-pin guide fit passed; production MPN, hole tolerance, retention and assembled-process validation remain open |
 | Full PCB placement/routing | Frozen |
 
 See `male-pin-feasibility.md` and `../fit-test-coupon/`.
