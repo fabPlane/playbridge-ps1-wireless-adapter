@@ -4,7 +4,7 @@
       {
         "ref": "U1",
         "value": "ESP32-WROOM-32",
-        "footprint": "PlayBridge:ESP32-WROOM-32_D0.3mm"
+        "footprint": "PlayBridge:ESP32-WROOM-32_D0.3mm_SILK_CLEAN"
       },
       {
         "ref": "U2",
@@ -38,7 +38,7 @@
       {
         "ref": "U5",
         "value": "CH340C USB-UART",
-        "footprint": "PlayBridge:SOIC-16_3.9x9.9mm_P1.27mm"
+        "footprint": "PlayBridge:SOIC-16_3.9x9.9mm_P1.27mm_SILK_CLEAN"
       },
       {
         "ref": "U6",
@@ -48,17 +48,17 @@
       {
         "ref": "J1",
         "value": "PROVISIONAL_PS1_BARE_MALE_PIN_ARRAY MECHANICAL_TBD NOT_FOR_PRODUCTION",
-        "footprint": "PlayBridge:PROVISIONAL_PS1_MALE_PIN_ARRAY_P4.00_SQ0.64_MECH_TBD_3D_DIAGNOSTIC",
+        "footprint": "PlayBridge:PROVISIONAL_PS1_MALE_PIN_ARRAY_P4.00_SQ0.64_P16.00_MECH_TBD_3D",
         "fields": {
           "Pinout": "Console mating view left-to-right: 9 PS_ACK, 8 NC, 7 PS_CLK | 6 PS_ATT, 5 PS_3V5_RESERVED_NO_CONNECT, 4 GND | 3 PS_8V_RAW, 2 PS_CMD, 1 PS_DATA. Pin 5 and pin 8 are intentionally isolated and have no electrical net.",
           "Orientation": "CONSOLE SIDE faces outward from the board edge. Console mating view left-to-right is pad 9 through pad 1. Contact centers are 0,4,8,12,16,20,24,28,32 mm: continuous uniform 4.00 mm pitch and 32.00 mm pad-9-to-pad-1 span. The visible three console-housing groups are plastic divisions only and do not add contact-center gaps.",
-          "Assembly Note": "MECHANICAL TBD / NOT PRODUCTION RELEASED. J1 is nine bare straight male conductive pins mounted directly to the PCB and projecting outward toward the console. Provisional mating section is 0.64 x 0.64 mm square, gold plated, and approximately 8.0 mm beyond the console-facing PCB/enclosure datum. Exact purchasable pin MPN, tail/retention geometry, production drill, plating specification and assembly method remain TBD pending connector-only coupon fit testing. The present 1.00 mm drills and 1.70 mm pads are provisional. A future keyed printed shell must align the pins and carry mating loads. No donor plug, cable, wires or female socket terminals."
+          "Assembly Note": "MECHANICAL TBD / NOT PRODUCTION RELEASED. J1 is nine bare straight 0.64 x 0.64 mm square contacts on 4.00 mm pitch in provisional 1.00 mm plated holes. Each contact projects 16.00 mm beyond the PCB-edge datum: the inner 8.00 mm is reserved for capture, alignment and lateral support by the future printed nose; only the outermost 8.00 mm is the console mating/insertion section. Exact purchasable pin MPN, tail/retention geometry, plating and assembly method remain TBD pending connector-only coupon fit testing. The 1.70 mm pads are provisional. The shell must carry mating loads. No donor plug, cable, wires or female socket terminals."
         }
       },
       {
         "ref": "J2",
         "value": "USB-C USB2 HRO TYPE-C-31-M-12",
-        "footprint": "PlayBridge:USB_C_Receptacle_HRO_TYPE-C-31-M-12_FANOUT",
+        "footprint": "PlayBridge:USB_C_Receptacle_HRO_TYPE-C-31-M-12_INTERIOR_FANOUT_V14_C165948_MODEL",
         "fields": {
           "MPN": "TYPE-C-31-M-12",
           "Pinout": "A4_B9/A9_B4=VBUS; A6=USB_DP_A via R21 0R to USB_DP_RAW; B6=USB_DP_B via R22 0R to USB_DP_RAW; A7=USB_DM_A via R23 0R to USB_DM_RAW; B7=USB_DM_B via R24 0R to USB_DM_RAW; A5=CC1; B5=CC2; A1_B12/A12_B1/S1=GND; A8/B8=SBU NC",
@@ -66,45 +66,45 @@
           "Placement Constraint": "USER SIDE edge only. Cable-entry mouth must cross the board outline and face outward, away from PCB interior. Rear SMT/contact-tail side faces inward toward U6/R14/R15/U5. Reject any placement whose opening faces across the PCB. Verify in a true edge/side render before routing."
         }
       },
-      { "ref": "R14", "value": "5.1k USB-C CC1 Rd", "footprint": "PlayBridge:R_0402_1005Metric" },
-      { "ref": "R15", "value": "5.1k USB-C CC2 Rd", "footprint": "PlayBridge:R_0402_1005Metric" },
-      { "ref": "R21", "value": "0R USB D+ A JOIN", "footprint": "PlayBridge:R_0402_1005Metric" },
-      { "ref": "R22", "value": "0R USB D+ B JOIN", "footprint": "PlayBridge:R_0402_1005Metric" },
-      { "ref": "R23", "value": "0R USB D- A JOIN", "footprint": "PlayBridge:R_0402_1005Metric" },
-      { "ref": "R24", "value": "0R USB D- B JOIN", "footprint": "PlayBridge:R_0402_1005Metric" },
-      { "ref": "TP1", "value": "3V3 TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm" },
-      { "ref": "TP2", "value": "GND TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm" },
-      { "ref": "TP3", "value": "UART TX TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm" },
-      { "ref": "TP4", "value": "UART RX TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm" },
+      { "ref": "R14", "value": "5.1k USB-C CC1 Rd", "footprint": "PlayBridge:R_0402_1005Metric_SILK_CLEAN" },
+      { "ref": "R15", "value": "5.1k USB-C CC2 Rd", "footprint": "PlayBridge:R_0402_1005Metric_SILK_CLEAN" },
+      { "ref": "R21", "value": "0R USB D+ A JOIN", "footprint": "PlayBridge:R_0402_1005Metric_SILK_CLEAN" },
+      { "ref": "R22", "value": "0R USB D+ B JOIN", "footprint": "PlayBridge:R_0402_1005Metric_SILK_CLEAN" },
+      { "ref": "R23", "value": "0R USB D- A JOIN", "footprint": "PlayBridge:R_0402_1005Metric_SILK_CLEAN" },
+      { "ref": "R24", "value": "0R USB D- B JOIN", "footprint": "PlayBridge:R_0402_1005Metric_SILK_CLEAN" },
+      { "ref": "TP1", "value": "3V3 TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm_SILK_CLEAN" },
+      { "ref": "TP2", "value": "GND TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm_SILK_CLEAN" },
+      { "ref": "TP3", "value": "UART TX TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm_SILK_CLEAN" },
+      { "ref": "TP4", "value": "UART RX TEST", "footprint": "PlayBridge:TestPoint_Pad_D1.5mm_SILK_CLEAN" },
       {
         "ref": "Q1",
         "value": "2N7002 DATA OD",
-        "footprint": "PlayBridge:SOT-23"
+        "footprint": "PlayBridge:SOT-23_SILK_CLEAN_V2"
       },
       {
         "ref": "Q2",
         "value": "2N7002 ACK OD",
-        "footprint": "PlayBridge:SOT-23"
+        "footprint": "PlayBridge:SOT-23_SILK_CLEAN_V2"
       },
       {
         "ref": "Q3",
         "value": "MMBT3904 AUTO-BOOT",
-        "footprint": "PlayBridge:SOT-23"
+        "footprint": "PlayBridge:SOT-23_SILK_CLEAN_V2"
       },
       {
         "ref": "Q4",
         "value": "MMBT3904 AUTO-RESET",
-        "footprint": "PlayBridge:SOT-23"
+        "footprint": "PlayBridge:SOT-23_SILK_CLEAN_V2"
       },
       {
         "ref": "SW1",
         "value": "RESET",
-        "footprint": "PlayBridge:SW_SPST_CK_RS282G05A3"
+        "footprint": "PlayBridge:SW_SPST_CK_RS282G05A3_RESET_SILK_V7"
       },
       {
         "ref": "SW2",
         "value": "BOOT",
-        "footprint": "PlayBridge:SW_SPST_CK_RS282G05A3"
+        "footprint": "PlayBridge:SW_SPST_CK_RS282G05A3_BOOT_SILK_V7"
       },
       {
         "ref": "D1",
@@ -114,92 +114,92 @@
       {
         "ref": "R1",
         "value": "1k PS CMD SERIES",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R2",
         "value": "10k",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R3",
         "value": "1k PS CLK SERIES",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R4",
         "value": "10k",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R5",
         "value": "1k PS ATT SERIES",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R6",
         "value": "10k",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R7",
         "value": "100",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R8",
         "value": "100k",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R9",
         "value": "100",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R10",
         "value": "100k",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R11",
         "value": "10k EN PULLUP",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R12",
         "value": "10k BOOT PULLUP",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R13",
         "value": "1k LED LIMIT",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R16",
         "value": "1k UART DIV TOP",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R17",
         "value": "2k UART DIV BOTTOM",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R18",
         "value": "10k DTR BASE",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R19",
         "value": "10k RTS BASE",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "R20",
         "value": "700 MUX ILIM",
-        "footprint": "PlayBridge:R_0603_1608Metric"
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN"
       },
       {
         "ref": "C1",
@@ -274,17 +274,17 @@
       {
         "ref": "D3",
         "value": "BAT54 CMD 3V3 CLAMP",
-        "footprint": "PlayBridge:D_SOD-323"
+        "footprint": "PlayBridge:D_SOD-323_SILK_CLEAN"
       },
       {
         "ref": "D4",
         "value": "BAT54 CLK 3V3 CLAMP",
-        "footprint": "PlayBridge:D_SOD-323"
+        "footprint": "PlayBridge:D_SOD-323_SILK_CLEAN"
       },
       {
         "ref": "D5",
         "value": "BAT54 ATT 3V3 CLAMP",
-        "footprint": "PlayBridge:D_SOD-323"
+        "footprint": "PlayBridge:D_SOD-323_SILK_CLEAN"
       }
     ],
     "nets": [
@@ -1123,7 +1123,7 @@
     ]
   },
   "board": {
-    "widthMm": 55,
+    "widthMm": 50,
     "heightMm": 52,
     "rules": {
       "clearanceMm": 0.15,

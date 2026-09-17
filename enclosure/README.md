@@ -25,7 +25,7 @@ Position 8 is physically present and electrically NC. Position 5 remains electri
 | Electrical gender | Nine bare male pins mating with the console's female port contacts |
 | Nine positions and plastic 3+3+3 divisions | Proven by user photo |
 | Electrical center pitch/span | Measured: continuous 4.00 mm; 32.00 mm first-to-last |
-| Pin projection/insertion | Approximately 8.0 mm beyond console-facing datum; coupon confirmation required |
+| Pin projection | 16.00 mm beyond PCB edge: inner 8.00 mm capture/support plus outer 8.00 mm console insertion; coupon confirmation required |
 | Console contact/opening size | Approximately 1.00 mm; exact mating profile/tolerance still required |
 | Exact male pin MPN, production drill and assembly process | Not selected |
 | Production footprint | Not created |
@@ -38,4 +38,4 @@ See `male-pin-feasibility.md` and `../fit-test-coupon/`.
 
 J1 is a provisional nine-position bare male-pin array. Looking at the adapter's console-facing mating side, electrical positions run left-to-right as `9 8 7 | 6 5 4 | 3 2 1`. Contact-center positions are `0, 4, 8, 12, 16, 20, 24, 28, 32 mm`: continuous uniform 4.00 mm pitch and a 32.00 mm first-to-last span. The separators shown by `|` describe only the future keyed shell divisions.
 
-The provisional mating section is 0.64 × 0.64 mm square and gold plated, projecting approximately 8.0 mm beyond the console-facing PCB/enclosure datum. The current 1.00 mm drills and 1.70 mm pads are **MECHANICAL TBD / NOT PRODUCTION RELEASED**. A coupon must validate the selected pin MPN, mating fit, projection, retention, production drill and assembly method before any populated-board order.
+The provisional contact is 0.64 × 0.64 mm square and gold plated, projecting 16.00 mm beyond the PCB-edge datum. The inner 8.00 mm is reserved for keyed-shell capture, alignment and lateral support; only the outermost 8.00 mm enters the console. The current 1.00 mm drills and 1.70 mm pads are **MECHANICAL TBD / NOT PRODUCTION RELEASED**. A coupon must validate the selected pin MPN, mating fit, both datums, retention, production drill and assembly method before any populated-board order.

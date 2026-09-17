@@ -21,7 +21,9 @@ TBD_nose_height = undef;
 TBD_shoulder_width = undef;
 TBD_shoulder_height = undef;
 TBD_shoulder_thickness = undef;
-provisional_pin_projection = 8.0;
+provisional_pin_projection = 16.0;
+provisional_capture_section = 8.0;
+provisional_console_insertion = 8.0;
 TBD_rear_body_depth = undef;
 TBD_contact_centerline_z = undef;
 provisional_pin_width = 0.64;
@@ -52,7 +54,7 @@ module keyed_pin_shell_tbd() {
 }
 
 // Product axis, fixed independently of the still-unmeasured dimensions:
-// CONSOLE SIDE -> [8 mm provisional male-pin projection][keyed shell][J1/PCB]
+// CONSOLE SIDE -> [8 mm insertion][8 mm printed-nose capture/support][PCB edge][J1]
 // PCB/enclosure then extends toward USER SIDE -> [outward-facing USB-C mouth].
 // J1 is provisional until pin MPN, tail, drill and assembly method pass coupon testing.
 module provisional_male_pin_assembly_tbd() {

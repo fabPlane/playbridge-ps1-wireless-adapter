@@ -1,4 +1,4 @@
-(footprint "R_0402_1005Metric"
+(footprint "R_0402_1005Metric_SILK_CLEAN"
 	(version 20260206)
 	(generator "kicad-footprint-generator")
 	(layer "F.Cu")
@@ -7,6 +7,7 @@
 	(property "Reference" "REF**"
 		(at 0 -1.17 0)
 		(layer "F.SilkS")
+		(hide yes)
 		(effects
 			(font
 				(size 1 1)

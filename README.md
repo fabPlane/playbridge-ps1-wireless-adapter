@@ -4,16 +4,17 @@ PlayBridge is an ESP32-based adapter intended to plug directly into an original 
 
 ## Current status
 
-This repository is an active engineering work in progress and is **not fabrication-ready**.
+The PCB design is electrically complete, but physical PS1-contact validation is still required before fabrication release.
 
 - Board: 55 x 52 mm, four copper layers
 - ESP32-WROOM-32 module
 - USB-C programming and development connection
 - Nine-position provisional PS1 contact footprint
 - Seven active PS1 contacts; pins 5 and 8 intentionally isolated
-- ERC: zero violations at the latest verified checkpoint
-- Pre-route DRC: zero physical-rule errors at the latest verified checkpoint
-- USB-C breakout and full-board routing are still in progress
+- Routing: complete, with zero unconnected items
+- ERC: zero errors and zero warnings
+- DRC: zero errors and zero warnings
+- USB-C breakout and full-board routing are complete
 - The PS1 metal contacts and printed alignment shell still require physical fit validation
 
 ## Repository layout
@@ -30,6 +31,6 @@ This repository is an active engineering work in progress and is **not fabricati
 
 ## Important mechanical note
 
-The nine PS1 contacts are currently provisional: 4.00 mm pitch, 32.00 mm first-to-last center span, nominal 0.64 mm square contact, and approximately 8.00 mm insertion projection. The final contact manufacturer part number, drill size, retention method, plating and mating fit have not been released for production.
+The nine PS1 contacts are currently provisional: 4.00 mm pitch, 32.00 mm first-to-last center span, nominal 0.64 mm square contact and 1.00 mm plated holes. Each pin projects 16.00 mm beyond the PCB edge: the inner 8.00 mm is reserved for printed-nose capture/alignment/support and only the outer 8.00 mm is the console mating section. The final contact manufacturer part number, retention method, plating and mating fit have not been released for production.
 
-Do not order assembled boards until routing, DRC, contact fit testing and the fabrication release checklist are complete.
+Do not order assembled boards until contact fit testing and the fabrication release checklist are complete.

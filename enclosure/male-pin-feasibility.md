@@ -11,7 +11,7 @@ Measured geometry:
 - 32.00 mm first-to-last span;
 - approximately 1.00 mm console openings;
 - provisional mating section: 0.64 × 0.64 mm square, gold plated;
-- provisional projection beyond the console-facing PCB/enclosure datum: approximately 8.0 mm.
+- projection beyond the PCB-edge datum: 16.00 mm total; inner 8.00 mm capture/support section and outer 8.00 mm console insertion section.
 
 The plastic 3+3+3 divisions are mechanical keying features only. They do not change electrical pitch. A future printed shell must reproduce those divisions, align the pins, establish insertion depth, prevent rotation, and carry insertion/removal loads.
 
@@ -21,7 +21,7 @@ The plastic 3+3+3 divisions are mechanical keying features only. They do not cha
 2. Mating-section tolerance around the provisional 0.64 × 0.64 mm profile.
 3. Gold plating thickness and underplate on the mating section.
 4. Pin material, current rating and mating-cycle suitability.
-5. Total pin length, 8.0 mm mating projection, PCB thickness allowance and rear retention length.
+5. Total pin length, 16.00 mm PCB-edge projection, 8.00 mm capture datum, 8.00 mm insertion datum, PCB thickness allowance and rear retention length.
 6. Tail/retention style: straight PTH stake, compliant section, swage feature or carrier strip.
 7. Manufacturer-recommended finished-hole diameter and tolerance.
 8. Pad diameter, annular ring and solder-mask opening.
@@ -35,4 +35,4 @@ The plastic 3+3+3 divisions are mechanical keying features only. They do not cha
 
 ## Release gate
 
-Build a connector-only coupon before ordering a populated PlayBridge board. The coupon must verify fit without console damage, contact continuity and isolation, 8.0 mm projection/insertion behavior, pin retention, alignment, repeated cycles and shell load transfer. Do not substitute ordinary 2.54 mm headers or change the measured 4.00 mm pitch.
+Build a connector-only coupon before ordering a populated PlayBridge board. The coupon must verify fit without console damage, contact continuity and isolation, the 16.00 mm projection with separate 8.00 mm capture and 8.00 mm insertion sections, pin retention, alignment, repeated cycles and shell load transfer. Do not substitute 2.54 mm pitch or change the measured 4.00 mm pitch.
