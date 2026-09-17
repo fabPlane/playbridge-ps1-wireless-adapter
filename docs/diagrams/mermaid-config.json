@@ -1,0 +1,10 @@
+{
+  "backgroundColor": "#ffffff",
+  "theme": "base",
+  "themeVariables": {
+    "fontFamily": "Inter, Arial, sans-serif",
+    "fontSize": "16px",
+    "primaryTextColor": "#13213C",
+    "lineColor": "#5E6C84"
+  }
+}

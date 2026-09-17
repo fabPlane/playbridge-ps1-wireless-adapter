@@ -27,6 +27,8 @@ The PCB design is electrically complete, but physical PS1-contact validation is 
 - `fit-check/` — printable STL fixtures and physical controller-port test photos
 - `enclosure/` — provisional mechanical studies
 - `manufacturing-notes.md` — current manufacturing constraints and open questions
+- `docs/diagrams/` — editable Mermaid sources and rendered modular-interconnect concepts
+- `docs/images/concepts/` — illustrative product and assembly concept renders
 - `docs/images/current/` — latest reviewed images only
 - `docs/images/archive/` — superseded and diagnostic images kept for design history
 

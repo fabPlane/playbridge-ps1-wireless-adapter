@@ -1,0 +1,43 @@
+%%{init: {"theme":"base","flowchart":{"curve":"basis","nodeSpacing":34,"rankSpacing":55},"themeVariables":{"fontFamily":"Arial, Helvetica, sans-serif","fontSize":"16px","primaryColor":"#EAF2FF","primaryTextColor":"#13213C","primaryBorderColor":"#3973D6","lineColor":"#5E6C84","secondaryColor":"#ECFDF5","tertiaryColor":"#FFF7E6","clusterBkg":"#F8FAFC","clusterBorder":"#CBD5E1"}}}%%
+flowchart LR
+    subgraph MAIN["ESP32 main board"]
+        direction TB
+        ESP["ESP32<br/>GPIO + protection"]
+        FRONT["J1 · USB 3 female<br/><b>PS1 front bus</b><br/>9 contacts"]
+        SERIAL["J2 · USB 3 female<br/><b>PS1 rear serial</b><br/>9 contacts"]
+        ESP --> FRONT
+        ESP --> SERIAL
+    end
+
+    subgraph FRONTMOD["Passive front-port harness"]
+        direction TB
+        FB["USB 3 male<br/>9-contact breakout"]
+        SPLICE["Small junction PCB<br/>shared bus + ATT split"]
+        C1["PS1 male donor cable<br/><b>Controller 1</b>"]
+        C2["PS1 male donor cable<br/><b>Controller 2</b>"]
+        M1["Optional male edge PCB<br/><b>Memory card 1</b>"]
+        M2["Optional male edge PCB<br/><b>Memory card 2</b>"]
+        FB --> SPLICE
+        SPLICE --> C1
+        SPLICE --> C2
+        SPLICE -. optional .-> M1
+        SPLICE -. optional .-> M2
+    end
+
+    subgraph SERIALMOD["Passive rear-serial harness"]
+        direction TB
+        SB["USB 3 male<br/>9-contact breakout"]
+        SC["8-wire cable<br/>+ shield/drain"]
+        SP["PS1 rear serial<br/><b>male plug</b>"]
+        SB --> SC --> SP
+    end
+
+    FRONT == "native PS1 signals" ==> FB
+    SERIAL == "native serial signals" ==> SB
+
+    classDef main fill:#EAF2FF,stroke:#3973D6,stroke-width:2px,color:#13213C;
+    classDef module fill:#ECFDF5,stroke:#15966A,stroke-width:2px,color:#123C2F;
+    classDef endpoint fill:#FFF7E6,stroke:#E49518,stroke-width:2px,color:#4B3210;
+    class ESP,FRONT,SERIAL main;
+    class FB,SPLICE,SB,SC module;
+    class C1,C2,M1,M2,SP endpoint;

@@ -1,0 +1,23 @@
+%%{init: {"theme":"base","flowchart":{"curve":"stepAfter","nodeSpacing":38,"rankSpacing":64},"themeVariables":{"fontFamily":"Arial, Helvetica, sans-serif","fontSize":"16px","primaryColor":"#EAF2FF","primaryTextColor":"#13213C","primaryBorderColor":"#3973D6","lineColor":"#5E6C84","secondaryColor":"#ECFDF5","tertiaryColor":"#FFF7E6"}}}%%
+flowchart LR
+    MAIN["ESP32 main PCB<br/><b>J1 USB 3 female</b>"]
+    BREAKOUT["Harness PCB<br/><b>USB 3 male breakout</b>"]
+    BUS["Shared lines<br/>DATA · CMD · CLK · ACK · GND"]
+    SELECT["Independent selects<br/>ATT1 · ATT2"]
+    P1["Cut PS1 donor cable<br/><b>Male plug 1</b>"]
+    P2["Cut PS1 donor cable<br/><b>Male plug 2</b>"]
+
+    MAIN == "one 9-contact link" ==> BREAKOUT
+    BREAKOUT --> BUS
+    BREAKOUT --> SELECT
+    BUS --> P1
+    BUS --> P2
+    SELECT -- ATT1 --> P1
+    SELECT -- ATT2 --> P2
+
+    classDef board fill:#EAF2FF,stroke:#3973D6,stroke-width:2px,color:#13213C;
+    classDef junction fill:#ECFDF5,stroke:#15966A,stroke-width:2px,color:#123C2F;
+    classDef cable fill:#FFF7E6,stroke:#E49518,stroke-width:2px,color:#4B3210;
+    class MAIN board;
+    class BREAKOUT,BUS,SELECT junction;
+    class P1,P2 cable;

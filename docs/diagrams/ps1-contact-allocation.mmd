@@ -1,0 +1,12 @@
+%%{init: {"theme":"base","flowchart":{"curve":"linear","nodeSpacing":20,"rankSpacing":30},"themeVariables":{"fontFamily":"Arial, Helvetica, sans-serif","fontSize":"15px","primaryColor":"#EAF2FF","primaryTextColor":"#13213C","primaryBorderColor":"#3973D6","lineColor":"#5E6C84","secondaryColor":"#ECFDF5","tertiaryColor":"#FFF7E6"}}}%%
+flowchart LR
+    J1["<b>J1 · FRONT BUS</b><br/><i>proposed 9-contact allocation</i><br/><br/>1 · DATA<br/>2 · CMD<br/>3 · CLK<br/>4 · ACK<br/>5 · ATT1<br/>6 · ATT2<br/>7 · +3.3 V sense / protected rail<br/>8 · +7.5 V memory-card rail<br/>9 · GND"]
+    NOTE["⚠ <b>Custom interconnect</b><br/><br/>USB 3 shells carry native PS1 signals.<br/><b>Never connect these ports<br/>to USB equipment.</b><br/><br/><i>Verify the pinout before PCB layout.</i>"]
+    J2["<b>J2 · REAR SERIAL</b><br/><i>proposed 9-contact allocation</i><br/><br/>1 · RXD<br/>2 · TXD<br/>3 · DSR<br/>4 · DTR<br/>5 · CTS<br/>6 · RTS<br/>7 · power reference<br/>8 · spare / shield policy TBD<br/>9 · GND"]
+
+    J1 ~~~ NOTE ~~~ J2
+
+    classDef contact fill:#FFF7E6,stroke:#E49518,stroke-width:2px,color:#4B3210;
+    classDef warning fill:#FFF1F2,stroke:#E11D48,stroke-width:2px,color:#881337;
+    class J1,J2 contact;
+    class NOTE warning;
