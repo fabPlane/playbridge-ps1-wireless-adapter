@@ -24,6 +24,7 @@ The PCB design is electrically complete, but physical PS1-contact validation is 
 - `PlayBridge.pretty/` — project-local footprints
 - `PlayBridge.3dshapes/` — project-local provisional 3D models
 - `fit-test-coupon/` — PS1 contact measurement and fit-test material
+- `fit-check/` — printable STL fixtures and physical controller-port test photos
 - `enclosure/` — provisional mechanical studies
 - `manufacturing-notes.md` — current manufacturing constraints and open questions
 - `docs/images/current/` — latest reviewed images only
