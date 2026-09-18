@@ -23,4 +23,13 @@ The concept currently uses USB 3 Type-A connector hardware because it provides e
 - [`concepts/`](concepts/) contains the supplied system architecture, breakout-board example and illustrative product layout.
 - [`references/ps1-donor-plug/`](references/ps1-donor-plug/) contains photographs of the actual donor plug, including the empty pin-8 position.
 
-No V2 PCB source, pin mapping, BOM or ordering package exists yet. Those directories will be created only when V2 design work begins.
+## Current development checkpoint
+
+V2 PCB development is active on branch `v2/donor-plug-modular-adapter`. The working source remains at the repository root until V2 is frozen as a release snapshot.
+
+- Board: 55 × 62 mm, four layers.
+- J1: Molex 48393-0003 / JLCPCB C3197928 used as a nine-contact **non-USB** PS1 donor-harness interface.
+- J2: the same connector reserved for a future rear-serial harness; its contacts remain intentionally unassigned until that interface is characterized.
+- The exact-part visual mesh is documented in `PlayBridge.3dshapes/README_MOLEX_48393-0003_TRACEPARTS.md`.
+- `renders/` contains the verified current connector-model views.
+- ERC currently reports zero errors and zero warnings. Routing and DRC cleanup are not complete, so V2 is not order-ready.

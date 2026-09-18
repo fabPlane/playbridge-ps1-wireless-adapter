@@ -33,7 +33,7 @@
       {
         "ref": "U4",
         "value": "TPS2113APW POWER MUX",
-        "footprint": "PlayBridge:TSSOP-8_3x3mm_P0.65mm_U4_ESCAPE_V2"
+        "footprint": "PlayBridge:TSSOP-8_3x3mm_P0.65mm_AUTHORIZED_KICAD_COPY"
       },
       {
         "ref": "U5",
@@ -47,18 +47,40 @@
       },
       {
         "ref": "J1",
-        "value": "PROVISIONAL_PS1_BARE_MALE_PIN_ARRAY MECHANICAL_TBD NOT_FOR_PRODUCTION",
-        "footprint": "PlayBridge:PROVISIONAL_PS1_MALE_PIN_ARRAY_P4.00_SQ0.64_P16.00_MECH_TBD_3D",
+        "value": "PS1 DONOR HARNESS / NOT USB",
+        "footprint": "PlayBridge:USB3_A_Molex_48393-0003_AUTHORIZED_COPY_MODEL_V3",
+        "libSource": { "lib": "Connector", "part": "USB3_A" },
         "fields": {
-          "Pinout": "Console mating view left-to-right: 9 PS_ACK, 8 NC, 7 PS_CLK | 6 PS_ATT, 5 PS_3V5_CONSOLE (measured 3.58 V; intentionally isolated), 4 GND | 3 PS_8V_RAW, 2 PS_CMD, 1 PS_DATA. Pin 5 is a real console logic-supply contact but has no PCB net in this self-powered MVP to prevent backfeed; pin 8 is the only true console NC.",
-          "Orientation": "CONSOLE SIDE faces outward from the board edge. Console mating view left-to-right is pad 9 through pad 1. Contact centers are 0,4,8,12,16,20,24,28,32 mm: continuous uniform 4.00 mm pitch and 32.00 mm pad-9-to-pad-1 span. The visible three console-housing groups are plastic divisions only and do not add contact-center gaps.",
-          "Assembly Note": "MECHANICAL TBD / NOT PRODUCTION RELEASED. A printed 4.00 mm-pitch guide carrying all nine provisional 0.64 x 0.64 mm square contacts was inserted together into a spare original PS1 controller port, validating the nine-pin spacing and insertion concept. Each contact projects 16.00 mm beyond the PCB-edge datum: the inner 8.00 mm is reserved for capture, alignment and lateral support by the future printed nose; only the outermost 8.00 mm is the console mating/insertion section. Exact purchasable pin MPN, tail/retention geometry, plating, production tolerance and assembly method remain TBD. The provisional 1.00 mm holes and 1.70 mm pads are not production-released. The shell must carry mating loads. No donor plug, cable, wires or female socket terminals.",
-          "Bench Validation": "With ESP32 disconnected and the console powered, J1 pin 5 measured 3.58 V relative to pin 4/GND. Keep pin 5 isolated from board 3V3, USB power and console-derived power paths; never tie it directly to board 3V3."
+          "Manufacturer": "Molex",
+          "MPN": "48393-0003",
+          "Normalized Manufacturer Number": "483930003",
+          "JLCPCB/LCSC Part": "C3197928",
+          "Datasheet": "https://www.molex.com/en-us/products/part-detail/483930003",
+          "Footprint Provenance": "Project-local authorized geometry copy of bundled KiCad Connector_USB:USB3_A_Molex_48393-001; land geometry references Molex drawing 483930003_sd.pdf.",
+          "Pinout": "CUSTOM NON-USB. Standard USB contact identities: 1/VBUS=NC_KEY; 2/D-=PS_CMD; 3/D+=PS_CLK; 4/GND=GND; 5/SSRX-=PS_ATT; 6/SSRX+=PS_DATA; 7/GND_DRAIN=PS_ACK; 8/SSTX-=PS_8V_RAW; 9/SSTX+=PS_3V5_CONSOLE_ISOLATED_NC. Shell pads SH have no electrical net.",
+          "Orientation": "Right-angle top-mount receptacle at enclosure edge; mating mouth faces outward. PCB solder-side contact numbering is not a mating-view map: verify mirror orientation against the Molex drawing before harness assembly.",
+          "Safety": "NOT USB. Pad 1 is deliberately unconnected so a normal USB source VBUS does not enter the circuit. Pad 9 is physically present but has no PCB net or copper and must never be tied to board 3V3. Shell is mechanically anchored but electrically isolated. NOT PRODUCTION RELEASED."
         }
       },
       {
         "ref": "J2",
-        "value": "USB-C USB2 HRO TYPE-C-31-M-12",
+        "value": "RESERVED REAR SERIAL / NOT USB / ALL CONTACTS NC",
+        "footprint": "PlayBridge:USB3_A_Molex_48393-0003_RESERVED_NOT_USB_MODEL_V3",
+        "libSource": { "lib": "Connector", "part": "USB3_A" },
+        "fields": {
+          "Manufacturer": "Molex",
+          "MPN": "48393-0003",
+          "Normalized Manufacturer Number": "483930003",
+          "JLCPCB/LCSC Part": "C3197928",
+          "Datasheet": "https://www.molex.com/en-us/products/part-detail/483930003",
+          "Pinout": "RESERVED: contacts 1 through 9 and shell pads SH intentionally have no nets and no copper.",
+          "Safety": "NOT USB. Do not populate a harness until the PS1 rear serial/expansion interface is electrically characterized.",
+          "Placement Constraint": "Board edge only; receptacle mouth faces outward and courtyard must remain mechanically clear."
+        }
+      },
+      {
+        "ref": "J3",
+        "value": "USB-C USB2 HRO TYPE-C-31-M-12 PROGRAMMING",
         "footprint": "PlayBridge:USB_C_Receptacle_HRO_TYPE-C-31-M-12_INTERIOR_FANOUT_V16_C165948_MODEL",
         "fields": {
           "MPN": "TYPE-C-31-M-12",
@@ -312,7 +334,7 @@
         "nodes": [
           {
             "ref": "J1",
-            "pin": "3"
+            "pin": "8"
           },
           {
             "ref": "F1",
@@ -371,6 +393,18 @@
           {
             "ref": "U4",
             "pin": "3"
+          },
+          {
+            "ref": "D3",
+            "pin": "1"
+          },
+          {
+            "ref": "D4",
+            "pin": "1"
+          },
+          {
+            "ref": "D5",
+            "pin": "1"
           }
         ]
       },
@@ -415,14 +449,14 @@
       {
         "name": "USB_VBUS_A",
         "nodes": [
-          { "ref": "J2", "pin": "A4_B9" },
+          { "ref": "J3", "pin": "A4_B9" },
           { "ref": "R26", "pin": "1" }
         ]
       },
       {
         "name": "USB_VBUS_B",
         "nodes": [
-          { "ref": "J2", "pin": "A9_B4" },
+          { "ref": "J3", "pin": "A9_B4" },
           { "ref": "R27", "pin": "1" }
         ]
       },
@@ -492,18 +526,6 @@
           {
             "ref": "TP1",
             "pin": "1"
-          },
-          {
-            "ref": "D3",
-            "pin": "1"
-          },
-          {
-            "ref": "D4",
-            "pin": "1"
-          },
-          {
-            "ref": "D5",
-            "pin": "1"
           }
         ]
       },
@@ -558,9 +580,9 @@
             "ref": "J1",
             "pin": "4"
           },
-          { "ref": "J2", "pin": "A1_B12" },
-          { "ref": "J2", "pin": "A12_B1" },
-          { "ref": "J2", "pin": "S1" },
+          { "ref": "J3", "pin": "A1_B12" },
+          { "ref": "J3", "pin": "A12_B1" },
+          { "ref": "J3", "pin": "S1" },
           {
             "ref": "TP2",
             "pin": "1"
@@ -718,42 +740,42 @@
       {
         "name": "USB_DP_A",
         "nodes": [
-          { "ref": "J2", "pin": "A6" },
+          { "ref": "J3", "pin": "A6" },
           { "ref": "R21", "pin": "1" }
         ]
       },
       {
         "name": "USB_DP_B",
         "nodes": [
-          { "ref": "J2", "pin": "B6" },
+          { "ref": "J3", "pin": "B6" },
           { "ref": "R22", "pin": "1" }
         ]
       },
       {
         "name": "USB_DM_A",
         "nodes": [
-          { "ref": "J2", "pin": "A7" },
+          { "ref": "J3", "pin": "A7" },
           { "ref": "R23", "pin": "1" }
         ]
       },
       {
         "name": "USB_DM_B",
         "nodes": [
-          { "ref": "J2", "pin": "B7" },
+          { "ref": "J3", "pin": "B7" },
           { "ref": "R24", "pin": "1" }
         ]
       },
       {
         "name": "USB_CC1",
         "nodes": [
-          { "ref": "J2", "pin": "A5" },
+          { "ref": "J3", "pin": "A5" },
           { "ref": "R14", "pin": "1" }
         ]
       },
       {
         "name": "USB_CC2",
         "nodes": [
-          { "ref": "J2", "pin": "B5" },
+          { "ref": "J3", "pin": "B5" },
           { "ref": "R15", "pin": "1" }
         ]
       },
@@ -835,7 +857,7 @@
         "nodes": [
           {
             "ref": "J1",
-            "pin": "7"
+            "pin": "3"
           },
           {
             "ref": "R3",
@@ -869,7 +891,7 @@
         "nodes": [
           {
             "ref": "J1",
-            "pin": "6"
+            "pin": "5"
           },
           {
             "ref": "R5",
@@ -937,7 +959,7 @@
           },
           {
             "ref": "J1",
-            "pin": "1"
+            "pin": "6"
           }
         ]
       },
@@ -980,7 +1002,7 @@
           },
           {
             "ref": "J1",
-            "pin": "9"
+            "pin": "7"
           }
         ]
       },
@@ -1171,7 +1193,13 @@
   },
   "board": {
     "widthMm": 55,
-    "heightMm": 52,
+    "heightMm": 62,
+    "copperLayers": 4,
+    "placements": [
+      { "ref": "J1", "position": { "x": -1.5, "y": 45 }, "rotation": 0 },
+      { "ref": "J2", "position": { "x": 18, "y": 45 }, "rotation": 0 },
+      { "ref": "J3", "position": { "x": 45.505, "y": 6.1 }, "rotation": 90 }
+    ],
     "rules": {
       "clearanceMm": 0.15,
       "trackWidthMm": 0.15,
