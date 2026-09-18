@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "PlayBridge")(type "KiCad")(uri "${KIPRJMOD}/PlayBridge.pretty")(options "")(descr "PlayBridge project-local verified footprints"))
+)

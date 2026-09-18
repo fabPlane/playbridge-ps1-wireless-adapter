@@ -1,0 +1,27 @@
+parameter,units,measured_value,method
+P1_X_from_center,mm,16.00,direct physical measurement
+P2_X_from_center,mm,12.00,direct physical measurement
+P3_X_from_center,mm,8.00,direct physical measurement
+P4_X_from_center,mm,4.00,direct physical measurement
+P5_X_from_center,mm,0.00,direct physical measurement
+P6_X_from_center,mm,-4.00,direct physical measurement
+P7_X_from_center,mm,-8.00,direct physical measurement
+P8_X_from_center,mm,-12.00,direct physical measurement
+P9_X_from_center,mm,-16.00,direct physical measurement
+contact_centerline_Y,mm,TBD,depth gauge/caliper
+console_opening_size,mm,approximately 1.00,direct measurement; exact tolerance required
+provisional_mating_width,mm,0.64,coupon starting value only
+provisional_mating_thickness,mm,0.64,coupon starting value only
+pin_projection_from_console_datum,mm,approximately 8.00,direct measurement; fit-coupon validation required
+pin_total_length,mm,TBD,selected-pin manufacturer drawing
+pin_tail_or_retention_geometry,mm,TBD,selected-pin manufacturer drawing
+recommended_finished_drill,mm,TBD,selected-pin manufacturer drawing
+gold_plating_thickness,um,TBD,selected-pin manufacturer drawing
+assembly_method,text,TBD,selected-pin manufacturer drawing and PCBA review
+maximum_insertion,mm,TBD,depth gauge
+fascia_to_socket_face,mm,TBD,depth gauge
+group1_key_profile,mm,TBD,contour/optical
+group2_key_profile,mm,TBD,contour/optical
+group3_key_profile,mm,TBD,contour/optical
+known_plug_insertion_force,N,TBD,force gauge
+known_plug_extraction_force,N,TBD,force gauge

@@ -2,6 +2,16 @@
 
 PlayBridge is an ESP32-based adapter intended to plug directly into an original PlayStation controller port. A PC sends controller state over Wi-Fi, and the adapter presents that state to the console through the PS1 controller protocol.
 
+## Hardware versions
+
+PlayBridge hardware is versioned independently so the existing PCB-mounted pin-array prototype can remain reproducible while the modular donor-plug design is developed.
+
+| Version | Design | Status |
+| --- | --- | --- |
+| `v1.0.0` | PCB-mounted pin array | Frozen prototype checkpoint under [`versions/v1-pcb-mounted-pin-array/`](versions/v1-pcb-mounted-pin-array/) |
+| `v1.x` | Compatible revisions of the PCB-mounted pin-array design | Reserved for future V1 corrections that retain the same architecture |
+| `v2.0.0` | Donor PlayStation plug with a removable custom USB-connector harness | Planned; development material is under [`versions/v2-donor-plug-modular-adapter/`](versions/v2-donor-plug-modular-adapter/) |
+
 ## Current status
 
 The PCB design is electrically complete, but physical PS1-contact validation is still required before fabrication release.
