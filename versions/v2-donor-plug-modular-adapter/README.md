@@ -30,8 +30,8 @@ V2 PCB development is active on branch `v2/donor-plug-modular-adapter`. The work
 - Board: 55 × 62 mm, four layers.
 - J1: Molex 48393-0003 / JLCPCB C3197928 used as a nine-contact **non-USB** PS1 donor-harness interface.
 - J2: the same connector reserved for a future rear-serial harness; its contacts remain intentionally unassigned until that interface is characterized.
-- The exact-part visual mesh is documented in `PlayBridge.3dshapes/README_MOLEX_48393-0003_TRACEPARTS.md`.
-- `renders/` contains the verified current connector-model views.
+- J1/J2 now use `Molex_48393-0003_DATASHEET_DERIVED_SD-48393-001.wrl`, built from the official Molex drawing and documented beside the model. It is explicitly a datasheet-derived placement/enclosure model, not vendor CAD; replace it with the exact Molex STEP before enclosure freeze.
+- `renders/` contains the current full-board, edge, side, perspective, and pin-alignment proof views.
 - ERC currently reports zero errors and zero warnings. Routing and DRC cleanup are not complete, so V2 is not order-ready.
 
 ## USB-A mechanical fit
@@ -43,3 +43,17 @@ placement, its mating lip projects 0.275 mm beyond the straight board edge so
 the cable remains accessible, while every signal pin and retention leg remains
 inside the board outline. The V2 PCB thickness is 1.20 mm, matching the PCB
 thickness stated on Molex drawing `483930003_sd.pdf`.
+
+## 3D-model validation
+
+The datasheet-derived model contains separate solids for all nine signal tails
+and four shell-retention posts. Their centerlines match the corresponding
+footprint holes/slots with a reported XY delta of 0.000 mm. The model uses zero
+offset and zero rotation in the footprint frame; its WRL scale is
+`0.3937007874` on all axes. The nominal tails/posts extend 1.10 mm below the
+top seating datum on the 1.20 mm PCB.
+
+The model is mechanically controlled only for the 13 PCB-entry features and
+the drawing's external envelope. Internal tongue/frame details are illustrative.
+See `PlayBridge.3dshapes/Molex_48393-0003_DATASHEET_DERIVED_README.md` for
+provenance, dimensions, transforms, and limitations.

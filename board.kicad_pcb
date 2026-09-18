@@ -638,10 +638,10 @@
 			(remove_unused_layers no)
 			(uuid "cbe8e964-efac-45a9-99ce-a6deaf3dd5aa")
 		)
-		(model "${KIPRJMOD}/PlayBridge.3dshapes/Molex_48393-0003_TraceParts_exact_visual.wrl"
-			(offset (xyz 3.5 -2.5 1.732204724))
+		(model "${KIPRJMOD}/PlayBridge.3dshapes/Molex_48393-0003_DATASHEET_DERIVED_SD-48393-001.wrl"
+			(offset (xyz 0 0 0))
 			(scale (xyz 0.3937007874 0.3937007874 0.3937007874))
-			(rotate (xyz -90 0 0))
+			(rotate (xyz 0 0 0))
 		)
 		(embedded_fonts no)
 	)
@@ -11587,10 +11587,10 @@
 			(remove_unused_layers no)
 			(uuid "88046632-a8c0-408a-a395-bb7ddc3157ad")
 		)
-		(model "${KIPRJMOD}/PlayBridge.3dshapes/Molex_48393-0003_TraceParts_exact_visual.wrl"
-			(offset (xyz 3.5 -2.5 1.732204724))
+		(model "${KIPRJMOD}/PlayBridge.3dshapes/Molex_48393-0003_DATASHEET_DERIVED_SD-48393-001.wrl"
+			(offset (xyz 0 0 0))
 			(scale (xyz 0.3937007874 0.3937007874 0.3937007874))
-			(rotate (xyz -90 0 0))
+			(rotate (xyz 0 0 0))
 		)
 		(embedded_fonts no)
 	)
