@@ -33,3 +33,13 @@ V2 PCB development is active on branch `v2/donor-plug-modular-adapter`. The work
 - The exact-part visual mesh is documented in `PlayBridge.3dshapes/README_MOLEX_48393-0003_TRACEPARTS.md`.
 - `renders/` contains the verified current connector-model views.
 - ERC currently reports zero errors and zero warnings. Routing and DRC cleanup are not complete, so V2 is not order-ready.
+
+## USB-A mechanical fit
+
+J1 and J2 use the official Molex 48393-0003 through-hole pattern: nine 0.70 mm
+signal holes plus four polarized shell-retention slots. The 13.80 × 14.25 mm
+connector body fits the footprint and requires no PCB cutout. With the current
+placement, its mating lip projects 0.275 mm beyond the straight board edge so
+the cable remains accessible, while every signal pin and retention leg remains
+inside the board outline. The V2 PCB thickness is 1.20 mm, matching the PCB
+thickness stated on Molex drawing `483930003_sd.pdf`.

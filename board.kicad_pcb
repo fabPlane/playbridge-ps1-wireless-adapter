@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.99")
 	(general
-		(thickness 1.6)
+		(thickness 1.2)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
@@ -240,7 +240,7 @@
 			)
 		)
 	)
-	(footprint "PlayBridge:USB3_A_Molex_48393-0003_AUTHORIZED_COPY"
+	(footprint "PlayBridge:USB3_A_Molex_48393-0003_AUTHORIZED_COPY_MODEL_V3"
 		(placed yes)
 		(layer "F.Cu")
 		(uuid "03bd4074-badc-4ab3-9de5-84b9614d4574")
@@ -637,6 +637,11 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(uuid "cbe8e964-efac-45a9-99ce-a6deaf3dd5aa")
+		)
+		(model "${KIPRJMOD}/PlayBridge.3dshapes/Molex_48393-0003_TraceParts_exact_visual.wrl"
+			(offset (xyz 3.5 -2.5 1.732204724))
+			(scale (xyz 0.3937007874 0.3937007874 0.3937007874))
+			(rotate (xyz -90 0 0))
 		)
 		(embedded_fonts no)
 	)
@@ -11194,7 +11199,7 @@
 			)
 		)
 	)
-	(footprint "PlayBridge:USB3_A_Molex_48393-0003_RESERVED_NOT_USB_V2"
+	(footprint "PlayBridge:USB3_A_Molex_48393-0003_RESERVED_NOT_USB_MODEL_V3"
 		(layer "F.Cu")
 		(uuid "b2174f1e-5d3c-47e2-9ecb-6e17df9e5821")
 		(transform
@@ -11581,6 +11586,11 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(uuid "88046632-a8c0-408a-a395-bb7ddc3157ad")
+		)
+		(model "${KIPRJMOD}/PlayBridge.3dshapes/Molex_48393-0003_TraceParts_exact_visual.wrl"
+			(offset (xyz 3.5 -2.5 1.732204724))
+			(scale (xyz 0.3937007874 0.3937007874 0.3937007874))
+			(rotate (xyz -90 0 0))
 		)
 		(embedded_fonts no)
 	)
