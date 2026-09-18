@@ -10,9 +10,14 @@ The legacy Three.js preview mesh was converted locally to VRML with `tools/trace
 
 KiCad attachment used by both V2 connector footprints:
 
-- Offset: `(3.5, -2.5, 5.5)`
+- Offset: `(3.5, -2.5, 1.732204724)`
 - Rotation: `(-90, 0, 0)` degrees
 - Scale: `(0.3937007874, 0.3937007874, 0.3937007874)`
+
+The Z offset seats the connector on the PCB instead of leaving it floating. It
+is derived from the model's 5.4998 mm terminal extremity minus the documented
+1.10 mm through-board tail, converted to KiCad WRL units:
+`(5.4998 - 1.10) / 2.54 = 1.732204724`.
 
 The scale is `1 / 2.54`, compensating for KiCad's VRML coordinate convention so the source millimetre geometry matches the 13.8 × 14.25 mm footprint envelope.
 
