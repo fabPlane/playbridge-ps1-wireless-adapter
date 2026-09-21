@@ -41,6 +41,7 @@ The PCB design is electrically complete, but physical PS1-contact validation is 
 - `docs/images/concepts/` — illustrative product and assembly concept renders
 - `docs/images/current/` — latest reviewed images only
 - `docs/images/archive/` — superseded and diagnostic images kept for design history
+- `firmware/playbridge_wifi_test/` — experimental ESP32 Wi-Fi controller firmware and bench instructions
 
 ## Help wanted: source the PS1 male contacts
 
