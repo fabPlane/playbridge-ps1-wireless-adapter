@@ -164,7 +164,9 @@ On 2026-09-22, the prototype completed a visible end-to-end test using controlle
 5. Quick clicks became reliable after ordered press/release requests and an 80 ms minimum press duration were added.
 6. The final status check reported 17,913 completed polls and 89,655 SPI bytes.
 
-This verifies the path `PC browser -> Wi-Fi -> ESP32 -> protected breadboard interface -> PS1 controller port -> visible console menu`.
+The tested connection was `Browser -> Wi-Fi -> ESP32 -> breadboard signal-conditioning circuit -> PS1 controller port 1`.
+
+This verifies the full path from a browser command to a visible response in the PS1 system menu.
 
 ## Implementation notes
 
