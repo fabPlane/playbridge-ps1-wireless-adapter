@@ -1,7 +1,14 @@
 #include <WiFi.h>
 #include <WebServer.h>
+#include <esp_intr_alloc.h>
+#include <esp_private/periph_ctrl.h>
 #include <esp_rom_sys.h>
+#include <soc/gpio_sig_map.h>
 #include <soc/gpio_struct.h>
+#include <soc/interrupts.h>
+#include <soc/periph_defs.h>
+#include <soc/spi_struct.h>
+#include "esp32-hal-matrix.h"
 
 const char *AP_NAME = "PlayBridge-Test";
 const char *AP_PASSWORD = "playbridge";
@@ -20,26 +27,27 @@ String lastInput = "NEUTRAL";
 // Byte 1: L2, R2, L1, R1, Triangle, Circle, Cross, Square.
 volatile uint16_t psButtons = 0xFFFF;
 uint8_t wifiSetupStep = 0;
-bool dataPulledLow = false;
 bool ackPulledLow = false;
 
-// PS1 digital-controller transaction state. The console sends and receives
-// least-significant bit first. DATA and ACK are inverted by the NPN stages:
-// GPIO HIGH pulls the PlayStation line low; GPIO LOW releases it.
-volatile bool psTransactionActive = false;
+// PS1 byte engine adapted from BlueRetro's Apache-2.0 PSX SPI responder.
+// It uses SPI2 one byte at a time instead of treating the entire controller
+// packet as one transaction. This is important because a PS1 expects an ACK
+// pulse between bytes. Our external NPN stages invert DATA and ACK, so reply
+// bytes are complemented and GPIO HIGH means "pull the PS1 line low".
+// Source: https://github.com/darthcloud/BlueRetro/blob/master/main/wired/ps_spi.c
+volatile bool psSpiReady = false;
 volatile bool psControllerSelected = false;
 volatile uint8_t psByteIndex = 0;
-volatile uint8_t psBitIndex = 0;
-volatile uint8_t psReceivedByte = 0;
-volatile uint8_t psReply[5] = {0xFF, 0x41, 0x5A, 0xFF, 0xFF};
-volatile uint32_t psPollCount = 0;
-volatile uint32_t psAttFallingCount = 0;
-volatile uint32_t psClockEdgeCount = 0;
-volatile uint32_t psAddressMatchCount = 0;
-volatile uint32_t psCommand42Count = 0;
-volatile uint32_t psLastAttFallingCycle = 0;
 volatile uint8_t psLastAddress = 0;
 volatile uint8_t psLastCommand = 0;
+volatile uint8_t psLastRx[5] = {0};
+volatile uint32_t psPollCount = 0;
+volatile uint32_t psAttFallingCount = 0;
+volatile uint32_t psAddressMatchCount = 0;
+volatile uint32_t psCommand42Count = 0;
+volatile uint32_t psSpiByteCount = 0;
+volatile int32_t psSpiInitError = 0;
+intr_handle_t psSpiInterrupt = nullptr;
 
 static inline void ARDUINO_ISR_ATTR fastDrive(uint8_t pin, bool pullLow) {
   const uint32_t mask = 1UL << pin;
@@ -53,78 +61,75 @@ static inline bool ARDUINO_ISR_ATTR fastReadInput(uint8_t pin) {
 }
 
 static inline void ARDUINO_ISR_ATTR pulseAck() {
-  esp_rom_delay_us(7);
+  // PSX-SPX documents that ACKs in the first 2-3 us after the last clock are
+  // ignored. BlueRetro waits 14 us and then holds ACK low for 2 us.
   fastDrive(ACK_DRIVE_PIN, true);
-  esp_rom_delay_us(3);
+  esp_rom_delay_us(2);
   fastDrive(ACK_DRIVE_PIN, false);
 }
 
-void ARDUINO_ISR_ATTR onAttentionChange() {
-  const uint32_t now = esp_cpu_get_cycle_count();
-  const uint32_t sincePreviousFalling = now - psLastAttFallingCycle;
-  psLastAttFallingCycle = now;
-
-  // A real ATT start is separated from the previous poll by milliseconds.
-  // Reject closely-spaced falling edges caused by breadboard/parallel-wire
-  // crosstalk so they cannot repeatedly reset an in-progress byte.
-  if (sincePreviousFalling < 24000U) return;  // 100 us at 240 MHz
-
-  psAttFallingCount++;
-  const uint16_t buttons = psButtons;
-  psReply[3] = buttons & 0xFF;
-  psReply[4] = buttons >> 8;
-  psByteIndex = 0;
-  psBitIndex = 0;
-  psReceivedByte = 0;
-  psControllerSelected = false;
-  psTransactionActive = true;
+static inline void ARDUINO_ISR_ATTR releaseData() {
+  pinMatrixOutDetach(DATA_DRIVE_PIN, false, false);
   fastDrive(DATA_DRIVE_PIN, false);
-  fastDrive(ACK_DRIVE_PIN, false);
 }
 
-void ARDUINO_ISR_ATTR onClockFalling() {
-  psClockEdgeCount++;
-  if (!psTransactionActive || fastReadInput(ATT_SENSE_PIN)) return;
+static inline void ARDUINO_ISR_ATTR armPs1Byte(uint8_t busByte) {
+  // The transistor inverts the ESP32 signal before it reaches PS1 DATA.
+  SPI2.data_buf[0] = static_cast<uint8_t>(~busByte);
+  SPI2.slave.sync_reset = 1;
+  SPI2.slave.trans_done = 0;
+  SPI2.cmd.usr = 1;
+}
 
-  // PS1 transfers are LSB-first. Both transmitters change their data on the
-  // falling CLK edge and the receivers sample on the following rising edge.
-  // Handling only FALLING halves the interrupt rate and gives DATA almost the
-  // whole low phase to settle before the console samples it.
-  if (psByteIndex == 0 || !psControllerSelected || psByteIndex >= 5) {
-    fastDrive(DATA_DRIVE_PIN, false);
-  } else {
-    const bool replyBitIsOne = (psReply[psByteIndex] >> psBitIndex) & 1U;
-    fastDrive(DATA_DRIVE_PIN, !replyBitIsOne);
-  }
+void ARDUINO_ISR_ATTR onAttentionRising() {
+  psControllerSelected = false;
+  psByteIndex = 0;
+  releaseData();
+  fastDrive(ACK_DRIVE_PIN, false);
+  armPs1Byte(0xFF);
+}
 
-  // By the time the GPIO interrupt runs, CMD for this bit has changed and is
-  // stable. Sampling here also avoids a second interrupt on the rising edge.
-  if (fastReadInput(CMD_SENSE_PIN)) psReceivedByte |= 1U << psBitIndex;
-  psBitIndex++;
-  if (psBitIndex < 8) return;
+void ARDUINO_ISR_ATTR onPs1SpiByte(void *) {
+  // Match the proven PSX timing: prepare the next byte before ACK, 14 us
+  // after the completed byte. All code/data touched here is IRAM/DRAM safe.
+  esp_rom_delay_us(14);
 
-  const uint8_t completedByte = psByteIndex;
-  const uint8_t received = psReceivedByte;
-  psByteIndex++;
-  psBitIndex = 0;
-  psReceivedByte = 0;
+  const uint8_t completed = psByteIndex;
+  const uint8_t received = static_cast<uint8_t>(SPI2.data_buf[0]);
+  psSpiByteCount++;
+  if (completed < sizeof(psLastRx)) psLastRx[completed] = received;
 
-  if (completedByte == 0) {
+  uint8_t nextReply = 0xFF;
+  if (completed == 0) {
+    psAttFallingCount++;
     psLastAddress = received;
     psControllerSelected = received == 0x01;
-    if (psControllerSelected) psAddressMatchCount++;
-  } else if (completedByte == 1 && received != 0x42) {
-    psLastCommand = received;
-    psControllerSelected = false;
-  } else if (completedByte == 1) {
-    psLastCommand = received;
-    psCommand42Count++;
+    if (psControllerSelected) {
+      psAddressMatchCount++;
+      // DATA must remain high-impedance during the address byte. Only connect
+      // SPI MISO after controller address 01h has been recognized.
+      pinMatrixOutAttach(DATA_DRIVE_PIN, HSPIQ_OUT_IDX, false, false);
+      nextReply = 0x41;
+    }
+  } else if (psControllerSelected) {
+    if (completed == 1) {
+      psLastCommand = received;
+      if (received == 0x42) psCommand42Count++;
+      nextReply = 0x5A;
+    } else if (completed == 2) {
+      nextReply = static_cast<uint8_t>(psButtons & 0xFF);
+    } else if (completed == 3) {
+      nextReply = static_cast<uint8_t>(psButtons >> 8);
+    } else if (completed == 4) {
+      psPollCount++;
+    }
   }
 
-  if (psControllerSelected && completedByte < 4) {
-    pulseAck();
-  }
-  if (psControllerSelected && completedByte == 4) psPollCount++;
+  psByteIndex = completed + 1;
+  armPs1Byte(nextReply);
+
+  // A digital controller sends five bytes total and ACKs the first four.
+  if (psControllerSelected && psByteIndex < 5) pulseAck();
 }
 
 void setOpenCollectorDrive(uint8_t pin, bool pullLow) {
@@ -134,10 +139,72 @@ void setOpenCollectorDrive(uint8_t pin, bool pullLow) {
 }
 
 void releaseBothOutputs() {
-  dataPulledLow = false;
   ackPulledLow = false;
-  setOpenCollectorDrive(DATA_DRIVE_PIN, false);
   setOpenCollectorDrive(ACK_DRIVE_PIN, false);
+}
+
+bool beginPs1Spi() {
+  pinMode(DATA_DRIVE_PIN, OUTPUT);
+  pinMode(ACK_DRIVE_PIN, OUTPUT);
+  pinMode(CMD_SENSE_PIN, INPUT);
+  pinMode(CLK_SENSE_PIN, INPUT);
+  pinMode(ATT_SENSE_PIN, INPUT);
+  releaseData();
+  fastDrive(ACK_DRIVE_PIN, false);
+
+  pinMatrixInAttach(CMD_SENSE_PIN, HSPID_IN_IDX, false);
+  pinMatrixInAttach(CLK_SENSE_PIN, HSPICLK_IN_IDX, false);
+  pinMatrixInAttach(ATT_SENSE_PIN, HSPICS0_IN_IDX, false);
+
+  periph_module_enable(PERIPH_HSPI_MODULE);
+  periph_module_reset(PERIPH_HSPI_MODULE);
+
+  SPI2.clock.val = 0;
+  SPI2.user.val = 0;
+  SPI2.ctrl.val = 0;
+  SPI2.slave.val = 0;
+  SPI2.slave.wr_rd_buf_en = 1;
+  SPI2.user.doutdin = 1;
+  SPI2.slave.slave_mode = 1;
+  SPI2.ctrl.wr_bit_order = 1;
+  SPI2.ctrl.rd_bit_order = 1;
+  // BlueRetro's proven original-PSX byte engine, with the output launch edge
+  // matched to this board's external inverting NPN stage. Our earlier mode-2
+  // hardware run completed all 40 clocks; delay mode 0 reproduces that MISO
+  // launch edge while retaining BlueRetro's byte-at-a-time ACK architecture.
+  SPI2.pin.ck_idle_edge = 0;
+  SPI2.user.ck_i_edge = 1;
+  SPI2.ctrl2.miso_delay_mode = 0;
+  SPI2.ctrl2.miso_delay_num = 0;
+  SPI2.ctrl2.mosi_delay_mode = 0;
+  SPI2.ctrl2.mosi_delay_num = 0;
+  SPI2.slv_wrbuf_dlen.bit_len = 7;
+  SPI2.slv_rdbuf_dlen.bit_len = 7;
+  SPI2.user.usr_miso = 1;
+  SPI2.user.usr_mosi = 1;
+  SPI2.data_buf[0] = 0x00;  // inverted FF while DATA is disconnected
+  SPI2.slave.trans_inten = 1;
+  SPI2.slave.trans_done = 0;
+
+  const esp_err_t result = esp_intr_alloc(
+      ETS_SPI2_INTR_SOURCE,
+      // Arduino-ESP32's prebuilt IDF rejects ESP_INTR_FLAG_IRAM for this
+      // peripheral (ESP_ERR_INVALID_ARG). The handler itself remains in IRAM;
+      // allocate the source with the supported level-1 flag.
+      ESP_INTR_FLAG_LEVEL1,
+      onPs1SpiByte, nullptr, &psSpiInterrupt);
+  if (result != ESP_OK) {
+    psSpiInitError = result;
+    Serial.printf("PS1 SPI interrupt allocation failed: %d\n", result);
+    return false;
+  }
+
+  psByteIndex = 0;
+  psControllerSelected = false;
+  SPI2.cmd.usr = 1;
+  attachInterrupt(ATT_SENSE_PIN, onAttentionRising, RISING);
+  psSpiReady = true;
+  return true;
 }
 
 void printCommandPrompt() {
@@ -221,13 +288,25 @@ void printStatus() {
     Serial.println("Local Wi-Fi: not connected");
   }
   Serial.printf("PS1 completed polls: %lu\n", (unsigned long)psPollCount);
-  Serial.printf("ATT starts: %lu | CLK edges: %lu | Address 01: %lu | Command 42: %lu\n",
+  Serial.println("Responder: byte-at-a-time SPI2 / inter-byte ACK");
+  Serial.printf("SPI ready: %s | Init error: %ld | Controller selected: %s | Byte index: %u\n",
+                psSpiReady ? "YES" : "NO",
+                (long)psSpiInitError,
+                psControllerSelected ? "YES" : "NO",
+                psByteIndex);
+  Serial.printf("SPI bytes: %lu | ATT transactions: %lu | ATT now: %u | CLK now: %u | CMD now: %u\n",
+                (unsigned long)psSpiByteCount,
                 (unsigned long)psAttFallingCount,
-                (unsigned long)psClockEdgeCount,
+                digitalRead(ATT_SENSE_PIN), digitalRead(CLK_SENSE_PIN),
+                digitalRead(CMD_SENSE_PIN));
+  Serial.printf("Address 01: %lu | Command 42: %lu\n",
                 (unsigned long)psAddressMatchCount,
                 (unsigned long)psCommand42Count);
   Serial.printf("Last address: %02X | Last command: %02X\n",
                 psLastAddress, psLastCommand);
+  Serial.printf("Last raw receive: %02X %02X %02X %02X %02X\n",
+                psLastRx[0], psLastRx[1], psLastRx[2], psLastRx[3],
+                psLastRx[4]);
 }
 
 void connectToLocalWifi(const String &ssid, const String &password) {
@@ -342,11 +421,39 @@ void handleRoot() {
   </div>
   <div id="result">Ready</div>
   <script>
-    async function setButton(button, pressed) {
-      button.classList.toggle('held', pressed);
+    const buttonState = new WeakMap();
+    const minimumPressMs = 80;
+
+    async function sendButton(button, pressed) {
       const response = await fetch('/button?name=' + encodeURIComponent(button.dataset.pad) + '&pressed=' + (pressed ? '1' : '0'));
       document.getElementById('result').textContent = await response.text();
     }
+
+    function pressButton(button) {
+      if (button.classList.contains('held')) return;
+      button.classList.add('held');
+      buttonState.set(button, {
+        pressedAt: performance.now(),
+        pressRequest: sendButton(button, true),
+        releasing: false
+      });
+    }
+
+    async function releaseButton(button) {
+      const state = buttonState.get(button);
+      if (!state || state.releasing) return;
+      state.releasing = true;
+      // Preserve request order, then keep even a very quick click pressed long
+      // enough to span multiple PS1 controller polls.
+      try { await state.pressRequest; } catch (_) {}
+      const remaining = minimumPressMs - (performance.now() - state.pressedAt);
+      if (remaining > 0) await new Promise(resolve => setTimeout(resolve, remaining));
+      try { await sendButton(button, false); } finally {
+        button.classList.remove('held');
+        buttonState.delete(button);
+      }
+    }
+
     async function releaseAll() {
       const response = await fetch('/input?value=NEUTRAL');
       document.querySelectorAll('[data-pad]').forEach(button => button.classList.remove('held'));
@@ -356,16 +463,16 @@ void handleRoot() {
       button.addEventListener('pointerdown', event => {
         event.preventDefault();
         button.setPointerCapture(event.pointerId);
-        setButton(button, true);
+        pressButton(button);
       });
       const release = event => {
         event.preventDefault();
-        setButton(button, false);
+        releaseButton(button);
       };
       button.addEventListener('pointerup', release);
       button.addEventListener('pointercancel', release);
       button.addEventListener('lostpointercapture', () => {
-        if (button.classList.contains('held')) setButton(button, false);
+        releaseButton(button);
       });
     });
   </script>
@@ -422,8 +529,8 @@ void handleSignal() {
   }
 
   if (line == "DATA") {
-    dataPulledLow = pullLow;
-    setOpenCollectorDrive(DATA_DRIVE_PIN, pullLow);
+    server.send(409, "text/plain", "DATA is owned by the hardware SPI responder");
+    return;
   } else if (line == "ACK") {
     ackPulledLow = pullLow;
     setOpenCollectorDrive(ACK_DRIVE_PIN, pullLow);
@@ -443,14 +550,11 @@ void setup() {
   Serial.begin(115200);
   delay(500);
 
-  pinMode(DATA_DRIVE_PIN, OUTPUT);
   pinMode(ACK_DRIVE_PIN, OUTPUT);
   releaseBothOutputs();
-  pinMode(CMD_SENSE_PIN, INPUT);
-  pinMode(CLK_SENSE_PIN, INPUT);
-  pinMode(ATT_SENSE_PIN, INPUT);
-  attachInterrupt(ATT_SENSE_PIN, onAttentionChange, FALLING);
-  attachInterrupt(CLK_SENSE_PIN, onClockFalling, FALLING);
+  if (!beginPs1Spi()) {
+    Serial.println("PS1 hardware responder unavailable.");
+  }
 
   WiFi.mode(WIFI_AP_STA);
   WiFi.softAP(AP_NAME, AP_PASSWORD);

@@ -2,15 +2,17 @@
 
 This Arduino sketch turns an ESP32 into an experimental digital PlayStation controller. A browser sends button state to the ESP32 over Wi-Fi, and the ESP32 answers controller polls from an original PlayStation through the native controller-port protocol.
 
-This is bench-validation firmware, not production firmware. It has been exercised with the breadboard interface described below and has completed live PS1 controller polls, but it still depends on timing-sensitive GPIO interrupt code and has not yet been validated across multiple consoles, games, PCB revisions, or long-duration sessions.
+This is bench-validation firmware, not production firmware. The breadboard interface described below has been validated on an original PlayStation with visible output captured through OBS. All supported digital buttons were exercised from the browser UI and produced the expected console response. Validation across multiple consoles, games, PCB revisions, and long-duration sessions is still required.
 
 ## Current capabilities
 
 - Digital-controller identity (`0x41`)
 - D-pad, Select, Start, shoulder buttons, and four face buttons
 - Browser controller served directly by the ESP32
+- Ordered browser press/release requests with an 80 ms minimum press time for reliable quick clicks
 - Local-network station mode plus a fallback access point
 - Serial Wi-Fi setup and PS1 protocol diagnostics
+- Byte-at-a-time SPI2 responder for complete five-byte PS1 polls
 - Open-collector DATA and ACK outputs through external NPN stages
 - Protected CMD, ATT, and CLK inputs
 
@@ -115,7 +117,7 @@ The web server uses plain HTTP and has no authentication. Use it only on a trust
 
 ## Browser control
 
-Open the ESP32 address in a browser. Press and hold a button to assert it; release the pointer to release it. The page provides:
+Open the ESP32 address in a browser. Press and hold a button to assert it; release the pointer to release it. Very quick clicks are automatically stretched to at least 80 ms, and the release request is sent only after the press request completes. The page provides:
 
 - Up, Down, Left, and Right
 - Select and Start
@@ -139,7 +141,7 @@ FF 41 5A DF FF
 
 Open the serial monitor at 115200 baud and use:
 
-- `STATUS` — Wi-Fi addresses, completed-poll count, edge counters, and last decoded address/command
+- `STATUS` — Wi-Fi addresses, SPI state, completed-poll and transaction counters, and the last raw request
 - `PAD_STATUS` — current five-byte controller reply and most recent browser input
 - `SET_WIFI` — update the password for `LOCAL_WIFI_NAME`
 
@@ -149,35 +151,38 @@ A healthy digital poll uses console address `01`, command `42`, and controller r
 FF 41 5A <button-low-byte> <button-high-byte>
 ```
 
-`PS1 completed polls` should continue increasing while the console is polling controller port 1. Breadboard wiring can create extra ATT or CLK edges, so completed polls and decoded `01`/`42` counts are more meaningful than raw edge counts alone.
+`PS1 completed polls` should continue increasing while the console is polling controller port 1. The decoded `01`/`42` counts and complete five-byte requests are the most useful health checks.
 
 ## Validated bench result
 
-On 2026-09-21, the prototype completed a headless end-to-end test:
+On 2026-09-22, the prototype completed a visible end-to-end test using controller port 1 on an original PlayStation and OBS video capture:
 
-1. The PS1 continuously issued valid `01`/`42` controller requests.
-2. Completed polls increased from 7,380 to 8,153 while Right was held.
-3. A PC sent Right over Wi-Fi and the reply changed to `FF 41 5A DF FF`.
-4. Releasing Right restored `FF 41 5A FF FF`.
-5. Completed polls continued increasing to 8,703 after release.
+1. The PS1 continuously issued complete five-byte `01`/`42` controller requests.
+2. The system menu remained stable without phantom or stuck input after reset.
+3. Up, Down, Left, Right, Select, Start, L1, L2, R1, R2, Triangle, Circle, Cross, and Square were each tested from the browser UI.
+4. Every press produced the expected active-low reply and visible menu action; every release restored `FF 41 5A FF FF`.
+5. Quick clicks became reliable after ordered press/release requests and an 80 ms minimum press duration were added.
+6. The final status check reported 17,913 completed polls and 89,655 SPI bytes.
 
-This verifies the path `PC browser -> Wi-Fi -> ESP32 -> controller harness -> PS1 protocol`. A video-output test is still required to confirm visible behavior in actual menus and games.
+This verifies the path `PC browser -> Wi-Fi -> ESP32 -> protected breadboard interface -> PS1 controller port -> visible console menu`.
 
 ## Implementation notes
 
 - PS1 bytes are transferred least-significant bit first.
-- CLK and ATT are handled on falling-edge GPIO interrupts.
-- DATA is prepared during the CLK low phase for sampling on the next rising edge.
+- SPI2 handles one eight-bit byte per transaction and is re-armed between bytes so ACK can be generated at the protocol boundary.
+- DATA remains high-impedance until the responder sees controller address `0x01`; memory-card address `0x81` is ignored.
+- ACK is asserted after each of the first four reply bytes following a 14 microsecond wait, then released after a 2 microsecond pulse.
 - DATA and ACK logic is inverted by the external NPN stages: GPIO high pulls the PS1 line low, while GPIO low releases it.
-- A short ATT falling-edge filter reduces breadboard crosstalk resets.
+- The SPI MISO timing is configured for the delay introduced by the external NPN stage and was validated across the full 40-bit poll.
 - The implementation answers as a five-byte digital controller: `FF 41 5A buttons-low buttons-high`.
+
+The byte-at-a-time SPI responder is adapted from the [BlueRetro PSX SPI implementation](https://github.com/darthcloud/BlueRetro), which is licensed under Apache-2.0. The source file retains the corresponding attribution notice.
 
 ## Known limitations
 
-- This timing-sensitive interrupt implementation is intended for the validated classic ESP32 configuration.
-- The ATT filter assumes a 240 MHz ESP32 clock.
+- The direct-register SPI implementation is intended for the validated classic ESP32 and Arduino core configuration.
 - Breadboard jumpers and long parallel wires can introduce crosstalk and intermittent contacts.
 - The fallback AP uses a development password and the webpage is unauthenticated.
 - The firmware currently contains a build-time local SSID constant.
-- No game-screen test, analog-mode test, vibration test, or long-duration reliability test has been completed.
+- No gameplay test, analog-mode test, vibration test, multi-console test, or long-duration reliability test has been completed.
 - Do not treat this bench circuit as a production electrical or mechanical release.

@@ -25,6 +25,7 @@ The PCB design is electrically complete, but physical PS1-contact validation is 
 - ERC: zero errors and zero warnings
 - DRC: zero errors and zero unconnected items; 25 physical warnings remain documented
 - USB-C breakout and full-board routing are complete
+- Controller-port bench firmware passed visible original-PS1 system-menu testing over Wi-Fi: all supported digital buttons worked, quick clicks were reliable, and the final check recorded 17,913 complete polls
 - The nine-pin 4.00 mm spacing/insertion concept passed a physical guide fit; the final contact MPN, assembly tolerances, retention and printed alignment shell still require manufacturing validation
 
 ## Repository layout
