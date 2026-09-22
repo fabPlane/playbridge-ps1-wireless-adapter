@@ -168,6 +168,16 @@ The tested connection was `Browser -> Wi-Fi -> ESP32 -> breadboard signal-condit
 
 This verifies the full path from a browser command to a visible response in the PS1 system menu.
 
+### Test photos
+
+Physical PS1 controller-port bench setup:
+
+![PlayBridge PS1 bench hardware](images/ps1-bench-hardware.jpeg)
+
+Browser controller and OBS validation:
+
+![PlayBridge browser and OBS validation](images/browser-obs-validation.png)
+
 ## Implementation notes
 
 - PS1 bytes are transferred least-significant bit first.
