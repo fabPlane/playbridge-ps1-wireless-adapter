@@ -1,0 +1,34 @@
+# JLCPCB PCBA sourcing audit — 2026-09-23
+
+## Result
+
+- Fitted references: 63
+- Unique orderable line items: 32
+- DNP/bare-board test pads: TP1, TP2, TP3, TP4
+- Missing fitted references: none
+- Duplicate reference assignments: none
+- Board routing/placement changed by this sourcing pass: no
+
+## Footprint-sensitive selections
+
+- D2: GOODWORK SMAJ12A / C908766, DO-214AC (SMA). The earlier value label said SMBJ12A, but the PCB uses an SMA land pattern; the selected SMAJ12A preserves the 12 V unidirectional TVS function and fits the footprint family.
+- F1: BHFUSE BSMD1206-075-30V / C976305, 1206, 750 mA hold, 1.5 A trip, 30 V.
+- L1: MYX MCNR4030AF-4R7M / C49449313, 4.0 x 4.0 mm, 4.7 uH, 2.5 A rated, 3 A saturation. JLC stock was low (40 units when checked), so recheck immediately before ordering.
+- R20: TA-I RMS06FT6980 / C912219, 698 ohm E96 substitute for the 700 ohm nominal. The TPS2113A current-limit setpoint difference is approximately +0.29%.
+- J1/J2: Molex 48393-0003 / C3197928. JLC showed only 7 available units when checked; with two populated per board, the public stock supports at most 3 complete boards. J2 is electrically reserved/all-NC, but remains populated in this BOM because the current board/render includes it.
+
+## Order files
+
+- `jlcpcb-bom.csv`: grouped JLC/LCSC BOM; all fitted references assigned exactly once.
+- `jlcpcb-cpl.csv`: top-side placement list derived from FabDesk's existing `exports/positions.csv`, excluding bare-board test pads.
+- `gerbers-jlcpcb.zip`: flat manufacturing Gerber/drill archive copied from FabDesk's verified export set.
+
+## Fresh release verification
+
+- KiCad DRC: 0 violations
+- Unconnected items: 0
+- Schematic-to-PCB parity issues: 0
+- KiCad ERC: 0 violations
+- Board and schematic hashes remained unchanged during the BOM/order-file pass.
+
+Stock is time-sensitive; JLCPCB/LCSC availability must be rechecked by the order portal at upload time.
