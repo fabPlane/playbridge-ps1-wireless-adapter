@@ -285,4 +285,9 @@
 		(uuid "7b64980f-9648-438e-ae36-5c5a0031d803")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/PlayBridge.3dshapes/K2-1107ST-A4SW-06.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
 )

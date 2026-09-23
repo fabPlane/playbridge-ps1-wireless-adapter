@@ -40,9 +40,9 @@
   (pad "SH" thru_hole oval (at -2.9 7.75) (size 1.2 2.1) (drill oval 0.6 1.4) (layers "*.Cu" "*.Mask"))
   (pad "SH" thru_hole oval (at 9.9 -0.75) (size 1.2 2.4) (drill oval 0.6 1.7) (layers "*.Cu" "*.Mask"))
   (pad "SH" thru_hole oval (at 9.9 7.75) (size 1.2 2.1) (drill oval 0.6 1.4) (layers "*.Cu" "*.Mask"))
-  (model "${KIPRJMOD}/PlayBridge.3dshapes/Molex_48393-0003_DATASHEET_DERIVED_SD-48393-001.wrl"
-    (offset (xyz 0 0 0))
+  (model "${KIPRJMOD}/PlayBridge.3dshapes/Molex_48393-0003_TraceParts_exact_visual.wrl"
+    (offset (xyz 3.5 -2.5 1.732204724))
     (scale (xyz 0.3937007874 0.3937007874 0.3937007874))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz -90 0 0))
   )
 )

@@ -197,7 +197,7 @@
 		(roundrect_rratio 0.227273)
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Sunlord_SWPA4030S.step"
+	(model "${KIPRJMOD}/PlayBridge.3dshapes/DATASHEET_DERIVED_MYX_MCNR4030AF-4R7M_C49449313.wrl"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -1,27 +1,27 @@
 {
   "metadata": {
-    "date": "2026-09-18T12:06:26",
+    "date": "2026-09-22T20:27:54",
     "generator": "KiCad 10.99.0-3826-gfe66f4d6b",
     "project": "board",
     "board_name": "board"
   },
   "board": {
     "has_outline": true,
-    "width": "55.0000 mm",
+    "width": "56.2950 mm",
     "height": "62.0000 mm",
-    "area": "3410.00 mm²",
-    "front_component_density": "72.67",
-    "back_component_density": "2.22",
-    "front_copper_area": "502.372 mm²",
-    "back_copper_area": "227.593 mm²",
-    "min_track_clearance": "0.0000 mm",
+    "area": "3490.29 mm²",
+    "front_component_density": "71.00",
+    "back_component_density": "2.17",
+    "front_copper_area": "445.561 mm²",
+    "back_copper_area": "187.051 mm²",
+    "min_track_clearance": "0.1668 mm",
     "min_track_width": "0.1500 mm",
     "min_drill_diameter": "0.3000 mm",
-    "board_thickness": "1.6000 mm",
+    "board_thickness": "1.2000 mm",
     "front_footprint_area": "2478.04 mm²",
     "back_footprint_area": "75.857 mm²",
-    "front_footprint_density": "72.67",
-    "back_footprint_density": "2.22"
+    "front_footprint_density": "71.00",
+    "back_footprint_density": "2.17"
   },
   "pads": {
     "through_hole": 42,
@@ -32,7 +32,7 @@
     "press_fit": 0
   },
   "vias": {
-    "through": 166,
+    "through": 172,
     "blind": 0,
     "buried": 0,
     "micro": 0
@@ -61,7 +61,7 @@
   },
   "drill_holes": [
     {
-      "count": 166,
+      "count": 172,
       "shape": "Round",
       "x_size": "0.3000 mm",
       "y_size": "0.3000 mm",

@@ -2,6 +2,13 @@
 renders/
 exports/
 backups/*/
+backups/*
+.fp-pcb/
+tools/__pycache__/
+*.bak
+reports/drc-*.json
+reports/release-audit-*.md
+PlayBridge.3dshapes/PROVISIONAL_DATASHEET_ENVELOPE_*
 .DS_Store
 ~*.lck
 *.kicad_prl
