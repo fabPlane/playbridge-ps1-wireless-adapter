@@ -27,6 +27,7 @@ self-contained in its version directory.
 - Schematic/PCB parity: zero findings.
 - FabDesk release gate: PASS.
 - PCBA data: 63 fitted references, 32 grouped BOM lines, and four DNP test pads.
+- Controller-port bench firmware passed visible original-PS1 system-menu testing over Wi-Fi: all supported digital buttons worked, quick clicks were reliable, and the final check recorded 17,913 complete polls.
 
 The design release is electrically and mechanically validated. Ordering still
 requires a final live JLCPCB stock check and review of the uploaded BOM/CPL
@@ -44,6 +45,21 @@ rotation previews; see [`ordering/DO-NOT-ORDER.md`](ordering/DO-NOT-ORDER.md).
 - `versions/v2-donor-plug-modular-adapter/` — V2 architecture, release notes, references, and accepted renders.
 - `fit-check/` and `fit-test-coupon/` — legacy V1 physical-contact test material.
 - `docs/` — diagrams, concepts, and design-history images.
+- `firmware/playbridge_wifi_test/` — experimental ESP32 Wi-Fi controller firmware and bench instructions
+
+## Why the live V2 files are at the repository root
+
+FabDesk opens and regenerates the active project from fixed root-level paths,
+including `circuit.netlist.json`, `board.kicad_*`, the local footprint/model
+libraries, `reports/`, and `ordering/`. Moving only those files into
+`versions/v2-donor-plug-modular-adapter/` would break the current FabDesk
+project and its library references.
+
+The `versions/` directories are release records. V1 is a frozen, fully copied
+snapshot; V2 currently keeps its release notes, references, concepts, and
+accepted renders there while the authoritative FabDesk project remains at the
+root. A fully self-contained V2 archive can be generated when the release is
+tagged, without removing the root working project.
 
 ## Important connector warning
 
