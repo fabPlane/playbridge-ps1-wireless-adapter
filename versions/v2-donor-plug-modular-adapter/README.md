@@ -25,9 +25,14 @@ The concept currently uses USB 3 Type-A connector hardware because it provides e
 
 ## V2.0.0 release checkpoint
 
-The release candidate is maintained on branch `v2/donor-plug-modular-adapter`.
-The authoritative working source remains at the repository root; this directory
-holds its architecture, references, release notes, and accepted renders.
+This directory is the self-contained V2.0.0 release snapshot. It includes the
+KiCad project, FabDesk netlist/configuration, local symbol/footprint/3D-model
+libraries, verification reports, manufacturing package, release tools,
+references, and accepted renders.
+
+FabDesk still uses the matching root-level files as its live working copy.
+Keeping that live copy avoids breaking FabDesk's fixed project path, while this
+directory keeps V2 independent from subsequent hardware versions.
 
 - Board: 56.295 × 62.000 mm, four layers, 1.20 mm thick.
 - J1: Molex 48393-0003 / JLCPCB C3197928 used as a nine-contact **non-USB** PS1 donor-harness interface.
@@ -38,6 +43,15 @@ holds its architecture, references, release notes, and accepted renders.
 
 See [`RELEASE-v2.0.0.md`](RELEASE-v2.0.0.md) for the release gate,
 manufacturing-package status, 3D-model provenance, and remaining checkout hold.
+
+## Snapshot layout
+
+- `board.kicad_*`, `circuit.netlist.json`, and `fabdesk.json` — complete V2 design.
+- `PlayBridge.pretty/`, `PlayBridge.3dshapes/`, and the symbol libraries — project-local libraries required to reopen the design.
+- `ordering/` — Gerber archive, BOM, CPL, sourcing audit, and checkout hold.
+- `reports/` — release build, DRC, ERC, statistics, and gate reports.
+- `tools/` — scripts used for model inspection and order-file generation.
+- `renders/` — accepted V2.0.0 renders only.
 
 ## USB-A mechanical fit
 

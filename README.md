@@ -42,7 +42,7 @@ rotation previews; see [`ordering/DO-NOT-ORDER.md`](ordering/DO-NOT-ORDER.md).
 - `ordering/` — JLCPCB Gerber bundle, BOM, CPL, and sourcing audit.
 - `reports/` — latest build, DRC, ERC, statistics, and release-gate reports.
 - `versions/v1-pcb-mounted-pin-array/` — frozen V1 design.
-- `versions/v2-donor-plug-modular-adapter/` — V2 architecture, release notes, references, and accepted renders.
+- `versions/v2-donor-plug-modular-adapter/` — self-contained V2.0.0 project snapshot, manufacturing package, reports, tools, references, and accepted renders.
 - `fit-check/` and `fit-test-coupon/` — legacy V1 physical-contact test material.
 - `docs/` — diagrams, concepts, and design-history images.
 - `firmware/playbridge_wifi_test/` — experimental ESP32 Wi-Fi controller firmware and bench instructions
@@ -55,11 +55,9 @@ libraries, `reports/`, and `ordering/`. Moving only those files into
 `versions/v2-donor-plug-modular-adapter/` would break the current FabDesk
 project and its library references.
 
-The `versions/` directories are release records. V1 is a frozen, fully copied
-snapshot; V2 currently keeps its release notes, references, concepts, and
-accepted renders there while the authoritative FabDesk project remains at the
-root. A fully self-contained V2 archive can be generated when the release is
-tagged, without removing the root working project.
+The `versions/` directories are self-contained release records. Both V1 and V2
+can be inspected independently. The root remains a matching live FabDesk copy
+so future versions can be developed without modifying a frozen version folder.
 
 ## Important connector warning
 
