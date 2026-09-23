@@ -30,9 +30,8 @@ KiCad project, FabDesk netlist/configuration, local symbol/footprint/3D-model
 libraries, verification reports, manufacturing package, release tools,
 references, and accepted renders.
 
-FabDesk still uses the matching root-level files as its live working copy.
-Keeping that live copy avoids breaking FabDesk's fixed project path, while this
-directory keeps V2 independent from subsequent hardware versions.
+Open this directory directly in FabDesk. It is independent of the repository
+root and remains frozen when development moves to V2.1 or a later version.
 
 - Board: 56.295 × 62.000 mm, four layers, 1.20 mm thick.
 - J1: Molex 48393-0003 / JLCPCB C3197928 used as a nine-contact **non-USB** PS1 donor-harness interface.

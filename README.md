@@ -11,8 +11,9 @@ controller protocol.
 | `v1.0.0` | Direct PCB-mounted PS1 pin array | Frozen prototype checkpoint under [`versions/v1-pcb-mounted-pin-array/`](versions/v1-pcb-mounted-pin-array/) |
 | `v2.0.0` | Modular donor-plug harness through board-mounted 9-contact connectors | Current release candidate under [`versions/v2-donor-plug-modular-adapter/`](versions/v2-donor-plug-modular-adapter/) |
 
-The repository root contains the current V2 production design. V1 remains
-self-contained in its version directory.
+Each hardware release is a self-contained FabDesk project under `versions/`.
+Open the version directory itself in FabDesk; the repository root is only the
+project index plus shared firmware and documentation.
 
 ## V2.0.0 status
 
@@ -31,33 +32,21 @@ self-contained in its version directory.
 
 The design release is electrically and mechanically validated. Ordering still
 requires a final live JLCPCB stock check and review of the uploaded BOM/CPL
-rotation previews; see [`ordering/DO-NOT-ORDER.md`](ordering/DO-NOT-ORDER.md).
+rotation previews; see
+[`versions/v2-donor-plug-modular-adapter/ordering/DO-NOT-ORDER.md`](versions/v2-donor-plug-modular-adapter/ordering/DO-NOT-ORDER.md).
 
 ## Repository layout
 
-- `circuit.netlist.json` — FabDesk design source and BOM metadata.
-- `board.kicad_*` — current V2 KiCad project.
-- `PlayBridge.pretty/` — project-local production footprints.
-- `PlayBridge.3dshapes/` — connector and critical-component 3D models.
-- `ordering/` — JLCPCB Gerber bundle, BOM, CPL, and sourcing audit.
-- `reports/` — latest build, DRC, ERC, statistics, and release-gate reports.
-- `versions/v1-pcb-mounted-pin-array/` — frozen V1 design.
-- `versions/v2-donor-plug-modular-adapter/` — self-contained V2.0.0 project snapshot, manufacturing package, reports, tools, references, and accepted renders.
-- `fit-check/` and `fit-test-coupon/` — legacy V1 physical-contact test material.
-- `docs/` — diagrams, concepts, and design-history images.
-- `firmware/playbridge_wifi_test/` — experimental ESP32 Wi-Fi controller firmware and bench instructions
+- `versions/v1-pcb-mounted-pin-array/` — complete frozen V1 FabDesk project, fit checks, historical renders, and provisional-contact studies.
+- `versions/v2-donor-plug-modular-adapter/` — complete V2.0.0 FabDesk project, manufacturing package, reports, tools, references, and accepted renders.
+- `firmware/playbridge_wifi_test/` — shared ESP32 Wi-Fi controller firmware and bench instructions.
+- `docs/` — shared protocol and modular-interconnect diagrams.
 
-## Why the live V2 files are at the repository root
+## Opening a hardware project
 
-FabDesk opens and regenerates the active project from fixed root-level paths,
-including `circuit.netlist.json`, `board.kicad_*`, the local footprint/model
-libraries, `reports/`, and `ordering/`. Moving only those files into
-`versions/v2-donor-plug-modular-adapter/` would break the current FabDesk
-project and its library references.
-
-The `versions/` directories are self-contained release records. Both V1 and V2
-can be inspected independently. The root remains a matching live FabDesk copy
-so future versions can be developed without modifying a frozen version folder.
+In FabDesk, select the desired directory under `versions/`, not the repository
+root. New hardware work should begin by copying the latest applicable version
+to a new version directory so previous releases remain unchanged.
 
 ## Important connector warning
 

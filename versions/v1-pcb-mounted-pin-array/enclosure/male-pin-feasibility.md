@@ -2,7 +2,7 @@
 
 ## Confirmed concept
 
-PlayBridge uses nine bare conductive male pins mounted directly to the PCB and projecting horizontally toward the PS1 console's female controller-port contacts. There is no donor plug, cable, internal wiring, or female socket array.
+PlayBridge uses eight bare conductive male contacts in a nine-position pattern, mounted directly to the PCB and projecting horizontally toward the PS1 console's female controller port. Position 8 is intentionally empty. There is no donor plug, cable, internal wiring, or female socket array.
 
 Measured geometry:
 
@@ -31,7 +31,7 @@ The plastic 3+3+3 divisions are mechanical keying features only. They do not cha
 
 ## Provisional footprint
 
-`PROVISIONAL_PS1_MALE_PIN_ARRAY_P4.00_SQ0.64_MECH_TBD` uses provisional 1.00 mm finished drills and 1.70 mm pads. These dimensions are not released until an actual pin manufacturer specifies its tail and hole. Pad 1 is square for orientation. Console mating view remains `9 8 7 | 6 5 4 | 3 2 1`.
+`PROVISIONAL_PS1_MALE_PIN_ARRAY_P4.00_SQ0.64_MECH_TBD` currently uses provisional 1.00 mm finished drills and 1.70 mm pads. Before release, position 8 must be removed from the populated footprint/model. These dimensions are not released until an actual contact manufacturer specifies its tail and hole. Position 1 remains the orientation datum. Looking directly at the male mating face, positions are `1 2 3 | 4 5 6 | 7 8 9`; position 8 is empty. PCB top view is mirrored.
 
 ## Release gate
 
