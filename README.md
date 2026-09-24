@@ -48,6 +48,13 @@ In FabDesk, select the desired directory under `versions/`, not the repository
 root. New hardware work should begin by copying the latest applicable version
 to a new version directory so previous releases remain unchanged.
 
+## PCB Fiddle
+
+Use [PCB Fiddle](https://pcbfiddle.com/) for quick browser-based PCB experiments
+and design exploration. Keep production FabDesk/KiCad source files inside their
+corresponding version directory under `versions/` so released board revisions
+remain self-contained and reproducible.
+
 ## Important connector warning
 
 J1 and J2 use USB 3 Type-A connector hardware only as inexpensive keyed
