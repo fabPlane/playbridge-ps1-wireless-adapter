@@ -19,6 +19,8 @@ project index plus shared firmware and documentation.
 
 ![PlayBridge V2.0 donor-plug modular adapter board](versions/v2-donor-plug-modular-adapter/renders/v2-donor-plug-modular-adapter-angle.png)
 
+_Board render created with [PCB Fiddle](https://pcbfiddle.com/)._
+
 - Board: 56.295 × 62.000 mm, four copper layers, 1.20 mm thick.
 - J1: 9-contact non-USB connector for a genuine PS1 donor-plug harness.
 - J2: mechanically identical reserved connector; every contact is intentionally NC.
@@ -49,14 +51,6 @@ rotation previews; see
 In FabDesk, select the desired directory under `versions/`, not the repository
 root. New hardware work should begin by copying the latest applicable version
 to a new version directory so previous releases remain unchanged.
-
-## PCB Fiddle
-
-Want to try or remix the board without setting up KiCad? [Grab it on PCB
-Fiddle](https://pcbfiddle.com/) and start experimenting in your browser. Keep
-production FabDesk/KiCad source files inside their corresponding version
-directory under `versions/` so released board revisions remain self-contained
-and reproducible.
 
 ## Important connector warning
 
