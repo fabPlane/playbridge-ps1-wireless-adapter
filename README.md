@@ -17,6 +17,8 @@ project index plus shared firmware and documentation.
 
 ## V2.0.0 status
 
+![PlayBridge V2.0 donor-plug modular adapter board](versions/v2-donor-plug-modular-adapter/renders/v2-donor-plug-modular-adapter-angle.png)
+
 - Board: 56.295 × 62.000 mm, four copper layers, 1.20 mm thick.
 - J1: 9-contact non-USB connector for a genuine PS1 donor-plug harness.
 - J2: mechanically identical reserved connector; every contact is intentionally NC.
