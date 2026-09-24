@@ -52,10 +52,11 @@ to a new version directory so previous releases remain unchanged.
 
 ## PCB Fiddle
 
-Use [PCB Fiddle](https://pcbfiddle.com/) for quick browser-based PCB experiments
-and design exploration. Keep production FabDesk/KiCad source files inside their
-corresponding version directory under `versions/` so released board revisions
-remain self-contained and reproducible.
+Want to try or remix the board without setting up KiCad? [Grab it on PCB
+Fiddle](https://pcbfiddle.com/) and start experimenting in your browser. Keep
+production FabDesk/KiCad source files inside their corresponding version
+directory under `versions/` so released board revisions remain self-contained
+and reproducible.
 
 ## Important connector warning
 
