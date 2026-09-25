@@ -75,9 +75,17 @@ for (const component of doc.netlist.components) {
     });
   }
   if (component.ref === 'J1' || component.ref === 'J2') {
-    component.fields.LCSC = 'C3197928';
-    component.fields['Procurement Status'] = 'JLCPCB selection retained; verify order-time stock';
-    component.fields['JLCPCB Part URL'] = 'https://jlcpcb.com/partdetail/C3197928';
+    component.fields.Manufacturer = 'Hong Cheng';
+    component.fields.MPN = 'HC-USB3.0-L168-ZP';
+    component.fields['JLCPCB/LCSC Part'] = 'C7501856';
+    component.fields.LCSC = 'C7501856';
+    component.fields.Package = 'USB 3.0 Type-A right-angle through-hole receptacle, 9 signal pins + 2 shell slots';
+    component.fields['Procurement Status'] = 'JLCPCB in-stock assembly part verified 2026-09-25; recheck live stock at order time';
+    component.fields['JLCPCB Part URL'] = 'https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856';
+    component.fields['Normalized Manufacturer Number'] = 'HC-USB3.0-L168-ZP';
+    component.fields.Datasheet = 'https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856';
+    component.fields['Footprint Provenance'] = 'Official JLCPCB/EasyEDA C7501856 land geometry for Hong Cheng HC-USB3.0-L168-ZP, converted locally with easyeda2kicad.';
+    component.fields.Orientation = 'Right-angle top-mount receptacle at the lower board edge; mating mouth faces outward. Signal-pad coordinates are preserved from the validated board routing.';
   }
   if (component.ref === 'SW1' || component.ref === 'SW2') {
     component.fields['JLCPCB/LCSC Part'] = 'C2837195';

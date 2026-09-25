@@ -1,6 +1,6 @@
 ** Drc report for board.kicad_pcb **
-** Created on 2026-09-25T14:41:24 **
-** Report includes: Errors, Warnings, Exclusions **
+** Created on 2026-09-25T15:33:48 **
+** Report includes: Errors, Warnings **
 
 ** Found 3 DRC violations **
 [track_dangling]: Track has unconnected end

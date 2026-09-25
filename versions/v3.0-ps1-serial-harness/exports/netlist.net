@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/amliomnie/fabdesk/wireless-pc-to-ps1-controller-bridge/versions/v3.0-ps1-serial-harness/board.kicad_sch")
-		(date "2026-09-25T14:41:29")
+		(date "2026-09-25T15:31:28")
 		(tool "Eeschema 10.99.0-3619-g0ef48b972f")
 		(sheet
 			(number "1")
@@ -1825,35 +1825,35 @@
 		(comp
 			(ref "J1")
 			(value "PS1 DONOR HARNESS / NOT USB")
-			(footprint "PlayBridge:USB3_A_Molex_48393-0003_AUTHORIZED_COPY_MODEL_V3")
-			(datasheet "https://www.molex.com/en-us/products/part-detail/483930003")
+			(footprint "PlayBridge:USB3_A_HongCheng_HC-USB3.0-L168-ZP_C7501856_PS1_FRONT_MODEL_V3")
+			(datasheet "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
 			(fields
 				(field
-					(name "Manufacturer") "Molex")
+					(name "Manufacturer") "Hong Cheng")
 				(field
-					(name "MPN") "48393-0003")
+					(name "MPN") "HC-USB3.0-L168-ZP")
 				(field
-					(name "Normalized Manufacturer Number") "483930003")
+					(name "Normalized Manufacturer Number") "HC-USB3.0-L168-ZP")
 				(field
-					(name "JLCPCB/LCSC Part") "C3197928")
+					(name "JLCPCB/LCSC Part") "C7501856")
 				(field
-					(name "Footprint Provenance") "Project-local authorized geometry copy of bundled KiCad Connector_USB:USB3_A_Molex_48393-001; land geometry references Molex drawing 483930003_sd.pdf.")
+					(name "Footprint Provenance") "Official JLCPCB/EasyEDA C7501856 land geometry for Hong Cheng HC-USB3.0-L168-ZP, converted locally with easyeda2kicad.")
 				(field
 					(name "Pinout") "CUSTOM NON-USB. Standard USB contact identities: 1/VBUS=NC_KEY; 2/D-=PS_CMD; 3/D+=PS_CLK; 4/GND=GND; 5/SSRX-=PS_ATT; 6/SSRX+=PS_DATA; 7/GND_DRAIN=PS_ACK; 8/SSTX-=PS_8V_RAW; 9/SSTX+=PS_3V5_CONSOLE_ISOLATED_NC. Shell pads SH have no electrical net.")
 				(field
-					(name "Orientation") "Right-angle top-mount receptacle at enclosure edge; mating mouth faces outward. PCB solder-side contact numbering is not a mating-view map: verify mirror orientation against the Molex drawing before harness assembly.")
+					(name "Orientation") "Right-angle top-mount receptacle at the lower board edge; mating mouth faces outward. Signal-pad coordinates are preserved from the validated board routing.")
 				(field
 					(name "Safety") "NOT USB. Pad 1 is deliberately unconnected so a normal USB source VBUS does not enter the circuit. Pad 9 is physically present but has no PCB net or copper and must never be tied to board 3V3. Shell is mechanically anchored but electrically isolated. NOT PRODUCTION RELEASED.")
 				(field
-					(name "LCSC") "C3197928")
+					(name "LCSC") "C7501856")
 				(field
-					(name "Procurement Status") "JLCPCB selection retained; verify order-time stock")
+					(name "Procurement Status") "JLCPCB in-stock assembly part; recheck live stock at order time")
 				(field
-					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C3197928")
+					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
 				(field
-					(name "Footprint") "PlayBridge:USB3_A_Molex_48393-0003_AUTHORIZED_COPY_MODEL_V3")
+					(name "Footprint") "PlayBridge:USB3_A_HongCheng_HC-USB3.0-L168-ZP_C7501856_PS1_FRONT_MODEL_V3")
 				(field
-					(name "Datasheet") "https://www.molex.com/en-us/products/part-detail/483930003")
+					(name "Datasheet") "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
 				(field
 					(name "Description")
 				)
@@ -1865,23 +1865,23 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "Molex")
+				(value "Hong Cheng")
 			)
 			(property
 				(name "MPN")
-				(value "48393-0003")
+				(value "HC-USB3.0-L168-ZP")
 			)
 			(property
 				(name "Normalized Manufacturer Number")
-				(value "483930003")
+				(value "HC-USB3.0-L168-ZP")
 			)
 			(property
 				(name "JLCPCB/LCSC Part")
-				(value "C3197928")
+				(value "C7501856")
 			)
 			(property
 				(name "Footprint Provenance")
-				(value "Project-local authorized geometry copy of bundled KiCad Connector_USB:USB3_A_Molex_48393-001; land geometry references Molex drawing 483930003_sd.pdf.")
+				(value "Official JLCPCB/EasyEDA C7501856 land geometry for Hong Cheng HC-USB3.0-L168-ZP, converted locally with easyeda2kicad.")
 			)
 			(property
 				(name "Pinout")
@@ -1889,7 +1889,7 @@
 			)
 			(property
 				(name "Orientation")
-				(value "Right-angle top-mount receptacle at enclosure edge; mating mouth faces outward. PCB solder-side contact numbering is not a mating-view map: verify mirror orientation against the Molex drawing before harness assembly.")
+				(value "Right-angle top-mount receptacle at the lower board edge; mating mouth faces outward. Signal-pad coordinates are preserved from the validated board routing.")
 			)
 			(property
 				(name "Safety")
@@ -1897,15 +1897,15 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C3197928")
+				(value "C7501856")
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB selection retained; verify order-time stock")
+				(value "JLCPCB in-stock assembly part; recheck live stock at order time")
 			)
 			(property
 				(name "JLCPCB Part URL")
-				(value "https://jlcpcb.com/partdetail/C3197928")
+				(value "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
 			)
 			(property
 				(name "Sheetname")
@@ -1952,17 +1952,17 @@
 		(comp
 			(ref "J2")
 			(value "PS1 SERIAL / NOT USB / 3-SIGNAL CANDIDATE")
-			(footprint "PlayBridge:USB3_A_Molex_48393-0003_PS1_SERIAL_NOT_USB_MODEL_V3")
-			(datasheet "https://www.molex.com/en-us/products/part-detail/483930003")
+			(footprint "PlayBridge:USB3_A_HongCheng_HC-USB3.0-L168-ZP_C7501856_PS1_SERIAL_MODEL_V3")
+			(datasheet "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
 			(fields
 				(field
-					(name "Manufacturer") "Molex")
+					(name "Manufacturer") "Hong Cheng")
 				(field
-					(name "MPN") "48393-0003")
+					(name "MPN") "HC-USB3.0-L168-ZP")
 				(field
-					(name "Normalized Manufacturer Number") "483930003")
+					(name "Normalized Manufacturer Number") "HC-USB3.0-L168-ZP")
 				(field
-					(name "JLCPCB/LCSC Part") "C3197928")
+					(name "JLCPCB/LCSC Part") "C7501856")
 				(field
 					(name "Pinout") "SONY REAR SERIAL NUMBERING PRESERVED: 1=PS1_RXD from ESP32 GPIO17/U2TX through R30; 2=PS1 3.5V SUPPLY NC; 3=DSR NC; 4=PS1_TXD to ESP32 GPIO16/U2RX through R31; 5=CTS NC; 6=DTR NC; 7=GND; 8=RTS NC; 9=SPARE NC; shell pads SH NC.")
 				(field
@@ -1970,15 +1970,15 @@
 				(field
 					(name "Placement Constraint") "Board edge only; receptacle mouth faces outward and courtyard must remain mechanically clear.")
 				(field
-					(name "LCSC") "C3197928")
+					(name "LCSC") "C7501856")
 				(field
-					(name "Procurement Status") "JLCPCB selection retained; verify order-time stock")
+					(name "Procurement Status") "JLCPCB in-stock assembly part; recheck live stock at order time")
 				(field
-					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C3197928")
+					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
 				(field
-					(name "Footprint") "PlayBridge:USB3_A_Molex_48393-0003_PS1_SERIAL_NOT_USB_MODEL_V3")
+					(name "Footprint") "PlayBridge:USB3_A_HongCheng_HC-USB3.0-L168-ZP_C7501856_PS1_SERIAL_MODEL_V3")
 				(field
-					(name "Datasheet") "https://www.molex.com/en-us/products/part-detail/483930003")
+					(name "Datasheet") "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
 				(field
 					(name "Description")
 				)
@@ -1990,19 +1990,19 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "Molex")
+				(value "Hong Cheng")
 			)
 			(property
 				(name "MPN")
-				(value "48393-0003")
+				(value "HC-USB3.0-L168-ZP")
 			)
 			(property
 				(name "Normalized Manufacturer Number")
-				(value "483930003")
+				(value "HC-USB3.0-L168-ZP")
 			)
 			(property
 				(name "JLCPCB/LCSC Part")
-				(value "C3197928")
+				(value "C7501856")
 			)
 			(property
 				(name "Pinout")
@@ -2018,15 +2018,15 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C3197928")
+				(value "C7501856")
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB selection retained; verify order-time stock")
+				(value "JLCPCB in-stock assembly part; recheck live stock at order time")
 			)
 			(property
 				(name "JLCPCB Part URL")
-				(value "https://jlcpcb.com/partdetail/C3197928")
+				(value "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
 			)
 			(property
 				(name "Sheetname")

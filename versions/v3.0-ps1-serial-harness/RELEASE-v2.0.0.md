@@ -16,7 +16,7 @@ must be marked **NOT USB** in the enclosure and harness.
 - Dimensions: 56.295 × 62.000 mm.
 - Stackup: four copper layers, 1.20 mm finished thickness.
 - Population: 67 footprints; 63 fitted references and four DNP test pads.
-- J1/J2: Molex 48393-0003 / JLCPCB C3197928, outward at the lower edge.
+- J1/J2: Hong Cheng HC-USB3.0-L168-ZP / JLCPCB C7501856, outward at the lower edge; nine signal-pad coordinates preserved from the validated routing.
 - J3: HRO TYPE-C-31-M-12 / JLCPCB C165948, outward at the right edge.
 - Board SHA-256: `4e4068be3e2941f74bfe923bd5959de7a7d2209ca3e7ce8036483f3a8c5df5ab`.
 
@@ -51,7 +51,7 @@ The repository includes:
 
 ## Checkout hold
 
-Before placing the PCBA order, recheck live stock for J1/J2 C3197928 and L1
+Before placing the PCBA order, recheck live stock for J1/J2 C7501856 and L1
 C49449313, then inspect the JLCPCB BOM/CPL placement preview—especially both
 USB-A connectors, USB-C, switches, D2, and L1. This is a commercial/assembly
 review hold; no electrical-layout or connector-orientation defect is open.

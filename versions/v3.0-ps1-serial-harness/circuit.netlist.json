@@ -149,46 +149,50 @@
       {
         "ref": "J1",
         "value": "PS1 DONOR HARNESS / NOT USB",
-        "footprint": "PlayBridge:USB3_A_Molex_48393-0003_AUTHORIZED_COPY_MODEL_V3",
+        "footprint": "PlayBridge:USB3_A_HongCheng_HC-USB3.0-L168-ZP_C7501856_PS1_FRONT_MODEL_V3",
         "libSource": {
           "lib": "PlayBridgeAuto",
           "part": "AUTO_J1"
         },
         "fields": {
-          "Manufacturer": "Molex",
-          "MPN": "48393-0003",
-          "Normalized Manufacturer Number": "483930003",
-          "JLCPCB/LCSC Part": "C3197928",
-          "Datasheet": "https://www.molex.com/en-us/products/part-detail/483930003",
-          "Footprint Provenance": "Project-local authorized geometry copy of bundled KiCad Connector_USB:USB3_A_Molex_48393-001; land geometry references Molex drawing 483930003_sd.pdf.",
+          "Manufacturer": "Hong Cheng",
+          "MPN": "HC-USB3.0-L168-ZP",
+          "Normalized Manufacturer Number": "HC-USB3.0-L168-ZP",
+          "JLCPCB/LCSC Part": "C7501856",
+          "Datasheet": "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856",
+          "Footprint Provenance": "Official JLCPCB/EasyEDA C7501856 land geometry for Hong Cheng HC-USB3.0-L168-ZP, converted locally with easyeda2kicad.",
           "Pinout": "CUSTOM NON-USB. Standard USB contact identities: 1/VBUS=NC_KEY; 2/D-=PS_CMD; 3/D+=PS_CLK; 4/GND=GND; 5/SSRX-=PS_ATT; 6/SSRX+=PS_DATA; 7/GND_DRAIN=PS_ACK; 8/SSTX-=PS_8V_RAW; 9/SSTX+=PS_3V5_CONSOLE_ISOLATED_NC. Shell pads SH have no electrical net.",
-          "Orientation": "Right-angle top-mount receptacle at enclosure edge; mating mouth faces outward. PCB solder-side contact numbering is not a mating-view map: verify mirror orientation against the Molex drawing before harness assembly.",
+          "Orientation": "Right-angle top-mount receptacle at the lower board edge; mating mouth faces outward. Signal-pad coordinates are preserved from the validated board routing.",
           "Safety": "NOT USB. Pad 1 is deliberately unconnected so a normal USB source VBUS does not enter the circuit. Pad 9 is physically present but has no PCB net or copper and must never be tied to board 3V3. Shell is mechanically anchored but electrically isolated. NOT PRODUCTION RELEASED.",
-          "LCSC": "C3197928",
-          "Procurement Status": "JLCPCB selection retained; verify order-time stock",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C3197928"
+          "LCSC": "C7501856",
+          "Procurement Status": "JLCPCB in-stock assembly part verified 2026-09-25; recheck live stock at order time",
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856",
+          "Package": "USB 3.0 Type-A right-angle through-hole receptacle, 9 signal pins + 2 shell slots"
         }
       },
       {
         "ref": "J2",
         "value": "PS1 SERIAL / NOT USB / 3-SIGNAL CANDIDATE",
-        "footprint": "PlayBridge:USB3_A_Molex_48393-0003_PS1_SERIAL_NOT_USB_MODEL_V3",
+        "footprint": "PlayBridge:USB3_A_HongCheng_HC-USB3.0-L168-ZP_C7501856_PS1_SERIAL_MODEL_V3",
         "libSource": {
           "lib": "PlayBridgeAuto",
           "part": "AUTO_J2"
         },
         "fields": {
-          "Manufacturer": "Molex",
-          "MPN": "48393-0003",
-          "Normalized Manufacturer Number": "483930003",
-          "JLCPCB/LCSC Part": "C3197928",
-          "Datasheet": "https://www.molex.com/en-us/products/part-detail/483930003",
+          "Manufacturer": "Hong Cheng",
+          "MPN": "HC-USB3.0-L168-ZP",
+          "Normalized Manufacturer Number": "HC-USB3.0-L168-ZP",
+          "JLCPCB/LCSC Part": "C7501856",
+          "Datasheet": "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856",
           "Pinout": "SONY REAR SERIAL NUMBERING PRESERVED: 1=PS1_RXD from ESP32 GPIO17/U2TX through R30; 2=PS1 3.5V SUPPLY NC; 3=DSR NC; 4=PS1_TXD to ESP32 GPIO16/U2RX through R31; 5=CTS NC; 6=DTR NC; 7=GND; 8=RTS NC; 9=SPARE NC; shell pads SH NC.",
           "Safety": "NOT USB. Three-signal PS1 serial harness validated by the user/team on the documented bench PoC. PS1 3.5V on contact 2 is intentionally isolated and must never connect to board 3V3. Validation applies only to the tested hardware/protocol configuration; full PS1 serial handshaking is not implemented.",
           "Placement Constraint": "Board edge only; receptacle mouth faces outward and courtyard must remain mechanically clear.",
-          "LCSC": "C3197928",
-          "Procurement Status": "JLCPCB selection retained; verify order-time stock",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C3197928"
+          "LCSC": "C7501856",
+          "Procurement Status": "JLCPCB in-stock assembly part verified 2026-09-25; recheck live stock at order time",
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856",
+          "Package": "USB 3.0 Type-A right-angle through-hole receptacle, 9 signal pins + 2 shell slots",
+          "Footprint Provenance": "Official JLCPCB/EasyEDA C7501856 land geometry for Hong Cheng HC-USB3.0-L168-ZP, converted locally with easyeda2kicad.",
+          "Orientation": "Right-angle top-mount receptacle at the lower board edge; mating mouth faces outward. Signal-pad coordinates are preserved from the validated board routing."
         }
       },
       {
@@ -449,7 +453,7 @@
         },
         "fields": {
           "DNP": "Yes",
-          "Assembly": "DNP - plated debug hole; no purchased component",
+          "Assembly": "DNP - bare PCB test pad; no purchased component",
           "Hole": "1.0 mm finished plated",
           "Pad": "2.0 mm copper diameter",
           "Function": "Ground debug probe/solder hole",
@@ -466,7 +470,7 @@
         },
         "fields": {
           "DNP": "Yes",
-          "Assembly": "DNP - plated debug hole; no purchased component",
+          "Assembly": "DNP - bare PCB test pad; no purchased component",
           "Hole": "1.0 mm finished plated",
           "Pad": "2.0 mm copper diameter",
           "Function": "UART transmit debug probe/solder hole",
@@ -483,7 +487,7 @@
         },
         "fields": {
           "DNP": "Yes",
-          "Assembly": "DNP - plated debug hole; no purchased component",
+          "Assembly": "DNP - bare PCB test pad; no purchased component",
           "Hole": "1.0 mm finished plated",
           "Pad": "2.0 mm copper diameter",
           "Function": "UART receive debug probe/solder hole",

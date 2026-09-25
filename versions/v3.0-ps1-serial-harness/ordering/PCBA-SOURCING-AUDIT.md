@@ -15,7 +15,7 @@
 - F1: BHFUSE BSMD1206-075-30V / C976305, 1206, 750 mA hold, 1.5 A trip, 30 V.
 - L1: MYX MCNR4030AF-4R7M / C49449313, 4.0 x 4.0 mm, 4.7 uH, 2.5 A rated, 3 A saturation. The inherited sourcing audit recorded low stock (40 units); this regeneration did not perform a live-stock query, so recheck immediately before ordering.
 - R20: TA-I RMS06FT6980 / C912219, 698 ohm E96 substitute for the 700 ohm nominal. The TPS2113A current-limit setpoint difference is approximately +0.29%.
-- J1/J2: Molex 48393-0003 / C3197928. The inherited sourcing audit recorded only 7 available units; this regeneration did not perform a live-stock query. With two populated per board, recheck stock at checkout. J2 carries the user/team bench-validated three-signal PS1 serial harness on contacts 1 (PS1_RXD), 4 (PS1_TXD) and 7 (GND); all other signal contacts remain NC.
+- J1/J2: Hong Cheng HC-USB3.0-L168-ZP / C7501856. JLCPCB listed this as a ready-for-assembly in-stock part during the 2026-09-25 replacement pass; recheck live stock at checkout. Its nine electrical-pad coordinates exactly match the replaced connector, so routing is unchanged. J2 carries the user/team bench-validated three-signal PS1 serial harness on contacts 1 (PS1_RXD), 4 (PS1_TXD) and 7 (GND); all other signal contacts remain NC.
 - D6: KENTO KT-0603R / C2286, red 0603 always-on 3V3 POWER indicator.
 - R29: UNI-ROYAL 0603WAF1001T5E / C21190, 1 kΩ 0603 POWER-LED series resistor.
 

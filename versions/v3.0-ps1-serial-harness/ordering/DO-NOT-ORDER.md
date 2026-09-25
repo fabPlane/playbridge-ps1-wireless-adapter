@@ -13,18 +13,19 @@ Fresh V3.0 manufacturing and assembly files have now been generated from the
 verified V3.0 board. The package includes J2, R30 and R31:
 
 - `gerbers-jlcpcb.zip` SHA-256:
-  `53c5e7433b1f62957e516f66e7e664dc6d699ae5377469fee0ea4a07bdd9e771`
+  `79cee6ab2a2817c448c97eeb5dafd0ae774262c85803f4c59c31d65bda27bab0`
 - `jlcpcb-bom.csv` SHA-256:
-  `940b544198f858c39223112ffdff71d2602239547ab33d38eca0a42286edc9f0`
+  `843957971777767e52d6aeeaf623a05dd8f5f9a323449939d0142b77e3f60fef`
 - `jlcpcb-cpl.csv` SHA-256:
-  `731d9a0e6846cbff34ae818d6703acabe2dd118965fbf10fea5762f6c6c0a346`
+  `686bd018bfcfe1f596070ecc0887670ec0c4ec81c907151657b2d36fe336b2dd`
 - Generic `exports/fabrication.zip` SHA-256:
-  `6df04be37730c71ab8cdb788056cc6929ac6e8ec569c8a4d1aaf6fa4ee44f648`
+  `f9774fabc9b61e5b25378fa0577895634e06d6d3ad8792c2b2a0efb07ab0fc4d`
 
 The only remaining hold is external assembler checkout review. Before ordering:
 
-- Confirm live JLCPCB/LCSC availability for Molex 48393-0003 / C3197928 (two
-  required per board).
+- Confirm live JLCPCB/LCSC availability for Hong Cheng HC-USB3.0-L168-ZP /
+  C7501856 (two required per board). It was listed as a ready-for-assembly,
+  in-stock part during the 2026-09-25 replacement pass.
 - Confirm availability or an approved substitute for L1, MYX
   MCNR4030AF-4R7M / C49449313.
 - Verify J2, R30 and R31 in the uploaded BOM/CPL and inspect their rotations and

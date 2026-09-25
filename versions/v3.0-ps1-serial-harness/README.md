@@ -89,10 +89,9 @@ The baseline details below remain useful for comparison, but V2.1 must pass a
 fresh release gate after modification.
 
 - Board: 56.295 × 62.000 mm, four layers, 1.20 mm thick.
-- J1: Molex 48393-0003 / JLCPCB C3197928 used as a nine-contact **non-USB** PS1 donor-harness interface.
-- J2: the same connector reserved for a future rear-serial harness; its contacts remain intentionally unassigned until that interface is characterized.
-- J1/J2 use `Molex_48393-0003_TraceParts_exact_visual.wrl`, converted from the exact TraceParts catalog preview for 48393-0003. Registration is documented in `PlayBridge.3dshapes/README_MOLEX_48393-0003_TRACEPARTS.md`.
-- J1 is at (4.525, 50.525) mm, J2 at (22.525, 50.525) mm, both at 0°, with their mating mouths facing outward through the lower edge. F1 is at (12.500, 38.000) mm. J3 remains at (51.025, 9.625) mm, 90°, facing outward through the right edge.
+- J1/J2: Hong Cheng `HC-USB3.0-L168-ZP` / JLCPCB `C7501856`, used as keyed nine-contact **non-USB** harness interfaces. J2 carries the validated three-wire PS1 serial link.
+- The official JLCPCB/EasyEDA footprint and 3D model are stored locally. All nine electrical-pad centers exactly match the prior routed pattern; only the connector shell slots, body/courtyard and visual model changed.
+- J1 is at (8.025, 50.825) mm and J2 at (26.025, 50.825) mm in the vendor footprint coordinate frame. Their absolute signal-pad coordinates and all routed copper are unchanged, and both mating mouths face outward through the lower edge. J3 remains at (51.025, 9.625) mm, 90°, facing outward through the right edge.
 - ERC, DRC, schematic parity, and connectivity currently pass with zero errors, warnings, or unconnected items. Ordering remains subject to the sourcing and PCBA-completeness checks in `ordering/`.
 
 See [`RELEASE-v2.0.0.md`](RELEASE-v2.0.0.md) for the release gate,
@@ -109,25 +108,16 @@ manufacturing-package status, 3D-model provenance, and remaining checkout hold.
 
 ## USB-A mechanical fit
 
-J1 and J2 use the official Molex 48393-0003 through-hole pattern: nine 0.70 mm
-signal holes plus four polarized shell-retention slots. The 13.80 × 14.25 mm
-connector body fits the footprint and requires no PCB cutout. With the current
-placement, its mating lip projects 0.275 mm beyond the straight board edge so
-the cable remains accessible, while every signal pin and retention leg remains
-inside the board outline. The V2 PCB thickness is 1.20 mm, matching the PCB
-thickness stated on Molex drawing `483930003_sd.pdf`.
+J1 and J2 use the official Hong Cheng `HC-USB3.0-L168-ZP` / `C7501856`
+through-hole pattern: nine 0.70 mm signal holes plus two 0.60 × 2.30 mm plated
+shell slots. The 13.10 × 16.80 mm body fits at the existing lower edge without
+a PCB cutout; its mouth intentionally overhangs the board while all signal pins
+and both shell slots remain supported by the PCB. Board thickness remains 1.20 mm.
 
 ## 3D-model validation
 
-The datasheet-derived model contains separate solids for all nine signal tails
-and four shell-retention posts. Their centerlines match the corresponding
-footprint holes/slots with a reported XY delta of 0.000 mm. The model uses zero
-offset and zero rotation in the footprint frame; its WRL scale is
-`0.3937007874` on all axes. The nominal tails/posts extend 1.10 mm below the
-top seating datum on the 1.20 mm PCB.
-
-The production footprints retain the official Molex entry geometry. The
-TraceParts visual model is used for populated-board inspection, while the
-datasheet-derived section proof remains available for dimensional audit.
-See `PlayBridge.3dshapes/README_MOLEX_48393-0003_TRACEPARTS.md` and
-`PlayBridge.3dshapes/Molex_48393-0003_DATASHEET_DERIVED_README.md`.
+The official `C7501856` WRL/STEP model uses zero offset, zero rotation and unit
+scale in the vendor footprint frame. Direct front and perspective renders show
+both bodies seated on the top surface, the two mouths facing outward, and the
+through-hole tails/retention legs aligned to their pads. See the accepted
+`renders/v3.0-*.png` inspection set.

@@ -62,8 +62,8 @@ items=[]
 all_refs=[]
 coverage=[]
 critical = {
-    "J1": ("EXACT_MESH", "PlayBridge.3dshapes/Molex_48393-0003_TraceParts_exact_visual.wrl"),
-    "J2": ("EXACT_MESH", "PlayBridge.3dshapes/Molex_48393-0003_TraceParts_exact_visual.wrl"),
+    "J1": ("EXACT_MESH", "PlayBridge.3dshapes/HC-USB3.0-L168-ZP_C7501856.wrl"),
+    "J2": ("EXACT_MESH", "PlayBridge.3dshapes/HC-USB3.0-L168-ZP_C7501856.wrl"),
     "J3": ("EXACT_MESH", "PlayBridge.3dshapes/TYPE-C-31-M-12.step"),
     "U1": ("AUTHORITATIVE_KICAD_MODEL_CROSSCHECKED_TO_MPN", "PlayBridge.3dshapes/KICAD_OFFICIAL_ESP32-WROOM-32.step"),
     "SW1": ("EXACT_PART_COMPONENT_ASSET", "PlayBridge.3dshapes/K2-1107ST-A4SW-06.step"),

@@ -17,11 +17,21 @@
   BOM/CPL rotation/placement previews require final human review
 - Order state: HOLD until the assembler checkout gate passes
 
+## J1/J2 sourcing replacement
+
+- Replaced unavailable/pre-order Molex C3197928 with ready-for-assembly Hong
+  Cheng HC-USB3.0-L168-ZP / JLCPCB C7501856.
+- All nine signal-pad centers are unchanged; no routed copper moved.
+- Official C7501856 shell slots, courtyard, footprint and WRL/STEP model are
+  included locally.
+- New top, perspective, lower-edge and bottom renders confirm correct seating
+  and outward-facing connector mouths.
+
 ## Release hashes
 
-- PCB: `e80a32c3c3352e8f94d40a66bf6f040861f3baa234d583c6b549988444f4da16`
-- Schematic: `a597e71d8429ba2a4d7c97674c73eca6dde54e8ec993f6614132286c49e464c3`
-- Generic fabrication ZIP: `6df04be37730c71ab8cdb788056cc6929ac6e8ec569c8a4d1aaf6fa4ee44f648`
-- JLCPCB Gerber ZIP: `53c5e7433b1f62957e516f66e7e664dc6d699ae5377469fee0ea4a07bdd9e771`
-- JLCPCB BOM: `940b544198f858c39223112ffdff71d2602239547ab33d38eca0a42286edc9f0`
-- JLCPCB CPL: `731d9a0e6846cbff34ae818d6703acabe2dd118965fbf10fea5762f6c6c0a346`
+- PCB: `9f35f14a72d0283f639ca8e53e08e3d4ad675e4c4d4937ba2a34dda01c05f976`
+- Schematic: `73d8a4e9e3b117d3dc982e4980389b215d62b1fa0540ba7ee33bbf3e6a9babcf`
+- Generic fabrication ZIP: `f9774fabc9b61e5b25378fa0577895634e06d6d3ad8792c2b2a0efb07ab0fc4d`
+- JLCPCB Gerber ZIP: `79cee6ab2a2817c448c97eeb5dafd0ae774262c85803f4c59c31d65bda27bab0`
+- JLCPCB BOM: `843957971777767e52d6aeeaf623a05dd8f5f9a323449939d0142b77e3f60fef`
+- JLCPCB CPL: `686bd018bfcfe1f596070ecc0887670ec0c4ec81c907151657b2d36fe336b2dd`
