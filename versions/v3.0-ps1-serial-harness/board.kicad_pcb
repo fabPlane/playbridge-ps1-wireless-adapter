@@ -17815,7 +17815,7 @@
 				)
 			)
 		)
-		(property "Safety" "NOT USB. Three-signal bench candidate only. PS1 3.5V on contact 2 is intentionally isolated and must never connect to board 3V3. Logic-level compatibility is not yet verified. Full PS1 serial handshaking is not implemented."
+		(property "Safety" "NOT USB. Three-signal PS1 serial harness validated by the user/team on the documented bench PoC. PS1 3.5V on contact 2 is intentionally isolated and must never connect to board 3V3. Validation applies only to the tested hardware/protocol configuration; full PS1 serial handshaking is not implemented."
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")

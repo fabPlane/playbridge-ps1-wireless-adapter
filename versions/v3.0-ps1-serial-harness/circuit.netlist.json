@@ -184,7 +184,7 @@
           "JLCPCB/LCSC Part": "C3197928",
           "Datasheet": "https://www.molex.com/en-us/products/part-detail/483930003",
           "Pinout": "SONY REAR SERIAL NUMBERING PRESERVED: 1=PS1_RXD from ESP32 GPIO17/U2TX through R30; 2=PS1 3.5V SUPPLY NC; 3=DSR NC; 4=PS1_TXD to ESP32 GPIO16/U2RX through R31; 5=CTS NC; 6=DTR NC; 7=GND; 8=RTS NC; 9=SPARE NC; shell pads SH NC.",
-          "Safety": "NOT USB. Three-signal bench candidate only. PS1 3.5V on contact 2 is intentionally isolated and must never connect to board 3V3. Logic-level compatibility is not yet verified. Full PS1 serial handshaking is not implemented.",
+          "Safety": "NOT USB. Three-signal PS1 serial harness validated by the user/team on the documented bench PoC. PS1 3.5V on contact 2 is intentionally isolated and must never connect to board 3V3. Validation applies only to the tested hardware/protocol configuration; full PS1 serial handshaking is not implemented.",
           "Placement Constraint": "Board edge only; receptacle mouth faces outward and courtyard must remain mechanically clear.",
           "LCSC": "C3197928",
           "Procurement Status": "JLCPCB selection retained; verify order-time stock",

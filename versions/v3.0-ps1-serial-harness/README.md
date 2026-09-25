@@ -21,8 +21,11 @@ LEDs and connector-free UART0 service row.
   policy before committing copper. Do not silently parallel console buses.
 - Keep the intended path explicit: PC/browser -> Wi-Fi -> ESP32 -> GPIO17/TX,
   GPIO16/RX and GND -> keyed NOT-USB harness -> PS1 serial port.
-- Do not claim game-image streaming or generate manufacturing outputs until the
-  teammate firmware/protocol and electrical evidence have been reviewed.
+- The user/team confirmed the teammate firmware/protocol and electrical bench
+  PoC on 2026-09-25. The preserved photos document the powered test hardware;
+  functional operation is a user-reported bench result rather than something
+  independently visible in the still images. Do not generalize that result to
+  untested console revisions, cables, protocol modes, or full handshaking.
 
 ## V2.1 baseline retained
 
@@ -41,10 +44,14 @@ Verified 2026-09-25: DRC 0 errors, 0 unconnected, and only three approved histor
 - Generic outputs: `exports/gerbers/`, `exports/gerbers/board.drl`, `exports/bom.csv`, `exports/positions.csv`, `exports/assembly-bom.csv`, `exports/assembly-cpl.csv`, `exports/netlist.net`, and `exports/fabrication.zip`.
 - JLCPCB preparation: `ordering/jlcpcb-bom.csv`, `ordering/jlcpcb-cpl.csv`, and `ordering/gerbers-jlcpcb.zip`.
 - Detailed evidence: `reports/V2.1-AUDIT.md`.
+- V3.0 PoC evidence: `reports/evidence/README.md` and the two preserved setup
+  photographs.
+- V3.0 release result and package hashes: `reports/final-release-gate.md`.
 
-**DO NOT ORDER:** the checked-in Gerbers/BOM/CPL still represent the inherited
-V2.1 board. Regenerate them from V3.0, then complete BOM/CPL rotation,
-substitution, and live-stock review. The user-reported J2 bench test has passed.
+**ORDER CHECKOUT HOLD:** fresh V3.0 manufacturing files are generated from the
+verified board. Before purchase, upload them to the assembler and complete the
+BOM/CPL rotation, substitution, and live-stock review described in
+`ordering/DO-NOT-ORDER.md`. The user-reported J2 bench test has passed.
 
 The fabrication exports and validation reports have been regenerated for V2.1.
 

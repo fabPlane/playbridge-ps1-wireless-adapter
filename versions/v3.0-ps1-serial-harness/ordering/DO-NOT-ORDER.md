@@ -1,23 +1,27 @@
-# DO NOT ORDER — V3.0 manufacturing package not regenerated
+# DO NOT ORDER — V3.0 assembler checkout review required
 
 Date: 2026-09-25
 
-The V3.0 J2 serial implementation is complete and the user reports that the
-bench test passed on the tested hardware. KiCad verification also passes with
-zero unconnected pads, zero ERC findings, zero schematic-parity findings, and
-only the three inherited locally approved UART0 test-stub warnings.
+The V3.0 J2 serial implementation is complete. On 2026-09-25 the user confirmed
+that the teammate firmware/protocol and electrical PoC passed on the tested
+hardware; the two supplied setup photographs are preserved under
+`reports/evidence/`. KiCad verification also passes with zero unconnected pads,
+zero ERC findings, zero schematic-parity findings, and only the three inherited
+locally approved UART0 test-stub warnings.
 
-The remaining hold is not the J2 routing or tested UART function. The checked-in
-ordering package still represents the inherited V2.1 board:
+Fresh V3.0 manufacturing and assembly files have now been generated from the
+verified V3.0 board. The package includes J2, R30 and R31:
 
-- `jlcpcb-bom.csv` still identifies J2 as the reserved/all-NC footprint and does
-  not contain the new R30/R31 series resistors.
-- `jlcpcb-cpl.csv` and `gerbers-jlcpcb.zip` predate the routed V3.0 J2 design.
-- The BOM/CPL rotation preview and any assembler substitutions have not been
-  reviewed against a freshly uploaded V3.0 package.
+- `gerbers-jlcpcb.zip` SHA-256:
+  `53c5e7433b1f62957e516f66e7e664dc6d699ae5377469fee0ea4a07bdd9e771`
+- `jlcpcb-bom.csv` SHA-256:
+  `940b544198f858c39223112ffdff71d2602239547ab33d38eca0a42286edc9f0`
+- `jlcpcb-cpl.csv` SHA-256:
+  `731d9a0e6846cbff34ae818d6703acabe2dd118965fbf10fea5762f6c6c0a346`
+- Generic `exports/fabrication.zip` SHA-256:
+  `6df04be37730c71ab8cdb788056cc6929ac6e8ec569c8a4d1aaf6fa4ee44f648`
 
-Before ordering, regenerate the Gerbers, drill files, BOM, CPL and fabrication
-ZIP from the committed V3.0 board, then perform these checkout checks:
+The only remaining hold is external assembler checkout review. Before ordering:
 
 - Confirm live JLCPCB/LCSC availability for Molex 48393-0003 / C3197928 (two
   required per board).
@@ -28,5 +32,6 @@ ZIP from the committed V3.0 board, then perform these checkout checks:
 - Approve all assembler substitutions and confirm project-local/custom
   footprints are accepted.
 
-Once the fresh package and checkout preview pass those checks, this ordering
-hold can be removed for the tested hardware configuration.
+Once the upload previews and sourcing checks pass, this ordering hold can be
+removed for the tested hardware configuration. It is not a remaining firmware,
+protocol, J2-routing, DRC/ERC, or file-generation blocker.

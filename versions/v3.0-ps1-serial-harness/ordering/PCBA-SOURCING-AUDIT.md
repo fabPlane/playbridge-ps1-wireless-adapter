@@ -2,7 +2,7 @@
 
 ## Result
 
-- Fitted references: 65
+- Fitted references: 67
 - Unique orderable line items: 34
 - DNP/bare-board test pads: TP1, TP2, TP3, TP4
 - Missing fitted references: none
@@ -13,9 +13,9 @@
 
 - D2: GOODWORK SMAJ12A / C908766, DO-214AC (SMA). The earlier value label said SMBJ12A, but the PCB uses an SMA land pattern; the selected SMAJ12A preserves the 12 V unidirectional TVS function and fits the footprint family.
 - F1: BHFUSE BSMD1206-075-30V / C976305, 1206, 750 mA hold, 1.5 A trip, 30 V.
-- L1: MYX MCNR4030AF-4R7M / C49449313, 4.0 x 4.0 mm, 4.7 uH, 2.5 A rated, 3 A saturation. JLC stock was low (40 units when checked), so recheck immediately before ordering.
+- L1: MYX MCNR4030AF-4R7M / C49449313, 4.0 x 4.0 mm, 4.7 uH, 2.5 A rated, 3 A saturation. The inherited sourcing audit recorded low stock (40 units); this regeneration did not perform a live-stock query, so recheck immediately before ordering.
 - R20: TA-I RMS06FT6980 / C912219, 698 ohm E96 substitute for the 700 ohm nominal. The TPS2113A current-limit setpoint difference is approximately +0.29%.
-- J1/J2: Molex 48393-0003 / C3197928. JLC showed only 7 available units when checked; with two populated per board, the public stock supports at most 3 complete boards. J2 is electrically reserved/all-NC, but remains populated in this BOM because the current board/render includes it.
+- J1/J2: Molex 48393-0003 / C3197928. The inherited sourcing audit recorded only 7 available units; this regeneration did not perform a live-stock query. With two populated per board, recheck stock at checkout. J2 carries the user/team bench-validated three-signal PS1 serial harness on contacts 1 (PS1_RXD), 4 (PS1_TXD) and 7 (GND); all other signal contacts remain NC.
 - D6: KENTO KT-0603R / C2286, red 0603 always-on 3V3 POWER indicator.
 - R29: UNI-ROYAL 0603WAF1001T5E / C21190, 1 kΩ 0603 POWER-LED series resistor.
 
