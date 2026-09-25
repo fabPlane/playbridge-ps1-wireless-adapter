@@ -1,6 +1,6 @@
 # PlayBridge V3.0 — PS1 serial harness evaluation
 
-Status: **active development — do not order**.
+Status: **J2 implementation and bench test passed; manufacturing package refresh required before ordering**.
 
 This directory is the authoritative V3.0 development project derived from the
 validated, frozen V2.1 release. V3.0 evaluates a third keyed donor-harness
@@ -42,7 +42,9 @@ Verified 2026-09-25: DRC 0 errors, 0 unconnected, and only three approved histor
 - JLCPCB preparation: `ordering/jlcpcb-bom.csv`, `ordering/jlcpcb-cpl.csv`, and `ordering/gerbers-jlcpcb.zip`.
 - Detailed evidence: `reports/V2.1-AUDIT.md`.
 
-**DO NOT ORDER:** pending final human render, mechanical, BOM/CPL rotation, substitution, and live-stock review.
+**DO NOT ORDER:** the checked-in Gerbers/BOM/CPL still represent the inherited
+V2.1 board. Regenerate them from V3.0, then complete BOM/CPL rotation,
+substitution, and live-stock review. The user-reported J2 bench test has passed.
 
 The fabrication exports and validation reports have been regenerated for V2.1.
 
