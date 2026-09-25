@@ -3,9 +3,15 @@ renders/
 exports/
 backups/*/
 backups/*
+**/backups/
+.history/
+_restore_backup_*/
 .fp-pcb/
 tools/__pycache__/
 *.bak
+*.png.png
+*.previous.md
+versions/*.zip
 reports/drc-*.json
 reports/release-audit-*.md
 PlayBridge.3dshapes/PROVISIONAL_DATASHEET_ENVELOPE_*

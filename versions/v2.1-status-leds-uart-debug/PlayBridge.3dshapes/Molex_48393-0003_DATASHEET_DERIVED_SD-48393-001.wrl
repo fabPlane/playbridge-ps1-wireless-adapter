@@ -1,0 +1,70 @@
+#VRML V2.0 utf8
+# DATASHEET_DERIVED visualization model for Molex 48393-0003.
+# Mechanical authority: Molex customer drawing SD-48393-001 / 483930003_sd.pdf.
+# Coordinates are millimetres in the KiCad footprint frame. Attach with scale 1/2.54.
+# PCB seating datum is Z=0. Electrical tails and retention posts extend to Z=-1.10.
+
+WorldInfo { title "Molex 48393-0003 DATASHEET_DERIVED SD-48393-001" }
+
+DEF METAL Appearance { material Material { diffuseColor 0.62 0.66 0.70 specularColor 0.85 0.88 0.90 shininess 0.72 } }
+DEF TIN Appearance { material Material { diffuseColor 0.72 0.74 0.75 specularColor 0.82 0.84 0.86 shininess 0.48 } }
+DEF BLUE Appearance { material Material { diffuseColor 0.02 0.20 0.72 specularColor 0.10 0.18 0.30 shininess 0.25 } }
+DEF GOLD Appearance { material Material { diffuseColor 0.82 0.55 0.08 specularColor 0.95 0.77 0.32 shininess 0.65 } }
+
+# External shell envelope: X=-3.40..10.40, Y=-2.50..11.75, Z=0..6.86.
+# Open mating face is at Y=11.75; there is deliberately no front cap.
+Transform { translation 3.5 4.625 6.71 children [ Shape { appearance USE METAL geometry Box { size 13.8 14.25 0.30 } } ] }
+Transform { translation -3.25 4.625 3.43 children [ Shape { appearance USE METAL geometry Box { size 0.30 14.25 6.86 } } ] }
+Transform { translation 10.25 4.625 3.43 children [ Shape { appearance USE METAL geometry Box { size 0.30 14.25 6.86 } } ] }
+Transform { translation 3.5 -2.35 3.43 children [ Shape { appearance USE METAL geometry Box { size 13.20 0.30 6.86 } } ] }
+Transform { translation 3.5 4.625 0.15 children [ Shape { appearance USE METAL geometry Box { size 13.20 14.25 0.30 } } ] }
+
+# Blue thermoplastic: drawing-derived external visual envelope only.
+Transform { translation 3.5 -0.25 3.00 children [ Shape { appearance USE BLUE geometry Box { size 12.50 4.00 5.40 } } ] }
+# Open-face blue frame, kept inset from the metal shell.
+Transform { translation 3.5 10.95 5.80 children [ Shape { appearance USE BLUE geometry Box { size 12.50 1.00 0.55 } } ] }
+Transform { translation -2.45 10.95 3.30 children [ Shape { appearance USE BLUE geometry Box { size 0.55 1.00 4.45 } } ] }
+Transform { translation 9.45 10.95 3.30 children [ Shape { appearance USE BLUE geometry Box { size 0.55 1.00 4.45 } } ] }
+# Blue tongue; internal detail is illustrative and not an enclosure datum.
+Transform { translation 3.5 6.35 3.15 children [ Shape { appearance USE BLUE geometry Box { size 10.15 8.50 0.80 } } ] }
+
+# Visible contact envelopes on the tongue (visual only, not PCB-tail centerlines).
+Transform { translation -0.50 7.00 3.58 children [ Shape { appearance USE GOLD geometry Box { size 0.45 5.20 0.06 } } ] }
+Transform { translation 0.50 7.00 3.58 children [ Shape { appearance USE GOLD geometry Box { size 0.45 5.20 0.06 } } ] }
+Transform { translation 1.50 7.00 3.58 children [ Shape { appearance USE GOLD geometry Box { size 0.45 5.20 0.06 } } ] }
+Transform { translation 2.50 7.00 3.58 children [ Shape { appearance USE GOLD geometry Box { size 0.45 5.20 0.06 } } ] }
+Transform { translation 3.50 7.00 3.58 children [ Shape { appearance USE GOLD geometry Box { size 0.45 5.20 0.06 } } ] }
+Transform { translation 4.50 7.00 3.58 children [ Shape { appearance USE GOLD geometry Box { size 0.45 5.20 0.06 } } ] }
+Transform { translation 5.50 7.00 3.58 children [ Shape { appearance USE GOLD geometry Box { size 0.45 5.20 0.06 } } ] }
+Transform { translation 6.50 7.00 3.58 children [ Shape { appearance USE GOLD geometry Box { size 0.45 5.20 0.06 } } ] }
+Transform { translation 7.50 7.00 3.58 children [ Shape { appearance USE GOLD geometry Box { size 0.45 5.20 0.06 } } ] }
+
+# Nine separate electrical solder tails. Each is 0.50 x 0.26 mm and Z=-1.10..0.
+# Pin 1 (0.00, 0.00)
+Transform { translation 0.00 0.00 -0.55 children [ Shape { appearance USE TIN geometry Box { size 0.50 0.26 1.10 } } ] }
+# Pin 2 (2.50, 0.00)
+Transform { translation 2.50 0.00 -0.55 children [ Shape { appearance USE TIN geometry Box { size 0.50 0.26 1.10 } } ] }
+# Pin 3 (4.50, 0.00)
+Transform { translation 4.50 0.00 -0.55 children [ Shape { appearance USE TIN geometry Box { size 0.50 0.26 1.10 } } ] }
+# Pin 4 (7.00, 0.00)
+Transform { translation 7.00 0.00 -0.55 children [ Shape { appearance USE TIN geometry Box { size 0.50 0.26 1.10 } } ] }
+# Pin 5 (7.50, -1.50)
+Transform { translation 7.50 -1.50 -0.55 children [ Shape { appearance USE TIN geometry Box { size 0.50 0.26 1.10 } } ] }
+# Pin 6 (5.50, -1.50)
+Transform { translation 5.50 -1.50 -0.55 children [ Shape { appearance USE TIN geometry Box { size 0.50 0.26 1.10 } } ] }
+# Pin 7 (3.50, -1.50)
+Transform { translation 3.50 -1.50 -0.55 children [ Shape { appearance USE TIN geometry Box { size 0.50 0.26 1.10 } } ] }
+# Pin 8 (1.50, -1.50)
+Transform { translation 1.50 -1.50 -0.55 children [ Shape { appearance USE TIN geometry Box { size 0.50 0.26 1.10 } } ] }
+# Pin 9 (-0.50, -1.50)
+Transform { translation -0.50 -1.50 -0.55 children [ Shape { appearance USE TIN geometry Box { size 0.50 0.26 1.10 } } ] }
+
+# Four separate shell retention posts. Width=0.60; slot-axis lengths match drawing.
+# Rear-left (-2.90,-0.75), 1.70-mm slot envelope.
+Transform { translation -2.90 -0.75 -0.55 children [ Shape { appearance USE METAL geometry Box { size 0.60 1.70 1.10 } } ] }
+# Front-left (-2.90,7.75), 1.40-mm slot envelope.
+Transform { translation -2.90 7.75 -0.55 children [ Shape { appearance USE METAL geometry Box { size 0.60 1.40 1.10 } } ] }
+# Rear-right (9.90,-0.75), 1.70-mm slot envelope.
+Transform { translation 9.90 -0.75 -0.55 children [ Shape { appearance USE METAL geometry Box { size 0.60 1.70 1.10 } } ] }
+# Front-right (9.90,7.75), 1.40-mm slot envelope.
+Transform { translation 9.90 7.75 -0.55 children [ Shape { appearance USE METAL geometry Box { size 0.60 1.40 1.10 } } ] }
