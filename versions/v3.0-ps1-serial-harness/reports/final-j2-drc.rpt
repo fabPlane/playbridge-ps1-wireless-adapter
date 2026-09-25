@@ -1,0 +1,27 @@
+** Drc report for board.kicad_pcb **
+** Created on 2026-09-25T14:14:51 **
+** Report includes: Errors, Warnings **
+
+** Found 3 DRC violations **
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(54.0000 mm, 29.6200 mm): Track [UART_RX] on F.Cu, length 2.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(34.9300 mm, 38.1200 mm): Track [UART_TX] on F.Cu, length 3.4012 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(54.0000 mm, 27.0800 mm): Track [UART_TX] on F.Cu, length 2.0000 mm
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

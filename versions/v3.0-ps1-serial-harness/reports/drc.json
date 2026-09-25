@@ -59,7 +59,7 @@
   "raw": {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-09-25T12:36:53",
+    "date": "2026-09-25T14:17:29",
     "ignored_checks": [
       {
         "description": "Footprint has no courtyard defined",
@@ -98,7 +98,7 @@
           {
             "description": "Track [UART_RX] on F.Cu, length 2.0000 mm",
             "pos": {
-              "x": 54,
+              "x": 54.0,
               "y": 29.62
             },
             "uuid": "b88663ad-68c4-4b54-852b-1adc9d085469"
@@ -128,7 +128,7 @@
           {
             "description": "Track [UART_TX] on F.Cu, length 2.0000 mm",
             "pos": {
-              "x": 54,
+              "x": 54.0,
               "y": 27.08
             },
             "uuid": "7eb79a45-6b98-4f36-ab7a-aca71eddf2cb"

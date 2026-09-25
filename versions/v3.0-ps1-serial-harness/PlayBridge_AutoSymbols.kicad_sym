@@ -31,6 +31,8 @@
       (pin passive line (at 10.16 -12.700 180) (length 5.08) (name "ATT_IN" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
       (pin passive line (at 10.16 -15.240 180) (length 5.08) (name "CMD_IN" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
       (pin passive line (at 10.16 -17.780 180) (length 5.08) (name "CLK_IN" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -10.16 17.780 0) (length 5.08) (name "U2_TX_RAW" (effects (font (size 1.27 1.27)))) (number "28" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -10.16 15.240 0) (length 5.08) (name "U2_RX_RAW" (effects (font (size 1.27 1.27)))) (number "27" (effects (font (size 1.27 1.27)))))
     )
   )
   (symbol "AUTO_U2"
@@ -219,6 +221,9 @@
       (rectangle (start -5.08 2.540) (end 5.08 -2.540) (stroke (width 0.254) (type default)) (fill (type background)))
     )
     (symbol "AUTO_J2_1_1"
+      (pin passive line (at 10.16 2.540 180) (length 5.08) (name "PS1_RXD" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 10.16 0.000 180) (length 5.08) (name "PS1_TXD" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 10.16 -2.540 180) (length 5.08) (name "GND" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
     )
   )
   (symbol "AUTO_J3"

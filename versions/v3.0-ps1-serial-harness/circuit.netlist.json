@@ -171,8 +171,8 @@
       },
       {
         "ref": "J2",
-        "value": "RESERVED REAR SERIAL / NOT USB / ALL CONTACTS NC",
-        "footprint": "PlayBridge:USB3_A_Molex_48393-0003_RESERVED_NOT_USB_MODEL_V3",
+        "value": "PS1 SERIAL / NOT USB / 3-SIGNAL CANDIDATE",
+        "footprint": "PlayBridge:USB3_A_Molex_48393-0003_PS1_SERIAL_NOT_USB_MODEL_V3",
         "libSource": {
           "lib": "PlayBridgeAuto",
           "part": "AUTO_J2"
@@ -183,12 +183,46 @@
           "Normalized Manufacturer Number": "483930003",
           "JLCPCB/LCSC Part": "C3197928",
           "Datasheet": "https://www.molex.com/en-us/products/part-detail/483930003",
-          "Pinout": "RESERVED: contacts 1 through 9 and shell pads SH intentionally have no nets and no copper.",
-          "Safety": "NOT USB. Do not populate a harness until the PS1 rear serial/expansion interface is electrically characterized.",
+          "Pinout": "SONY REAR SERIAL NUMBERING PRESERVED: 1=PS1_RXD from ESP32 GPIO17/U2TX through R30; 2=PS1 3.5V SUPPLY NC; 3=DSR NC; 4=PS1_TXD to ESP32 GPIO16/U2RX through R31; 5=CTS NC; 6=DTR NC; 7=GND; 8=RTS NC; 9=SPARE NC; shell pads SH NC.",
+          "Safety": "NOT USB. Three-signal bench candidate only. PS1 3.5V on contact 2 is intentionally isolated and must never connect to board 3V3. Logic-level compatibility is not yet verified. Full PS1 serial handshaking is not implemented.",
           "Placement Constraint": "Board edge only; receptacle mouth faces outward and courtyard must remain mechanically clear.",
           "LCSC": "C3197928",
           "Procurement Status": "JLCPCB selection retained; verify order-time stock",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C3197928"
+        }
+      },
+      {
+        "ref": "R30",
+        "value": "1k U2TX SERIES / BENCH CONFIG",
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0603WAF1001T5E",
+          "JLCPCB/LCSC Part": "C21190",
+          "LCSC": "C21190",
+          "Package": "0603, 1k, +/-1%",
+          "Engineering Note": "Initial bench-configurable series isolation. Limits fault current but does not prove voltage compatibility or arbitrate simultaneous drivers."
+        }
+      },
+      {
+        "ref": "R31",
+        "value": "1k U2RX SERIES / BENCH CONFIG",
+        "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0603WAF1001T5E",
+          "JLCPCB/LCSC Part": "C21190",
+          "LCSC": "C21190",
+          "Package": "0603, 1k, +/-1%",
+          "Engineering Note": "Initial bench-configurable series protection. Does not level-shift or prove the PS1 TXD voltage is safe for ESP32 GPIO16."
         }
       },
       {
@@ -1538,6 +1572,10 @@
             "pin": "4"
           },
           {
+            "ref": "J2",
+            "pin": "7"
+          },
+          {
             "ref": "J3",
             "pin": "A1_B12"
           },
@@ -2240,6 +2278,58 @@
             "pin": "1"
           }
         ]
+      },
+      {
+        "name": "U2_TX_RAW",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "28"
+          },
+          {
+            "ref": "R30",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "PS1_RXD",
+        "nodes": [
+          {
+            "ref": "R30",
+            "pin": "2"
+          },
+          {
+            "ref": "J2",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "PS1_TXD",
+        "nodes": [
+          {
+            "ref": "J2",
+            "pin": "4"
+          },
+          {
+            "ref": "R31",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "U2_RX_RAW",
+        "nodes": [
+          {
+            "ref": "R31",
+            "pin": "2"
+          },
+          {
+            "ref": "U1",
+            "pin": "27"
+          }
+        ]
       }
     ]
   },
@@ -2285,6 +2375,22 @@
         "position": {
           "x": 11.225,
           "y": 9.725
+        },
+        "rotation": 0
+      },
+      {
+        "ref": "R30",
+        "position": {
+          "x": 34.2,
+          "y": 42.5
+        },
+        "rotation": 0
+      },
+      {
+        "ref": "R31",
+        "position": {
+          "x": 38,
+          "y": 42.5
         },
         "rotation": 0
       }
