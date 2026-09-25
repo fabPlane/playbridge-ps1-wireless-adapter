@@ -11,6 +11,7 @@ controller protocol.
 | `v1.0.0` | Direct PCB-mounted PS1 pin array | Frozen prototype checkpoint under [`versions/v1-pcb-mounted-pin-array/`](versions/v1-pcb-mounted-pin-array/) |
 | `v2.0.0` | Modular donor-plug harness through board-mounted 9-contact connectors | Frozen release candidate under [`versions/v2-donor-plug-modular-adapter/`](versions/v2-donor-plug-modular-adapter/) |
 | `v2.1.0` | V2.0 baseline plus status LEDs and UART debug access | Release candidate under [`versions/v2.1-status-leds-uart-debug/`](versions/v2.1-status-leds-uart-debug/) |
+| `v2.2` | V2.1 baseline plus a third SNAC-style donor-harness connector (J4) | Active development under [`versions/v2.2-third-snac-connector/`](versions/v2.2-third-snac-connector/) |
 
 Each hardware release is a self-contained FabDesk project under `versions/`.
 Open the version directory itself in FabDesk; the repository root is only the
@@ -41,6 +42,7 @@ rotation previews; see
 - `versions/v1-pcb-mounted-pin-array/` — complete frozen V1 FabDesk project, fit checks, historical renders, and provisional-contact studies.
 - `versions/v2-donor-plug-modular-adapter/` — complete V2.0.0 FabDesk project, manufacturing package, reports, tools, references, and accepted renders.
 - `versions/v2.1-status-leds-uart-debug/` — complete V2.1.0 FabDesk project, debug interface, manufacturing package, reports, tools, and accepted renders.
+- `versions/v2.2-third-snac-connector/` — active V2.2 FabDesk project for the third SNAC-style connector (J4).
 - `firmware/playbridge_wifi_test/` — shared ESP32 Wi-Fi controller firmware and bench instructions.
 - `docs/` — shared protocol and modular-interconnect diagrams.
 
