@@ -1,11 +1,12 @@
 # PlayBridge V3.0 — PS1 serial harness evaluation
 
-Status: **J2 implementation and bench test passed; manufacturing package refresh required before ordering**.
+Status: **J2 routing and combined firmware build pass; assembled V3 electrical
+and simultaneous-load validation required before ordering**.
 
 This directory is the authoritative V3.0 development project derived from the
-validated, frozen V2.1 release. V3.0 evaluates a third keyed donor-harness
-connector, J4, for a PS1 serial-port link while preserving the V2.1 status
-LEDs and connector-free UART0 service row.
+validated, frozen V2.1 release. V3.0 repurposes the reserved J2 donor-harness
+connector for a three-wire PS1 serial-port link while preserving the V2.1
+status LEDs and connector-free UART0 service row.
 
 ## V3.0 design intent
 
@@ -47,11 +48,12 @@ Verified 2026-09-25: DRC 0 errors, 0 unconnected, and only three approved histor
 - V3.0 PoC evidence: `reports/evidence/README.md` and the two preserved setup
   photographs.
 - V3.0 release result and package hashes: `reports/final-release-gate.md`.
+- Combined firmware build evidence: `reports/V3.0-COMBINED-FIRMWARE.md`.
 
-**ORDER CHECKOUT HOLD:** fresh V3.0 manufacturing files are generated from the
-verified board. Before purchase, upload them to the assembler and complete the
-BOM/CPL rotation, substitution, and live-stock review described in
-`ordering/DO-NOT-ORDER.md`. The user-reported J2 bench test has passed.
+**ORDER HOLD:** fresh V3.0 manufacturing files include the fabricated J2
+`NOT USB` warning. Before purchase, complete J2 voltage and signal-integrity
+measurements, assembled-board simultaneous testing, and the BOM/CPL rotation,
+substitution and live-stock review in `ordering/DO-NOT-ORDER.md`.
 
 The fabrication exports and validation reports have been regenerated for V2.1.
 
