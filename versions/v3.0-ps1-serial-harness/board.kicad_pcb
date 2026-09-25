@@ -18033,7 +18033,7 @@
 		)
 		(fp_text user "NOT USB"
 			(at 3.5 -5.65 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "a013e339-3e54-4a70-8448-828af125f2b9")
 			(effects
 				(font
