@@ -1,29 +1,35 @@
-# PlayBridge V2.2 — third SNAC connector
+# PlayBridge V3.0 — PS1 serial harness evaluation
 
 Status: **active development — do not order**.
 
-This directory is the authoritative V2.2 project derived from the validated
-V2.1 release candidate. V2.2 adds a third SNAC-style donor-harness interface
-as J4 while preserving the V2.1 status LEDs and connector-free UART service
-row.
+This directory is the authoritative V3.0 development project derived from the
+validated, frozen V2.1 release. V3.0 evaluates a third keyed donor-harness
+connector, J4, for a PS1 serial-port link while preserving the V2.1 status
+LEDs and connector-free UART0 service row.
 
-## V2.2 design intent
+## V3.0 design intent
 
-- Add one outward-facing USB-A connector body matching J1/J2 and identify it
-  clearly as J4 and `NOT USB`.
+- Evaluate whether the currently all-NC J2 can safely serve the PS1 serial
+  harness before adding another connector. Do not populate both J2 and J4 for
+  the same purpose without a documented mechanical/electrical reason.
+- If J4 remains necessary, use one outward-facing USB-A connector body matching
+  J1/J2 and identify it clearly as J4 and `NOT USB`.
 - Preserve J1, J2, J3, the SERVICE / DEBUG row, RESET, BOOT, STATUS, PWR,
   antenna clearance, and all V2.1 functionality.
-- Confirm the J4 signal assignment and isolation/backfeed policy before
-  committing its copper. Do not silently parallel console buses.
-- Produce a mechanically coherent three-connector edge layout, fresh DRC/ERC,
-  populated renders, and version-local manufacturing outputs.
+- Confirm the PS1 serial-harness pinout, logic levels, direction, protocol,
+  throughput/latency, supported console revisions, and isolation/backfeed
+  policy before committing copper. Do not silently parallel console buses.
+- Keep the intended path explicit: PC/browser -> Wi-Fi -> ESP32 -> GPIO17/TX,
+  GPIO16/RX and GND -> keyed NOT-USB harness -> PS1 serial port.
+- Do not claim game-image streaming or generate manufacturing outputs until the
+  teammate firmware/protocol and electrical evidence have been reviewed.
 
 ## V2.1 baseline retained
 
 - D1 is the green firmware `STATUS` LED: Everlight `19-217/GHC-YR1S2/3T` / LCSC `C72043`, driven by ESP32 module pin 26 on `STATUS_LED` through R13, 1 kΩ UNI-ROYAL `0603WAF1001T5E` / `C21190`.
 - D6 is the red always-on 3V3 `PWR` LED: KENTO `KT-0603R` / `C2286`, through R29, 1 kΩ UNI-ROYAL `0603WAF1001T5E` / `C21190`.
 - The physical J4 header was removed. The lower-right SERVICE/DEBUG row contains DNP plated holes: TP2 GND at (43.500, 54.000) mm, TP3 UART_TX at (46.700, 54.000) mm, and TP4 UART_RX at (49.900, 54.000) mm. Pitch is 3.200 mm; each pad is 2.0 mm with a 1.0 mm finished plated hole.
-- J1, J2, J3, and SERVICE / DEBUG are explicitly identified on F.Silkscreen. No J4 reference is fabricated in V2.1; the planned third SNAC-style connector in V2.2 will take reference J4.
+- J1, J2, J3, and SERVICE / DEBUG are explicitly identified on F.Silkscreen. No J4 reference is fabricated in V2.1; V3.0 must first decide whether J2 can serve the serial harness or whether a distinct J4 is justified.
 - TP1 remains the existing 3V3 test point. UART signals are 3.3 V logic only.
 - RESET, BOOT, J1/J2/J3, USB orientations, antenna keepout, outline, and unrelated V2.0 placement/copper remain unchanged.
 
