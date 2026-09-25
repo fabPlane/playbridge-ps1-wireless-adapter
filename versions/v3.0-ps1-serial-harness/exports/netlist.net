@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/amliomnie/fabdesk/wireless-pc-to-ps1-controller-bridge/versions/v3.0-ps1-serial-harness/board.kicad_sch")
-		(date "2026-09-25T15:31:28")
+		(date "2026-09-25T16:29:44")
 		(tool "Eeschema 10.99.0-3619-g0ef48b972f")
 		(sheet
 			(number "1")
@@ -70,7 +70,7 @@
 				(field
 					(name "Package") "1206, 22uF, 25V, X5R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C12891")
 				(field
@@ -109,7 +109,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -127,7 +127,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "48bde79a-a9a5-4024-8fb4-f57cb84755bf")
+			(tstamps "a583100e-ab0c-4880-8184-967b20db0c30")
 			(units
 				(unit
 					(name "A")
@@ -158,7 +158,7 @@
 				(field
 					(name "Package") "1206, 22uF, 25V, X5R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C12891")
 				(field
@@ -197,7 +197,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -215,7 +215,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "61ef43e2-b4ff-48b3-a291-97d1c7bd77b1")
+			(tstamps "6daa1ebc-0050-4255-83e4-fdc0a938c8df")
 			(units
 				(unit
 					(name "A")
@@ -236,19 +236,19 @@
 			(footprint "PlayBridge:C_0805_2012Metric")
 			(fields
 				(field
-					(name "Manufacturer") "CCTC")
+					(name "Manufacturer") "Samsung Electro-Mechanics")
 				(field
-					(name "MPN") "TCC0805X5R106K160FT")
+					(name "MPN") "CL21A106KOQNNNE")
 				(field
-					(name "JLCPCB/LCSC Part") "C380332")
+					(name "JLCPCB/LCSC Part") "C1713")
 				(field
-					(name "LCSC") "C380332")
+					(name "LCSC") "C1713")
 				(field
 					(name "Package") "0805, 10uF, 16V, X5R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
-					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C380332")
+					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C1713")
 				(field
 					(name "Footprint") "PlayBridge:C_0805_2012Metric")
 				(field
@@ -265,19 +265,19 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "CCTC")
+				(value "Samsung Electro-Mechanics")
 			)
 			(property
 				(name "MPN")
-				(value "TCC0805X5R106K160FT")
+				(value "CL21A106KOQNNNE")
 			)
 			(property
 				(name "JLCPCB/LCSC Part")
-				(value "C380332")
+				(value "C1713")
 			)
 			(property
 				(name "LCSC")
-				(value "C380332")
+				(value "C1713")
 			)
 			(property
 				(name "Package")
@@ -285,11 +285,11 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
-				(value "https://jlcpcb.com/partdetail/C380332")
+				(value "https://jlcpcb.com/partdetail/C1713")
 			)
 			(property
 				(name "Sheetname")
@@ -303,7 +303,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0e82bc91-bdce-4f78-ac3c-cc24de3fa975")
+			(tstamps "60d8a46e-d287-405e-91ef-e499d095c5c2")
 			(units
 				(unit
 					(name "A")
@@ -334,7 +334,7 @@
 				(field
 					(name "Package") "0603, 100nF, 50V, X7R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C14663")
 				(field
@@ -373,7 +373,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -391,7 +391,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "14d346aa-5cfa-43d5-aaa2-d975016e1262")
+			(tstamps "015022e5-3467-47dc-a5d8-357351bcc894")
 			(units
 				(unit
 					(name "A")
@@ -422,7 +422,7 @@
 				(field
 					(name "Package") "0603, 1uF, 25V, X5R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C5673")
 				(field
@@ -461,7 +461,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -479,7 +479,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "c3e2ca6c-c455-4d96-b3d2-f3823438105c")
+			(tstamps "2874f424-93fa-46b6-96fc-416ff5eee962")
 			(units
 				(unit
 					(name "A")
@@ -510,7 +510,7 @@
 				(field
 					(name "Package") "0805, 4.7uF, 16V, X5R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C380342")
 				(field
@@ -549,7 +549,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -567,7 +567,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e85f18d0-515c-40d1-b5bc-8a9830e29f72")
+			(tstamps "97aa92d1-0e5c-411c-9067-e6d789f23b27")
 			(units
 				(unit
 					(name "A")
@@ -598,7 +598,7 @@
 				(field
 					(name "Package") "0603, 100nF, 50V, X7R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C14663")
 				(field
@@ -637,7 +637,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -655,7 +655,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9f018976-c5fa-4428-826c-eb59cd1f8dc0")
+			(tstamps "9b26d1a0-a51a-4679-90df-9ff9e731df2b")
 			(units
 				(unit
 					(name "A")
@@ -686,7 +686,7 @@
 				(field
 					(name "Package") "0603, 100nF, 50V, X7R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C14663")
 				(field
@@ -725,7 +725,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -743,7 +743,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "f324b628-36af-462b-aa19-5869c67ed7ff")
+			(tstamps "9d0d0d9b-f32f-4eaf-a517-88b866fd75e2")
 			(units
 				(unit
 					(name "A")
@@ -764,19 +764,19 @@
 			(footprint "PlayBridge:C_0805_2012Metric")
 			(fields
 				(field
-					(name "Manufacturer") "SANYEAR")
+					(name "Manufacturer") "Samsung Electro-Mechanics")
 				(field
-					(name "MPN") "C0805X5R226M6R3NT")
+					(name "MPN") "CL21A226MQQNNNE")
 				(field
-					(name "JLCPCB/LCSC Part") "C466795")
+					(name "JLCPCB/LCSC Part") "C5674")
 				(field
-					(name "LCSC") "C466795")
+					(name "LCSC") "C5674")
 				(field
 					(name "Package") "0805, 22uF, 6.3V, X5R, +/-20%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
-					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C466795")
+					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C5674")
 				(field
 					(name "Footprint") "PlayBridge:C_0805_2012Metric")
 				(field
@@ -793,19 +793,19 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "SANYEAR")
+				(value "Samsung Electro-Mechanics")
 			)
 			(property
 				(name "MPN")
-				(value "C0805X5R226M6R3NT")
+				(value "CL21A226MQQNNNE")
 			)
 			(property
 				(name "JLCPCB/LCSC Part")
-				(value "C466795")
+				(value "C5674")
 			)
 			(property
 				(name "LCSC")
-				(value "C466795")
+				(value "C5674")
 			)
 			(property
 				(name "Package")
@@ -813,11 +813,11 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
-				(value "https://jlcpcb.com/partdetail/C466795")
+				(value "https://jlcpcb.com/partdetail/C5674")
 			)
 			(property
 				(name "Sheetname")
@@ -831,7 +831,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3837cd63-3d92-4e00-8344-8ca4e4133e82")
+			(tstamps "76258632-3581-4871-8153-c8f5d3ce0187")
 			(units
 				(unit
 					(name "A")
@@ -862,7 +862,7 @@
 				(field
 					(name "Package") "0603, 100nF, 50V, X7R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C14663")
 				(field
@@ -901,7 +901,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -919,7 +919,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ed2ee52f-2df6-4b82-b82a-631acff07d49")
+			(tstamps "2f65358f-aada-4481-9f6a-ab9cfa789d16")
 			(units
 				(unit
 					(name "A")
@@ -950,7 +950,7 @@
 				(field
 					(name "Package") "0603, 1uF, 25V, X5R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C5673")
 				(field
@@ -989,7 +989,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -1007,7 +1007,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "cacab334-3e58-41a6-bf9f-606aa2995803")
+			(tstamps "f679b992-aa51-4f4c-b06b-e19b4f4e6ad6")
 			(units
 				(unit
 					(name "A")
@@ -1038,7 +1038,7 @@
 				(field
 					(name "Package") "0603, 1uF, 25V, X5R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C5673")
 				(field
@@ -1077,7 +1077,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -1095,7 +1095,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "fd315292-4831-4b58-947a-a32cb486037c")
+			(tstamps "23eaa4e4-b275-4fe2-8a7d-07479135b8ad")
 			(units
 				(unit
 					(name "A")
@@ -1126,7 +1126,7 @@
 				(field
 					(name "Package") "0603, 100nF, 50V, X7R, +/-10%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C14663")
 				(field
@@ -1165,7 +1165,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -1183,7 +1183,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "5ad5b236-56df-4154-8a1c-7d75577a3c16")
+			(tstamps "07118ce5-1458-45ab-9cdd-0a4a92aacbe8")
 			(units
 				(unit
 					(name "A")
@@ -1200,23 +1200,23 @@
 		)
 		(comp
 			(ref "D1")
-			(value "STATUS GREEN")
+			(value "STATUS YELLOW-GREEN")
 			(footprint "PlayBridge:LED_0603_1608Metric")
 			(fields
 				(field
-					(name "Manufacturer") "Everlight Electronics")
+					(name "Manufacturer") "KENTO")
 				(field
-					(name "MPN") "19-217/GHC-YR1S2/3T")
+					(name "MPN") "KT-0603YG")
 				(field
-					(name "JLCPCB/LCSC Part") "C72043")
+					(name "JLCPCB/LCSC Part") "C2289")
 				(field
-					(name "LCSC") "C72043")
+					(name "LCSC") "C2289")
 				(field
-					(name "Package") "0603 green LED")
+					(name "Package") "0603 yellow-green LED")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
-					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C72043")
+					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C2289")
 				(field
 					(name "Footprint") "PlayBridge:LED_0603_1608Metric")
 				(field
@@ -1233,31 +1233,31 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "Everlight Electronics")
+				(value "KENTO")
 			)
 			(property
 				(name "MPN")
-				(value "19-217/GHC-YR1S2/3T")
+				(value "KT-0603YG")
 			)
 			(property
 				(name "JLCPCB/LCSC Part")
-				(value "C72043")
+				(value "C2289")
 			)
 			(property
 				(name "LCSC")
-				(value "C72043")
+				(value "C2289")
 			)
 			(property
 				(name "Package")
-				(value "0603 green LED")
+				(value "0603 yellow-green LED")
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
-				(value "https://jlcpcb.com/partdetail/C72043")
+				(value "https://jlcpcb.com/partdetail/C2289")
 			)
 			(property
 				(name "Sheetname")
@@ -1271,7 +1271,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "27309540-a02c-4cf6-87f3-5146f00da3d6")
+			(tstamps "e432c6cc-3c35-4ad5-9556-7569f8a02dba")
 			(units
 				(unit
 					(name "A")
@@ -1302,7 +1302,7 @@
 				(field
 					(name "Package") "DO-214AC (SMA), 12V standoff, 400W unidirectional TVS")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C908766")
 				(field
@@ -1343,7 +1343,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -1365,7 +1365,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "78b0765d-524d-4f9b-9d24-430025b1988c")
+			(tstamps "19099de0-c35f-40d5-8a0c-49073e445a35")
 			(units
 				(unit
 					(name "A")
@@ -1396,7 +1396,7 @@
 				(field
 					(name "Package") "SOD-323 Schottky diode")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C916997")
 				(field
@@ -1435,7 +1435,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -1453,7 +1453,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ee0f0233-75c6-4e3f-9922-ec5f2a0afdd4")
+			(tstamps "9d59454a-290f-4d90-baf1-0ce387b75cf1")
 			(units
 				(unit
 					(name "A")
@@ -1484,7 +1484,7 @@
 				(field
 					(name "Package") "SOD-323 Schottky diode")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C916997")
 				(field
@@ -1523,7 +1523,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -1541,7 +1541,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "7a19b49e-ae07-4d2f-9374-23fa9a598681")
+			(tstamps "7d3db025-a7f6-47a6-afd2-ae60b88e29bc")
 			(units
 				(unit
 					(name "A")
@@ -1572,7 +1572,7 @@
 				(field
 					(name "Package") "SOD-323 Schottky diode")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C916997")
 				(field
@@ -1611,7 +1611,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -1629,7 +1629,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "88af4628-3270-4834-82e6-66677f18d809")
+			(tstamps "ec1c57ce-612a-4bde-841c-d19b6bceb02c")
 			(units
 				(unit
 					(name "A")
@@ -1719,7 +1719,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "fe3874e9-7e81-471c-85e5-694456f501ad")
+			(tstamps "3f3deb3d-fa25-4178-bd78-387f535dc679")
 			(units
 				(unit
 					(name "A")
@@ -1750,7 +1750,7 @@
 				(field
 					(name "Package") "1206 resettable fuse, 750mA hold, 1.5A trip, 30V")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C976305")
 				(field
@@ -1789,7 +1789,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -1807,7 +1807,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "f0ff7f3c-c708-4456-9bea-272b290e7d12")
+			(tstamps "03c0d4a2-becd-44b6-8f93-910f69ac9b3c")
 			(units
 				(unit
 					(name "A")
@@ -1847,9 +1847,11 @@
 				(field
 					(name "LCSC") "C7501856")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock assembly part; recheck live stock at order time")
+					(name "Procurement Status") "JLCPCB in-stock assembly part verified 2026-09-25; recheck live stock at order time")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
+				(field
+					(name "Package") "USB 3.0 Type-A right-angle through-hole receptacle, 9 signal pins + 2 shell slots")
 				(field
 					(name "Footprint") "PlayBridge:USB3_A_HongCheng_HC-USB3.0-L168-ZP_C7501856_PS1_FRONT_MODEL_V3")
 				(field
@@ -1901,11 +1903,15 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock assembly part; recheck live stock at order time")
+				(value "JLCPCB in-stock assembly part verified 2026-09-25; recheck live stock at order time")
 			)
 			(property
 				(name "JLCPCB Part URL")
 				(value "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
+			)
+			(property
+				(name "Package")
+				(value "USB 3.0 Type-A right-angle through-hole receptacle, 9 signal pins + 2 shell slots")
 			)
 			(property
 				(name "Sheetname")
@@ -1919,7 +1925,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "97507f38-95f6-4a01-98e6-f25e9e3708e2")
+			(tstamps "61de12d7-e2fb-46cd-99e3-f4850157e457")
 			(units
 				(unit
 					(name "A")
@@ -1972,9 +1978,15 @@
 				(field
 					(name "LCSC") "C7501856")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock assembly part; recheck live stock at order time")
+					(name "Procurement Status") "JLCPCB in-stock assembly part verified 2026-09-25; recheck live stock at order time")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
+				(field
+					(name "Package") "USB 3.0 Type-A right-angle through-hole receptacle, 9 signal pins + 2 shell slots")
+				(field
+					(name "Footprint Provenance") "Official JLCPCB/EasyEDA C7501856 land geometry for Hong Cheng HC-USB3.0-L168-ZP, converted locally with easyeda2kicad.")
+				(field
+					(name "Orientation") "Right-angle top-mount receptacle at the lower board edge; mating mouth faces outward. Signal-pad coordinates are preserved from the validated board routing.")
 				(field
 					(name "Footprint") "PlayBridge:USB3_A_HongCheng_HC-USB3.0-L168-ZP_C7501856_PS1_SERIAL_MODEL_V3")
 				(field
@@ -2022,11 +2034,23 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock assembly part; recheck live stock at order time")
+				(value "JLCPCB in-stock assembly part verified 2026-09-25; recheck live stock at order time")
 			)
 			(property
 				(name "JLCPCB Part URL")
 				(value "https://jlcpcb.com/partdetail/HongCheng-HC_USB3_0_L168ZP/C7501856")
+			)
+			(property
+				(name "Package")
+				(value "USB 3.0 Type-A right-angle through-hole receptacle, 9 signal pins + 2 shell slots")
+			)
+			(property
+				(name "Footprint Provenance")
+				(value "Official JLCPCB/EasyEDA C7501856 land geometry for Hong Cheng HC-USB3.0-L168-ZP, converted locally with easyeda2kicad.")
+			)
+			(property
+				(name "Orientation")
+				(value "Right-angle top-mount receptacle at the lower board edge; mating mouth faces outward. Signal-pad coordinates are preserved from the validated board routing.")
 			)
 			(property
 				(name "Sheetname")
@@ -2040,7 +2064,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ffde71c9-6282-4523-bb1d-9aca4e0daea3")
+			(tstamps "f53374a3-8a31-42ab-949e-a91995cd1bf4")
 			(units
 				(unit
 					(name "A")
@@ -2143,7 +2167,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "8de36e94-7902-42b5-85e6-9cd852f1e0c3")
+			(tstamps "d72365cb-43d5-4911-9c23-f319c0da5dce")
 			(units
 				(unit
 					(name "A")
@@ -2187,25 +2211,27 @@
 		)
 		(comp
 			(ref "L1")
-			(value "4.7uH >=2.5A SHIELDED")
-			(footprint "PlayBridge:L_Sunlord_SWPA4030S")
+			(value "4.7uH 2.85A SHIELDED WPN4020H")
+			(footprint "PlayBridge:L_Sunlord_WPN4020H")
 			(fields
 				(field
-					(name "Manufacturer") "MYX")
+					(name "Manufacturer") "Sunlord")
 				(field
-					(name "MPN") "MCNR4030AF-4R7M")
+					(name "MPN") "WPN4020H4R7MT")
 				(field
-					(name "JLCPCB/LCSC Part") "C49449313")
+					(name "JLCPCB/LCSC Part") "C98363")
 				(field
-					(name "LCSC") "C49449313")
+					(name "LCSC") "C98363")
 				(field
-					(name "Package") "SMD 4.0x4.0mm, 4.7uH, 2.5A rated, 3A saturation")
+					(name "Package") "SMD 4.0x4.0x2.0mm, 4.7uH +/-20%, 2.85A rated, 4.9A saturation, 108mR")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
-					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C49449313")
+					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C98363")
 				(field
-					(name "Footprint") "PlayBridge:L_Sunlord_SWPA4030S")
+					(name "Footprint Provenance") "Official Sunlord WPN4020H land pattern: 1.9mm pad gap, 1.1x3.7mm pads, centers +/-1.5mm; exactly matches inherited routed copper.")
+				(field
+					(name "Footprint") "PlayBridge:L_Sunlord_WPN4020H")
 				(field
 					(name "Datasheet")
 				)
@@ -2220,31 +2246,35 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "MYX")
+				(value "Sunlord")
 			)
 			(property
 				(name "MPN")
-				(value "MCNR4030AF-4R7M")
+				(value "WPN4020H4R7MT")
 			)
 			(property
 				(name "JLCPCB/LCSC Part")
-				(value "C49449313")
+				(value "C98363")
 			)
 			(property
 				(name "LCSC")
-				(value "C49449313")
+				(value "C98363")
 			)
 			(property
 				(name "Package")
-				(value "SMD 4.0x4.0mm, 4.7uH, 2.5A rated, 3A saturation")
+				(value "SMD 4.0x4.0x2.0mm, 4.7uH +/-20%, 2.85A rated, 4.9A saturation, 108mR")
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
-				(value "https://jlcpcb.com/partdetail/C49449313")
+				(value "https://jlcpcb.com/partdetail/C98363")
+			)
+			(property
+				(name "Footprint Provenance")
+				(value "Official Sunlord WPN4020H land pattern: 1.9mm pad gap, 1.1x3.7mm pads, centers +/-1.5mm; exactly matches inherited routed copper.")
 			)
 			(property
 				(name "Sheetname")
@@ -2258,7 +2288,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "01fedd64-2660-41ad-9b74-bb41d877567e")
+			(tstamps "fe28c3c9-59cf-40db-b665-ab6d5e562279")
 			(units
 				(unit
 					(name "A")
@@ -2289,7 +2319,7 @@
 				(field
 					(name "Package") "SOT-23 N-channel MOSFET")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C8545")
 				(field
@@ -2328,7 +2358,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -2346,7 +2376,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0c13b351-c3d7-4fd1-9877-02241ca14ea1")
+			(tstamps "996c21f4-80f0-4400-821c-762b8dd5f5f9")
 			(units
 				(unit
 					(name "A")
@@ -2380,7 +2410,7 @@
 				(field
 					(name "Package") "SOT-23 N-channel MOSFET")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C8545")
 				(field
@@ -2419,7 +2449,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -2437,7 +2467,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "3844b641-593a-4c42-9d6c-fb30de409673")
+			(tstamps "e7e15cd8-d8f3-4b5c-9d19-39872d672e23")
 			(units
 				(unit
 					(name "A")
@@ -2471,7 +2501,7 @@
 				(field
 					(name "Package") "SOT-23 NPN transistor")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C20526")
 				(field
@@ -2510,7 +2540,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -2528,7 +2558,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9b4eda78-c076-4cfb-ab3c-49bacf351013")
+			(tstamps "f3d21b99-1645-4049-9b73-405ff7632c36")
 			(units
 				(unit
 					(name "A")
@@ -2562,7 +2592,7 @@
 				(field
 					(name "Package") "SOT-23 NPN transistor")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C20526")
 				(field
@@ -2601,7 +2631,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -2619,7 +2649,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "4b5beb45-1316-4073-8a3a-111528c0c47f")
+			(tstamps "9b89d48f-786b-4398-b36b-b4d60cc41d40")
 			(units
 				(unit
 					(name "A")
@@ -2653,7 +2683,7 @@
 				(field
 					(name "Package") "0603, 1k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C21190")
 				(field
@@ -2692,7 +2722,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -2710,7 +2740,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "76058b6f-6419-4311-bec8-54a70744edb6")
+			(tstamps "31fcfcf8-7ea5-488e-a329-85c028a230aa")
 			(units
 				(unit
 					(name "A")
@@ -2741,7 +2771,7 @@
 				(field
 					(name "Package") "0603, 10k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C25804")
 				(field
@@ -2780,7 +2810,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -2798,7 +2828,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0e93d880-409e-4c80-8d9c-1c21bd197e83")
+			(tstamps "f5163a98-6ecb-4507-8ad8-a2a1b1c32d78")
 			(units
 				(unit
 					(name "A")
@@ -2829,7 +2859,7 @@
 				(field
 					(name "Package") "0603, 1k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C21190")
 				(field
@@ -2868,7 +2898,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -2886,7 +2916,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "28027804-a330-47b0-881a-ae5d1035941b")
+			(tstamps "e330e0b8-c71b-4daa-90c8-5a16fcb1d1fe")
 			(units
 				(unit
 					(name "A")
@@ -2917,7 +2947,7 @@
 				(field
 					(name "Package") "0603, 10k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C25804")
 				(field
@@ -2956,7 +2986,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -2974,7 +3004,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "82ea0742-07be-46f0-9795-f56f1db78dab")
+			(tstamps "77a45d8a-cd34-409c-826c-c6205ae055fa")
 			(units
 				(unit
 					(name "A")
@@ -3005,7 +3035,7 @@
 				(field
 					(name "Package") "0603, 1k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C21190")
 				(field
@@ -3044,7 +3074,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -3062,7 +3092,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "841dd39b-59b1-4f5e-b456-4018f6c07ccd")
+			(tstamps "d5809526-42a4-4802-b518-f958479ad7e7")
 			(units
 				(unit
 					(name "A")
@@ -3093,7 +3123,7 @@
 				(field
 					(name "Package") "0603, 10k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C25804")
 				(field
@@ -3132,7 +3162,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -3150,7 +3180,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "29ecfed5-1407-4b09-8cd6-495b2bdc33dd")
+			(tstamps "970118ec-f614-46d3-9c94-2a31bbbb20ad")
 			(units
 				(unit
 					(name "A")
@@ -3181,7 +3211,7 @@
 				(field
 					(name "Package") "0603, 100R, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C22775")
 				(field
@@ -3220,7 +3250,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -3238,7 +3268,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "4a0fdb21-1298-4fdc-a9b1-1b3b4dfe17e5")
+			(tstamps "6784f2a8-b435-4017-a87c-2f6e8bf358cf")
 			(units
 				(unit
 					(name "A")
@@ -3269,7 +3299,7 @@
 				(field
 					(name "Package") "0603, 100k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C25803")
 				(field
@@ -3308,7 +3338,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -3326,7 +3356,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "45ecfc08-a5a1-424e-9772-97fc4154a528")
+			(tstamps "19b208ad-e536-4986-8f89-f2eafb0d0ce6")
 			(units
 				(unit
 					(name "A")
@@ -3357,7 +3387,7 @@
 				(field
 					(name "Package") "0603, 100R, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C22775")
 				(field
@@ -3396,7 +3426,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -3414,7 +3444,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "a74ec186-d222-4c27-a16b-b97a3eaca167")
+			(tstamps "dc804193-3569-4aba-abae-6ff948680450")
 			(units
 				(unit
 					(name "A")
@@ -3445,7 +3475,7 @@
 				(field
 					(name "Package") "0603, 100k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C25803")
 				(field
@@ -3484,7 +3514,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -3502,7 +3532,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "d8206c0b-6f1e-493d-9930-489b461d4671")
+			(tstamps "a8619d26-0df6-4488-968e-181521ef2adc")
 			(units
 				(unit
 					(name "A")
@@ -3533,7 +3563,7 @@
 				(field
 					(name "Package") "0603, 10k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C25804")
 				(field
@@ -3572,7 +3602,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -3590,7 +3620,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9307dd18-3662-4b1b-b89d-5d5b4f7b1015")
+			(tstamps "6da5d424-a8c2-496a-8b41-00cfc95e5fb6")
 			(units
 				(unit
 					(name "A")
@@ -3621,7 +3651,7 @@
 				(field
 					(name "Package") "0603, 10k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C25804")
 				(field
@@ -3660,7 +3690,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -3678,7 +3708,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ca1e29f8-7d2d-4f79-97e8-a78c508e535d")
+			(tstamps "d6b1be40-8d03-47d8-89ab-cbef35fe2a33")
 			(units
 				(unit
 					(name "A")
@@ -3709,7 +3739,7 @@
 				(field
 					(name "Package") "0603, 1k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C21190")
 				(field
@@ -3748,7 +3778,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -3766,7 +3796,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ef3fc49b-2715-4003-893e-3bca69b6f2c2")
+			(tstamps "b217ed05-4621-4c2e-8514-f859ddfec882")
 			(units
 				(unit
 					(name "A")
@@ -3797,7 +3827,7 @@
 				(field
 					(name "Package") "0402, 5.1k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C25905")
 				(field
@@ -3836,7 +3866,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -3854,7 +3884,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e22bc235-7e1d-4494-8427-d76b516b46d7")
+			(tstamps "103863b6-6503-49de-85b2-6e20c1936f08")
 			(units
 				(unit
 					(name "A")
@@ -3885,7 +3915,7 @@
 				(field
 					(name "Package") "0402, 5.1k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C25905")
 				(field
@@ -3924,7 +3954,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -3942,7 +3972,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9f4051e4-d3be-40ce-a687-d3571cc7fa8c")
+			(tstamps "ba96d408-9b8f-4617-a7e8-d2d09e1f9357")
 			(units
 				(unit
 					(name "A")
@@ -3973,7 +4003,7 @@
 				(field
 					(name "Package") "0603, 1k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C21190")
 				(field
@@ -4012,7 +4042,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -4030,7 +4060,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "6a770dcd-d332-4017-bebd-ae595de0b4b4")
+			(tstamps "61441506-1e7c-49f7-9c43-e5aa16ae0c72")
 			(units
 				(unit
 					(name "A")
@@ -4061,7 +4091,7 @@
 				(field
 					(name "Package") "0603, 2k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C22975")
 				(field
@@ -4100,7 +4130,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -4118,7 +4148,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "cd3aba85-d04a-4a98-b7c2-a4445bec4107")
+			(tstamps "c50609f2-ad27-4e40-9aa2-b1fb6528ecd6")
 			(units
 				(unit
 					(name "A")
@@ -4149,7 +4179,7 @@
 				(field
 					(name "Package") "0603, 10k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C25804")
 				(field
@@ -4188,7 +4218,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -4206,7 +4236,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "6e9c8249-d15b-4d4b-8946-46ea27132c2f")
+			(tstamps "354b7f86-ce5d-4a56-8d63-0ded3766471a")
 			(units
 				(unit
 					(name "A")
@@ -4237,7 +4267,7 @@
 				(field
 					(name "Package") "0603, 10k, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C25804")
 				(field
@@ -4276,7 +4306,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -4294,7 +4324,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "69745aca-cca9-44a3-91a5-aa3b49f3f2c4")
+			(tstamps "3ea8ec68-093f-44ef-a8f9-355b2d52ebb6")
 			(units
 				(unit
 					(name "A")
@@ -4311,25 +4341,25 @@
 		)
 		(comp
 			(ref "R20")
-			(value "700 MUX ILIM")
+			(value "680R MUX ILIM")
 			(footprint "PlayBridge:R_0603_1608Metric_SILK_CLEAN")
 			(fields
 				(field
-					(name "Manufacturer") "TA-I")
+					(name "Manufacturer") "UNI-ROYAL")
 				(field
-					(name "MPN") "RMS06FT6980")
+					(name "MPN") "0603WAF6800T5E")
 				(field
-					(name "JLCPCB/LCSC Part") "C912219")
+					(name "JLCPCB/LCSC Part") "C23228")
 				(field
-					(name "LCSC") "C912219")
+					(name "LCSC") "C23228")
 				(field
-					(name "Package") "0603, 698R, +/-1% (700R nominal ILIM; -0.29% substitution)")
+					(name "Package") "0603, 680R, +/-1%")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
-					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C912219")
+					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C23228")
 				(field
-					(name "Engineering Note") "698R is the stocked E96 substitute for 700R; TPS2113A current-limit setpoint changes by approximately +0.29%.")
+					(name "Engineering Note") "Relative to the existing 698R selection, the calculated TPS2113A current limit increases by approximately 2.65%; verify intended current-limit acceptability.")
 				(field
 					(name "Footprint") "PlayBridge:R_0603_1608Metric_SILK_CLEAN")
 				(field
@@ -4346,35 +4376,35 @@
 			)
 			(property
 				(name "Manufacturer")
-				(value "TA-I")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "MPN")
-				(value "RMS06FT6980")
+				(value "0603WAF6800T5E")
 			)
 			(property
 				(name "JLCPCB/LCSC Part")
-				(value "C912219")
+				(value "C23228")
 			)
 			(property
 				(name "LCSC")
-				(value "C912219")
+				(value "C23228")
 			)
 			(property
 				(name "Package")
-				(value "0603, 698R, +/-1% (700R nominal ILIM; -0.29% substitution)")
+				(value "0603, 680R, +/-1%")
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
-				(value "https://jlcpcb.com/partdetail/C912219")
+				(value "https://jlcpcb.com/partdetail/C23228")
 			)
 			(property
 				(name "Engineering Note")
-				(value "698R is the stocked E96 substitute for 700R; TPS2113A current-limit setpoint changes by approximately +0.29%.")
+				(value "Relative to the existing 698R selection, the calculated TPS2113A current limit increases by approximately 2.65%; verify intended current-limit acceptability.")
 			)
 			(property
 				(name "Sheetname")
@@ -4388,7 +4418,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "53270ed4-0c69-4b7c-a3ce-23a1d78c6810")
+			(tstamps "004ce42f-89d6-4561-95d4-b72c1b55c30d")
 			(units
 				(unit
 					(name "A")
@@ -4419,7 +4449,7 @@
 				(field
 					(name "Package") "0402, 0R jumper")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C17168")
 				(field
@@ -4458,7 +4488,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -4476,7 +4506,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "7362c2b9-e4a7-4d5e-a9f3-cd88c5ef36f6")
+			(tstamps "df75951c-1ab8-45e2-a221-d97d2740bd7f")
 			(units
 				(unit
 					(name "A")
@@ -4507,7 +4537,7 @@
 				(field
 					(name "Package") "0402, 0R jumper")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C17168")
 				(field
@@ -4546,7 +4576,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -4564,7 +4594,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "22329590-6a03-4567-aae2-8277a53c78ff")
+			(tstamps "e5326184-57df-4426-9029-ffd3bd722952")
 			(units
 				(unit
 					(name "A")
@@ -4595,7 +4625,7 @@
 				(field
 					(name "Package") "0402, 0R jumper")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C17168")
 				(field
@@ -4634,7 +4664,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -4652,7 +4682,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "2202c08f-0fd2-44e7-8ec9-c95e65e15319")
+			(tstamps "2db7301e-7545-49ef-bcec-d277c24ab894")
 			(units
 				(unit
 					(name "A")
@@ -4683,7 +4713,7 @@
 				(field
 					(name "Package") "0402, 0R jumper")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C17168")
 				(field
@@ -4722,7 +4752,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -4740,7 +4770,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "75a39600-a8e0-4270-a9ce-9371e49cd678")
+			(tstamps "d1680651-6d74-4fb5-a9d6-c7cdafe1b9ed")
 			(units
 				(unit
 					(name "A")
@@ -4771,7 +4801,7 @@
 				(field
 					(name "Package") "0402, 0R jumper")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C17168")
 				(field
@@ -4810,7 +4840,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -4828,7 +4858,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "2b76122d-cc2d-48f2-8a60-a417e0f72db6")
+			(tstamps "7ca0ead9-a7ff-4285-ab64-a48f12d7d0e6")
 			(units
 				(unit
 					(name "A")
@@ -4859,7 +4889,7 @@
 				(field
 					(name "Package") "0402, 0R jumper")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C17168")
 				(field
@@ -4898,7 +4928,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -4916,7 +4946,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "724fbd6c-59c9-4dda-8e40-6e839fc4f1c4")
+			(tstamps "8c3162ff-5db5-4831-b986-46165eeadf6e")
 			(units
 				(unit
 					(name "A")
@@ -4947,7 +4977,7 @@
 				(field
 					(name "Package") "0402, 0R jumper")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C17168")
 				(field
@@ -4986,7 +5016,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -5004,7 +5034,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "7cb5fe72-8882-454c-8a18-20f3beccd0b6")
+			(tstamps "e01c3b88-c30f-4398-a1dc-a43523b18fc0")
 			(units
 				(unit
 					(name "A")
@@ -5035,7 +5065,7 @@
 				(field
 					(name "Package") "0402, 0R jumper")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C17168")
 				(field
@@ -5074,7 +5104,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -5092,7 +5122,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "1f746655-58a5-438b-8f17-8a6373702bf5")
+			(tstamps "35554e54-2135-4bb5-8819-8f9412696e36")
 			(units
 				(unit
 					(name "A")
@@ -5182,7 +5212,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "954b56d0-8182-461f-9f20-9099758df5d4")
+			(tstamps "9fd3673d-5895-43d9-9a7f-bd254517e344")
 			(units
 				(unit
 					(name "A")
@@ -5272,7 +5302,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "9e62a73a-82e9-4fcc-a58f-914f70077d98")
+			(tstamps "efc8cfc6-4361-4b93-b888-472566815a66")
 			(units
 				(unit
 					(name "A")
@@ -5362,7 +5392,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "69775941-0b26-412c-abc5-a3e8ff68eda8")
+			(tstamps "0bf9ccc3-bf47-4c64-b1fd-0541b2b2a2ae")
 			(units
 				(unit
 					(name "A")
@@ -5450,7 +5480,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "14c18c3d-2024-4a0e-8b7c-3d96f1ca2649")
+			(tstamps "51bb05d9-c495-446c-807c-0bab8996e422")
 			(units
 				(unit
 					(name "A")
@@ -5538,7 +5568,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "dba7579f-63da-4ae4-a137-74f85d037f3e")
+			(tstamps "3734203b-6797-459e-9795-0b24de3d97a3")
 			(units
 				(unit
 					(name "A")
@@ -5596,7 +5626,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "1004c704-aab9-4fed-8ae4-60349118967f")
+			(tstamps "de610508-b4e0-49ce-ab31-bee2a2a76a01")
 			(units
 				(unit
 					(name "A")
@@ -5616,7 +5646,7 @@
 				(field
 					(name "DNP") "Yes")
 				(field
-					(name "Assembly") "DNP - plated debug hole; no purchased component")
+					(name "Assembly") "DNP - bare PCB test pad; no purchased component")
 				(field
 					(name "Hole") "1.0 mm finished plated")
 				(field
@@ -5645,7 +5675,7 @@
 			)
 			(property
 				(name "Assembly")
-				(value "DNP - plated debug hole; no purchased component")
+				(value "DNP - bare PCB test pad; no purchased component")
 			)
 			(property
 				(name "Hole")
@@ -5675,7 +5705,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "2d73c4d8-f4f0-43e3-b4ad-1fe0f25f2b15")
+			(tstamps "4f04071a-ecb8-4268-b5b4-d87b047c8d81")
 			(units
 				(unit
 					(name "A")
@@ -5695,7 +5725,7 @@
 				(field
 					(name "DNP") "Yes")
 				(field
-					(name "Assembly") "DNP - plated debug hole; no purchased component")
+					(name "Assembly") "DNP - bare PCB test pad; no purchased component")
 				(field
 					(name "Hole") "1.0 mm finished plated")
 				(field
@@ -5724,7 +5754,7 @@
 			)
 			(property
 				(name "Assembly")
-				(value "DNP - plated debug hole; no purchased component")
+				(value "DNP - bare PCB test pad; no purchased component")
 			)
 			(property
 				(name "Hole")
@@ -5754,7 +5784,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "c7ebb47d-d48e-49d2-b76d-cac12bb6dc05")
+			(tstamps "5879e251-f851-4a89-8546-cf070758d6e3")
 			(units
 				(unit
 					(name "A")
@@ -5774,7 +5804,7 @@
 				(field
 					(name "DNP") "Yes")
 				(field
-					(name "Assembly") "DNP - plated debug hole; no purchased component")
+					(name "Assembly") "DNP - bare PCB test pad; no purchased component")
 				(field
 					(name "Hole") "1.0 mm finished plated")
 				(field
@@ -5803,7 +5833,7 @@
 			)
 			(property
 				(name "Assembly")
-				(value "DNP - plated debug hole; no purchased component")
+				(value "DNP - bare PCB test pad; no purchased component")
 			)
 			(property
 				(name "Hole")
@@ -5833,7 +5863,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "f90b83ad-9155-42bc-974d-23b406cd48d2")
+			(tstamps "2646b29c-912f-4c15-a0a8-e0e10ee1fc1c")
 			(units
 				(unit
 					(name "A")
@@ -5861,7 +5891,7 @@
 				(field
 					(name "Package") "ESP32-WROOM-32 module")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C701341")
 				(field
@@ -5900,7 +5930,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -5918,7 +5948,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "b5da4f31-5a00-4290-89da-c3dde324a70c")
+			(tstamps "a1f0553b-49d0-45a3-8f28-e7470d02575a")
 			(units
 				(unit
 					(name "A")
@@ -5995,7 +6025,7 @@
 				(field
 					(name "Package") "TSOT-23-6")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C780769")
 				(field
@@ -6033,7 +6063,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -6051,7 +6081,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "84588330-3b45-4512-b5ff-c49d94018897")
+			(tstamps "8e0afb78-e0a2-4d76-9e24-4a8c5416dee6")
 			(units
 				(unit
 					(name "A")
@@ -6094,7 +6124,7 @@
 				(field
 					(name "Package") "SOT-25-5")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C51118")
 				(field
@@ -6133,7 +6163,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -6151,7 +6181,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "eb5625ec-f189-43e3-b394-3de08aa164be")
+			(tstamps "da9add23-e79a-477f-8618-fcf5aab7e8ff")
 			(units
 				(unit
 					(name "A")
@@ -6188,7 +6218,7 @@
 				(field
 					(name "Package") "TSSOP-8")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C130052")
 				(field
@@ -6227,7 +6257,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -6245,7 +6275,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "d572455e-2d1d-4f27-a682-707057eae137")
+			(tstamps "d6d533a8-ad76-4270-97fc-007634777353")
 			(units
 				(unit
 					(name "A")
@@ -6291,7 +6321,7 @@
 				(field
 					(name "Package") "SOP-16")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C7464026")
 				(field
@@ -6330,7 +6360,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -6348,7 +6378,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "04b34107-78c6-4310-bb71-12bea08c1634")
+			(tstamps "82b933bf-5f57-441c-93c7-885263bea3e1")
 			(units
 				(unit
 					(name "A")
@@ -6403,7 +6433,7 @@
 				(field
 					(name "Package") "SOT-23-6L")
 				(field
-					(name "Procurement Status") "JLCPCB in-stock selection verified 2026-09-22")
+					(name "Procurement Status") "JLCPCB sourcing selection verified 2026-09-25")
 				(field
 					(name "JLCPCB Part URL") "https://jlcpcb.com/partdetail/C7519")
 				(field
@@ -6442,7 +6472,7 @@
 			)
 			(property
 				(name "Procurement Status")
-				(value "JLCPCB in-stock selection verified 2026-09-22")
+				(value "JLCPCB sourcing selection verified 2026-09-25")
 			)
 			(property
 				(name "JLCPCB Part URL")
@@ -6460,7 +6490,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ae07f23f-95be-4b6e-8ff2-3536f3d26a24")
+			(tstamps "9e7e17a1-27d2-4a23-96d6-ee8f15bd271d")
 			(units
 				(unit
 					(name "A")

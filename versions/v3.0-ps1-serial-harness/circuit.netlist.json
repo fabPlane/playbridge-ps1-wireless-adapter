@@ -15,7 +15,7 @@
           "JLCPCB/LCSC Part": "C701341",
           "LCSC": "C701341",
           "Package": "ESP32-WROOM-32 module",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C701341"
         }
       },
@@ -30,7 +30,7 @@
           "JLCPCB/LCSC Part": "C780769",
           "LCSC": "C780769",
           "Package": "TSOT-23-6",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C780769"
         },
         "libSource": {
@@ -40,20 +40,21 @@
       },
       {
         "ref": "L1",
-        "value": "4.7uH >=2.5A SHIELDED",
-        "footprint": "PlayBridge:L_Sunlord_SWPA4030S",
+        "value": "4.7uH 2.85A SHIELDED WPN4020H",
+        "footprint": "PlayBridge:L_Sunlord_WPN4020H",
         "libSource": {
           "lib": "PlayBridgeAuto",
           "part": "AUTO_L1"
         },
         "fields": {
-          "Manufacturer": "MYX",
-          "MPN": "MCNR4030AF-4R7M",
-          "JLCPCB/LCSC Part": "C49449313",
-          "LCSC": "C49449313",
-          "Package": "SMD 4.0x4.0mm, 4.7uH, 2.5A rated, 3A saturation",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C49449313"
+          "Manufacturer": "Sunlord",
+          "MPN": "WPN4020H4R7MT",
+          "JLCPCB/LCSC Part": "C98363",
+          "LCSC": "C98363",
+          "Package": "SMD 4.0x4.0x2.0mm, 4.7uH +/-20%, 2.85A rated, 4.9A saturation, 108mR",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C98363",
+          "Footprint Provenance": "Official Sunlord WPN4020H land pattern: 1.9mm pad gap, 1.1x3.7mm pads, centers +/-1.5mm; exactly matches inherited routed copper."
         }
       },
       {
@@ -70,7 +71,7 @@
           "JLCPCB/LCSC Part": "C14663",
           "LCSC": "C14663",
           "Package": "0603, 100nF, 50V, X7R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C14663"
         }
       },
@@ -88,7 +89,7 @@
           "JLCPCB/LCSC Part": "C51118",
           "LCSC": "C51118",
           "Package": "SOT-25-5",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C51118"
         }
       },
@@ -106,7 +107,7 @@
           "JLCPCB/LCSC Part": "C130052",
           "LCSC": "C130052",
           "Package": "TSSOP-8",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C130052"
         }
       },
@@ -124,7 +125,7 @@
           "JLCPCB/LCSC Part": "C7464026",
           "LCSC": "C7464026",
           "Package": "SOP-16",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C7464026"
         }
       },
@@ -142,7 +143,7 @@
           "JLCPCB/LCSC Part": "C7519",
           "LCSC": "C7519",
           "Package": "SOT-23-6L",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C7519"
         }
       },
@@ -264,7 +265,7 @@
           "JLCPCB/LCSC Part": "C25905",
           "LCSC": "C25905",
           "Package": "0402, 5.1k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C25905"
         }
       },
@@ -282,7 +283,7 @@
           "JLCPCB/LCSC Part": "C25905",
           "LCSC": "C25905",
           "Package": "0402, 5.1k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C25905"
         }
       },
@@ -300,7 +301,7 @@
           "JLCPCB/LCSC Part": "C17168",
           "LCSC": "C17168",
           "Package": "0402, 0R jumper",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C17168"
         }
       },
@@ -318,7 +319,7 @@
           "JLCPCB/LCSC Part": "C17168",
           "LCSC": "C17168",
           "Package": "0402, 0R jumper",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C17168"
         }
       },
@@ -336,7 +337,7 @@
           "JLCPCB/LCSC Part": "C17168",
           "LCSC": "C17168",
           "Package": "0402, 0R jumper",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C17168"
         }
       },
@@ -354,7 +355,7 @@
           "JLCPCB/LCSC Part": "C17168",
           "LCSC": "C17168",
           "Package": "0402, 0R jumper",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C17168"
         }
       },
@@ -372,7 +373,7 @@
           "JLCPCB/LCSC Part": "C17168",
           "LCSC": "C17168",
           "Package": "0402, 0R jumper",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C17168"
         }
       },
@@ -390,7 +391,7 @@
           "JLCPCB/LCSC Part": "C17168",
           "LCSC": "C17168",
           "Package": "0402, 0R jumper",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C17168"
         }
       },
@@ -408,7 +409,7 @@
           "JLCPCB/LCSC Part": "C17168",
           "LCSC": "C17168",
           "Package": "0402, 0R jumper",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C17168"
         }
       },
@@ -426,7 +427,7 @@
           "JLCPCB/LCSC Part": "C17168",
           "LCSC": "C17168",
           "Package": "0402, 0R jumper",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C17168"
         }
       },
@@ -508,7 +509,7 @@
           "JLCPCB/LCSC Part": "C8545",
           "LCSC": "C8545",
           "Package": "SOT-23 N-channel MOSFET",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C8545"
         }
       },
@@ -526,7 +527,7 @@
           "JLCPCB/LCSC Part": "C8545",
           "LCSC": "C8545",
           "Package": "SOT-23 N-channel MOSFET",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C8545"
         }
       },
@@ -544,7 +545,7 @@
           "JLCPCB/LCSC Part": "C20526",
           "LCSC": "C20526",
           "Package": "SOT-23 NPN transistor",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C20526"
         }
       },
@@ -562,7 +563,7 @@
           "JLCPCB/LCSC Part": "C20526",
           "LCSC": "C20526",
           "Package": "SOT-23 NPN transistor",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C20526"
         }
       },
@@ -606,20 +607,20 @@
       },
       {
         "ref": "D1",
-        "value": "STATUS GREEN",
+        "value": "STATUS YELLOW-GREEN",
         "footprint": "PlayBridge:LED_0603_1608Metric",
         "libSource": {
           "lib": "PlayBridgeAuto",
           "part": "AUTO_D1"
         },
         "fields": {
-          "Manufacturer": "Everlight Electronics",
-          "MPN": "19-217/GHC-YR1S2/3T",
-          "JLCPCB/LCSC Part": "C72043",
-          "LCSC": "C72043",
-          "Package": "0603 green LED",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C72043"
+          "Manufacturer": "KENTO",
+          "MPN": "KT-0603YG",
+          "JLCPCB/LCSC Part": "C2289",
+          "LCSC": "C2289",
+          "Package": "0603 yellow-green LED",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C2289"
         }
       },
       {
@@ -653,7 +654,7 @@
           "JLCPCB/LCSC Part": "C21190",
           "LCSC": "C21190",
           "Package": "0603, 1k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C21190"
         }
       },
@@ -671,7 +672,7 @@
           "JLCPCB/LCSC Part": "C25804",
           "LCSC": "C25804",
           "Package": "0603, 10k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C25804"
         }
       },
@@ -689,7 +690,7 @@
           "JLCPCB/LCSC Part": "C21190",
           "LCSC": "C21190",
           "Package": "0603, 1k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C21190"
         }
       },
@@ -707,7 +708,7 @@
           "JLCPCB/LCSC Part": "C25804",
           "LCSC": "C25804",
           "Package": "0603, 10k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C25804"
         }
       },
@@ -725,7 +726,7 @@
           "JLCPCB/LCSC Part": "C21190",
           "LCSC": "C21190",
           "Package": "0603, 1k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C21190"
         }
       },
@@ -743,7 +744,7 @@
           "JLCPCB/LCSC Part": "C25804",
           "LCSC": "C25804",
           "Package": "0603, 10k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C25804"
         }
       },
@@ -761,7 +762,7 @@
           "JLCPCB/LCSC Part": "C22775",
           "LCSC": "C22775",
           "Package": "0603, 100R, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C22775"
         }
       },
@@ -779,7 +780,7 @@
           "JLCPCB/LCSC Part": "C25803",
           "LCSC": "C25803",
           "Package": "0603, 100k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C25803"
         }
       },
@@ -797,7 +798,7 @@
           "JLCPCB/LCSC Part": "C22775",
           "LCSC": "C22775",
           "Package": "0603, 100R, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C22775"
         }
       },
@@ -815,7 +816,7 @@
           "JLCPCB/LCSC Part": "C25803",
           "LCSC": "C25803",
           "Package": "0603, 100k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C25803"
         }
       },
@@ -833,7 +834,7 @@
           "JLCPCB/LCSC Part": "C25804",
           "LCSC": "C25804",
           "Package": "0603, 10k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C25804"
         }
       },
@@ -851,7 +852,7 @@
           "JLCPCB/LCSC Part": "C25804",
           "LCSC": "C25804",
           "Package": "0603, 10k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C25804"
         }
       },
@@ -869,7 +870,7 @@
           "JLCPCB/LCSC Part": "C21190",
           "LCSC": "C21190",
           "Package": "0603, 1k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C21190"
         }
       },
@@ -904,7 +905,7 @@
           "JLCPCB/LCSC Part": "C21190",
           "LCSC": "C21190",
           "Package": "0603, 1k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C21190"
         }
       },
@@ -922,7 +923,7 @@
           "JLCPCB/LCSC Part": "C22975",
           "LCSC": "C22975",
           "Package": "0603, 2k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C22975"
         }
       },
@@ -940,7 +941,7 @@
           "JLCPCB/LCSC Part": "C25804",
           "LCSC": "C25804",
           "Package": "0603, 10k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C25804"
         }
       },
@@ -958,27 +959,27 @@
           "JLCPCB/LCSC Part": "C25804",
           "LCSC": "C25804",
           "Package": "0603, 10k, +/-1%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C25804"
         }
       },
       {
         "ref": "R20",
-        "value": "700 MUX ILIM",
+        "value": "680R MUX ILIM",
         "footprint": "PlayBridge:R_0603_1608Metric_SILK_CLEAN",
         "libSource": {
           "lib": "PlayBridgeAuto",
           "part": "AUTO_R20"
         },
         "fields": {
-          "Manufacturer": "TA-I",
-          "MPN": "RMS06FT6980",
-          "JLCPCB/LCSC Part": "C912219",
-          "LCSC": "C912219",
-          "Package": "0603, 698R, +/-1% (700R nominal ILIM; -0.29% substitution)",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C912219",
-          "Engineering Note": "698R is the stocked E96 substitute for 700R; TPS2113A current-limit setpoint changes by approximately +0.29%."
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0603WAF6800T5E",
+          "JLCPCB/LCSC Part": "C23228",
+          "LCSC": "C23228",
+          "Package": "0603, 680R, +/-1%",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C23228",
+          "Engineering Note": "Relative to the existing 698R selection, the calculated TPS2113A current limit increases by approximately 2.65%; verify intended current-limit acceptability."
         }
       },
       {
@@ -995,7 +996,7 @@
           "JLCPCB/LCSC Part": "C12891",
           "LCSC": "C12891",
           "Package": "1206, 22uF, 25V, X5R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C12891"
         }
       },
@@ -1013,7 +1014,7 @@
           "JLCPCB/LCSC Part": "C12891",
           "LCSC": "C12891",
           "Package": "1206, 22uF, 25V, X5R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C12891"
         }
       },
@@ -1026,13 +1027,13 @@
           "part": "AUTO_C3"
         },
         "fields": {
-          "Manufacturer": "CCTC",
-          "MPN": "TCC0805X5R106K160FT",
-          "JLCPCB/LCSC Part": "C380332",
-          "LCSC": "C380332",
+          "Manufacturer": "Samsung Electro-Mechanics",
+          "MPN": "CL21A106KOQNNNE",
+          "JLCPCB/LCSC Part": "C1713",
+          "LCSC": "C1713",
           "Package": "0805, 10uF, 16V, X5R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C380332"
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C1713"
         }
       },
       {
@@ -1049,7 +1050,7 @@
           "JLCPCB/LCSC Part": "C14663",
           "LCSC": "C14663",
           "Package": "0603, 100nF, 50V, X7R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C14663"
         }
       },
@@ -1067,7 +1068,7 @@
           "JLCPCB/LCSC Part": "C5673",
           "LCSC": "C5673",
           "Package": "0603, 1uF, 25V, X5R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C5673"
         }
       },
@@ -1085,7 +1086,7 @@
           "JLCPCB/LCSC Part": "C380342",
           "LCSC": "C380342",
           "Package": "0805, 4.7uF, 16V, X5R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C380342"
         }
       },
@@ -1103,7 +1104,7 @@
           "JLCPCB/LCSC Part": "C14663",
           "LCSC": "C14663",
           "Package": "0603, 100nF, 50V, X7R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C14663"
         }
       },
@@ -1121,7 +1122,7 @@
           "JLCPCB/LCSC Part": "C14663",
           "LCSC": "C14663",
           "Package": "0603, 100nF, 50V, X7R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C14663"
         }
       },
@@ -1134,13 +1135,13 @@
           "part": "AUTO_C9"
         },
         "fields": {
-          "Manufacturer": "SANYEAR",
-          "MPN": "C0805X5R226M6R3NT",
-          "JLCPCB/LCSC Part": "C466795",
-          "LCSC": "C466795",
+          "Manufacturer": "Samsung Electro-Mechanics",
+          "MPN": "CL21A226MQQNNNE",
+          "JLCPCB/LCSC Part": "C5674",
+          "LCSC": "C5674",
           "Package": "0805, 22uF, 6.3V, X5R, +/-20%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C466795"
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C5674"
         }
       },
       {
@@ -1157,7 +1158,7 @@
           "JLCPCB/LCSC Part": "C14663",
           "LCSC": "C14663",
           "Package": "0603, 100nF, 50V, X7R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C14663"
         }
       },
@@ -1175,7 +1176,7 @@
           "JLCPCB/LCSC Part": "C5673",
           "LCSC": "C5673",
           "Package": "0603, 1uF, 25V, X5R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C5673"
         }
       },
@@ -1193,7 +1194,7 @@
           "JLCPCB/LCSC Part": "C5673",
           "LCSC": "C5673",
           "Package": "0603, 1uF, 25V, X5R, +/-10%",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C5673"
         }
       },
@@ -1211,7 +1212,7 @@
           "JLCPCB/LCSC Part": "C976305",
           "LCSC": "C976305",
           "Package": "1206 resettable fuse, 750mA hold, 1.5A trip, 30V",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C976305"
         }
       },
@@ -1229,7 +1230,7 @@
           "JLCPCB/LCSC Part": "C908766",
           "LCSC": "C908766",
           "Package": "DO-214AC (SMA), 12V standoff, 400W unidirectional TVS",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C908766",
           "Engineering Note": "Corrected from SMBJ12A: PCB footprint is DO-214AC/SMA. Electrical rating remains 12V standoff, unidirectional TVS."
         }
@@ -1248,7 +1249,7 @@
           "JLCPCB/LCSC Part": "C916997",
           "LCSC": "C916997",
           "Package": "SOD-323 Schottky diode",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C916997"
         }
       },
@@ -1266,7 +1267,7 @@
           "JLCPCB/LCSC Part": "C916997",
           "LCSC": "C916997",
           "Package": "SOD-323 Schottky diode",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C916997"
         }
       },
@@ -1284,7 +1285,7 @@
           "JLCPCB/LCSC Part": "C916997",
           "LCSC": "C916997",
           "Package": "SOD-323 Schottky diode",
-          "Procurement Status": "JLCPCB in-stock selection verified 2026-09-22",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
           "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C916997"
         }
       }
@@ -2345,16 +2346,16 @@
       {
         "ref": "J1",
         "position": {
-          "x": 4.525,
-          "y": 50.525
+          "x": 8.025,
+          "y": 50.825
         },
         "rotation": 0
       },
       {
         "ref": "J2",
         "position": {
-          "x": 22.525,
-          "y": 50.525
+          "x": 26.025,
+          "y": 50.825
         },
         "rotation": 0
       },

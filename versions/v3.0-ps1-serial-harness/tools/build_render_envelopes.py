@@ -69,7 +69,7 @@ critical = {
     "SW1": ("EXACT_PART_COMPONENT_ASSET", "PlayBridge.3dshapes/K2-1107ST-A4SW-06.step"),
     "SW2": ("EXACT_PART_COMPONENT_ASSET", "PlayBridge.3dshapes/K2-1107ST-A4SW-06.step"),
     "D2": ("AUTHORITATIVE_KICAD_PACKAGE_MODEL", "PlayBridge.3dshapes/KICAD_OFFICIAL_D_SMA_DO-214AC.step"),
-    "L1": ("DATASHEET_DERIVED", "PlayBridge.3dshapes/DATASHEET_DERIVED_MYX_MCNR4030AF-4R7M_C49449313.wrl"),
+    "L1": ("DATASHEET_DERIVED", "PlayBridge.3dshapes/DATASHEET_DERIVED_SUNLORD_WPN4020H4R7MT_C98363.wrl"),
 }
 for b in blocks(text):
     fm=re.match(r'\(footprint "([^"]+)"', b)

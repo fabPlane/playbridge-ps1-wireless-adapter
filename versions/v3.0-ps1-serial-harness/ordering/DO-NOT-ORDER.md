@@ -26,8 +26,10 @@ The only remaining hold is external assembler checkout review. Before ordering:
 - Confirm live JLCPCB/LCSC availability for Hong Cheng HC-USB3.0-L168-ZP /
   C7501856 (two required per board). It was listed as a ready-for-assembly,
   in-stock part during the 2026-09-25 replacement pass.
-- Confirm availability or an approved substitute for L1, MYX
-  MCNR4030AF-4R7M / C49449313.
+- Confirm live availability for L1, Sunlord WPN4020H4R7MT / C98363, and verify
+  the 2.0 mm height plus current rating in the assembler preview.
+- Confirm the R20 680 ohm selection is acceptable for the calculated
+  approximately 2.65% current-limit increase relative to the prior selection.
 - Verify J2, R30 and R31 in the uploaded BOM/CPL and inspect their rotations and
   placement previews.
 - Approve all assembler substitutions and confirm project-local/custom

@@ -21,10 +21,10 @@
 - Classification: authoritative KiCad DO-214AC/SMA package model. The exact BOM device is GOODWORK SMAJ12A, not SMBJ12A.
 - Polarity follows footprint pad 1/cathode and the package cathode band.
 
-## L1 — MYX MCNR4030AF-4R7M / C49449313
+## L1 — Sunlord WPN4020H4R7MT / C98363
 
-- Model: `DATASHEET_DERIVED_MYX_MCNR4030AF-4R7M_C49449313.wrl`.
+- Model: `DATASHEET_DERIVED_SUNLORD_WPN4020H4R7MT_C98363.wrl`.
 - Classification: **PROVISIONAL DATASHEET-DERIVED**, not vendor CAD.
-- The exact-part EasyEDA/LCSC record identifies package `IND-SMD_L4.0-W4.0`; the BOM and footprint specify 4.0 × 4.0 × 3.0 mm. The linked exact-part STEP UUID was unavailable (HTTP 404).
-- Body envelope: 4.0 × 4.0 × 3.0 mm. Seating plane: Z=0. Terminal envelopes: 1.10 × 3.70 × 0.30 mm centered at X=±1.50 mm, matching the authoritative production land geometry.
-- Replace with manufacturer CAD if MYX later publishes it; do not represent this asset as vendor CAD.
+- The Sunlord WPN4020H land pattern specifies a 1.9 mm pad gap with 1.10 × 3.70 mm pads centered at X=±1.50 mm, exactly matching the inherited copper.
+- Body envelope: 4.0 × 4.0 × 2.0 mm. Seating plane: Z=0. Terminal envelopes: 1.10 × 3.70 × 0.30 mm centered at X=±1.50 mm.
+- Replace with manufacturer CAD if a qualified exact-part model is obtained; do not represent this envelope as vendor CAD.

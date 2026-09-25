@@ -10,8 +10,8 @@ const parts = {
   U4: ['Texas Instruments', 'TPS2113APWR', 'C130052', 'TSSOP-8'],
   U5: ['WCH', 'CH340C', 'C7464026', 'SOP-16'],
   U6: ['STMicroelectronics', 'USBLC6-2SC6', 'C7519', 'SOT-23-6L'],
-  L1: ['MYX', 'MCNR4030AF-4R7M', 'C49449313', 'SMD 4.0x4.0mm, 4.7uH, 2.5A rated, 3A saturation'],
-  D1: ['Everlight Electronics', '19-217/GHC-YR1S2/3T', 'C72043', '0603 green LED'],
+  L1: ['Sunlord', 'WPN4020H4R7MT', 'C98363', 'SMD 4.0x4.0x2.0mm, 4.7uH +/-20%, 2.85A rated, 4.9A saturation, 108mR'],
+  D1: ['KENTO', 'KT-0603YG', 'C2289', '0603 yellow-green LED'],
   D2: ['GOODWORK', 'SMAJ12A', 'C908766', 'DO-214AC (SMA), 12V standoff, 400W unidirectional TVS'],
   D3: ['JSMSEMI', 'BAT54WS', 'C916997', 'SOD-323 Schottky diode'],
   D4: ['JSMSEMI', 'BAT54WS', 'C916997', 'SOD-323 Schottky diode'],
@@ -25,17 +25,17 @@ const parts = {
 
 const groups = [
   [['C1', 'C2'], 'Samsung Electro-Mechanics', 'CL31A226KAHNNNE', 'C12891', '1206, 22uF, 25V, X5R, +/-10%'],
-  [['C3'], 'CCTC', 'TCC0805X5R106K160FT', 'C380332', '0805, 10uF, 16V, X5R, +/-10%'],
+  [['C3'], 'Samsung Electro-Mechanics', 'CL21A106KOQNNNE', 'C1713', '0805, 10uF, 16V, X5R, +/-10%'],
   [['C4', 'C7', 'C8', 'C10', 'C13'], 'Yageo', 'CC0603KRX7R9BB104', 'C14663', '0603, 100nF, 50V, X7R, +/-10%'],
   [['C5', 'C11', 'C12'], 'Samsung Electro-Mechanics', 'CL10A105KA8NNNC', 'C5673', '0603, 1uF, 25V, X5R, +/-10%'],
   [['C6'], 'CCTC', 'TCC0805X5R475K160FT', 'C380342', '0805, 4.7uF, 16V, X5R, +/-10%'],
-  [['C9'], 'SANYEAR', 'C0805X5R226M6R3NT', 'C466795', '0805, 22uF, 6.3V, X5R, +/-20%'],
+  [['C9'], 'Samsung Electro-Mechanics', 'CL21A226MQQNNNE', 'C5674', '0805, 22uF, 6.3V, X5R, +/-20%'],
   [['R1', 'R3', 'R5', 'R13', 'R16'], 'UNI-ROYAL', '0603WAF1001T5E', 'C21190', '0603, 1k, +/-1%'],
   [['R2', 'R4', 'R6', 'R11', 'R12', 'R18', 'R19'], 'UNI-ROYAL', '0603WAF1002T5E', 'C25804', '0603, 10k, +/-1%'],
   [['R7', 'R9'], 'UNI-ROYAL', '0603WAF1000T5E', 'C22775', '0603, 100R, +/-1%'],
   [['R8', 'R10'], 'UNI-ROYAL', '0603WAF1003T5E', 'C25803', '0603, 100k, +/-1%'],
   [['R17'], 'UNI-ROYAL', '0603WAF2001T5E', 'C22975', '0603, 2k, +/-1%'],
-  [['R20'], 'TA-I', 'RMS06FT6980', 'C912219', '0603, 698R, +/-1% (700R nominal ILIM; -0.29% substitution)'],
+  [['R20'], 'UNI-ROYAL', '0603WAF6800T5E', 'C23228', '0603, 680R, +/-1%'],
   [['R14', 'R15'], 'UNI-ROYAL', '0402WGF5101TCE', 'C25905', '0402, 5.1k, +/-1%'],
   [['R21', 'R22', 'R23', 'R24', 'R25', 'R26', 'R27', 'R28'], 'UNI-ROYAL', '0402WGF0000TCE', 'C17168', '0402, 0R jumper'],
 ];
@@ -54,12 +54,15 @@ for (const component of doc.netlist.components) {
       'JLCPCB/LCSC Part': lcsc,
       LCSC: lcsc,
       Package: pkg,
-      'Procurement Status': 'JLCPCB in-stock selection verified 2026-09-22',
+      'Procurement Status': 'JLCPCB sourcing selection verified 2026-09-25',
       'JLCPCB Part URL': `https://jlcpcb.com/partdetail/${lcsc}`,
     });
   }
   if (component.ref === 'R20') {
-    component.fields['Engineering Note'] = '698R is the stocked E96 substitute for 700R; TPS2113A current-limit setpoint changes by approximately +0.29%.';
+    component.fields['Engineering Note'] = 'Relative to the existing 698R selection, the calculated TPS2113A current limit increases by approximately 2.65%; verify intended current-limit acceptability.';
+  }
+  if (component.ref === 'L1') {
+    component.fields['Footprint Provenance'] = 'Official Sunlord WPN4020H land pattern: 1.9mm pad gap, 1.1x3.7mm pads, centers +/-1.5mm; exactly matches inherited routed copper.';
   }
   if (component.ref === 'D2') {
     component.fields['Engineering Note'] = 'Corrected from SMBJ12A: PCB footprint is DO-214AC/SMA. Electrical rating remains 12V standoff, unidirectional TVS.';

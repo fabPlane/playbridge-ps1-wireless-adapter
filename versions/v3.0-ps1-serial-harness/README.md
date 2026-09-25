@@ -29,7 +29,7 @@ LEDs and connector-free UART0 service row.
 
 ## V2.1 baseline retained
 
-- D1 is the green firmware `STATUS` LED: Everlight `19-217/GHC-YR1S2/3T` / LCSC `C72043`, driven by ESP32 module pin 26 on `STATUS_LED` through R13, 1 kΩ UNI-ROYAL `0603WAF1001T5E` / `C21190`.
+- D1 is the yellow-green firmware `STATUS` LED: KENTO `KT-0603YG` / LCSC `C2289`, driven by ESP32 module pin 26 on `STATUS_LED` through R13, 1 kΩ UNI-ROYAL `0603WAF1001T5E` / `C21190`; polarity is unchanged.
 - D6 is the red always-on 3V3 `PWR` LED: KENTO `KT-0603R` / `C2286`, through R29, 1 kΩ UNI-ROYAL `0603WAF1001T5E` / `C21190`.
 - The physical J4 header was removed. The lower-right SERVICE/DEBUG row contains DNP plated holes: TP2 GND at (43.500, 54.000) mm, TP3 UART_TX at (46.700, 54.000) mm, and TP4 UART_RX at (49.900, 54.000) mm. Pitch is 3.200 mm; each pad is 2.0 mm with a 1.0 mm finished plated hole.
 - J1, J2, J3, and SERVICE / DEBUG are explicitly identified on F.Silkscreen. No J4 reference is fabricated in V2.1; V3.0 must first decide whether J2 can serve the serial harness or whether a distinct J4 is justified.

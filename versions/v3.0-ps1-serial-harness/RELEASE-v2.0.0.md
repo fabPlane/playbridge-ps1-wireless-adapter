@@ -52,6 +52,6 @@ The repository includes:
 ## Checkout hold
 
 Before placing the PCBA order, recheck live stock for J1/J2 C7501856 and L1
-C49449313, then inspect the JLCPCB BOM/CPL placement preview—especially both
+Sunlord WPN4020H4R7MT / C98363, then inspect the JLCPCB BOM/CPL placement preview—especially both
 USB-A connectors, USB-C, switches, D2, and L1. This is a commercial/assembly
 review hold; no electrical-layout or connector-orientation defect is open.
