@@ -1,4 +1,4 @@
-# DO NOT ORDER — V3.0 assembler checkout review required
+# V3.0 ORDER REVIEW COMPLETE — not yet purchased
 
 Date: 2026-09-25
 
@@ -10,31 +10,36 @@ zero ERC findings, zero schematic-parity findings, and only the three inherited
 locally approved UART0 test-stub warnings.
 
 Fresh V3.0 manufacturing and assembly files have now been generated from the
-verified V3.0 board. The package includes J2, R30 and R31:
+verified V3.0 board. The package includes J2, R30 and R31. On 2026-09-25 the
+files were uploaded to a live JLCPCB Standard PCBA quote for five boards; all
+34 BOM rows were confirmed and the placement preview was reviewed. The quote
+reached $157.05 before shipping and tax. Save to Cart was not clicked and no
+order was placed.
+
+The live quote required one catalog substitution:
+
+- R1, R3, R5, R13, R16, R29, R30 and R31 changed from unavailable UNI-ROYAL
+  0603WAF1001T5E / C21190 to Yageo RC0603FR-071KL / C22548. Both are 0603,
+  1 kOhm, +/-1%, 100 mW, 75 V resistors; land pattern, routing and placement
+  are unchanged.
+- J1/J2 were reselected as the exact original C7501856, and SW1/SW2 were
+  reselected as the exact original C2837195. JLCPCB's initial zero-quantity
+  matches were stale; these were not substitutions.
+
+Current package hashes:
 
 - `gerbers-jlcpcb.zip` SHA-256:
-  `79cee6ab2a2817c448c97eeb5dafd0ae774262c85803f4c59c31d65bda27bab0`
+  `a88b31894732a681873b0c5fa4dddc82e82b0fdcf7c66dfae1b98b0ab3e725d8`
 - `jlcpcb-bom.csv` SHA-256:
-  `843957971777767e52d6aeeaf623a05dd8f5f9a323449939d0142b77e3f60fef`
+  `dc14498df3f4fc5ce8dd69c2211daf1fb5ab602a2a89adb5fe740414ea47b6fa`
 - `jlcpcb-cpl.csv` SHA-256:
   `686bd018bfcfe1f596070ecc0887670ec0c4ec81c907151657b2d36fe336b2dd`
 - Generic `exports/fabrication.zip` SHA-256:
-  `f9774fabc9b61e5b25378fa0577895634e06d6d3ad8792c2b2a0efb07ab0fc4d`
+  `92a6d5d03cca62bb854a6787f041eaa93b8f6ecc017e9756aa2eaffc077d354a`
 
-The only remaining hold is external assembler checkout review. Before ordering:
-
-- Confirm live JLCPCB/LCSC availability for Hong Cheng HC-USB3.0-L168-ZP /
-  C7501856 (two required per board). It was listed as a ready-for-assembly,
-  in-stock part during the 2026-09-25 replacement pass.
-- Confirm live availability for L1, Sunlord WPN4020H4R7MT / C98363, and verify
-  the 2.0 mm height plus current rating in the assembler preview.
-- Confirm the R20 680 ohm selection is acceptable for the calculated
-  approximately 2.65% current-limit increase relative to the prior selection.
-- Verify J2, R30 and R31 in the uploaded BOM/CPL and inspect their rotations and
-  placement previews.
-- Approve all assembler substitutions and confirm project-local/custom
-  footprints are accepted.
-
-Once the upload previews and sourcing checks pass, this ordering hold can be
-removed for the tested hardware configuration. It is not a remaining firmware,
-protocol, J2-routing, DRC/ERC, or file-generation blocker.
+The previous external assembler checkout hold is complete for the reviewed
+2026-09-25 quote. Before a future purchase, recheck time-sensitive stock and
+pricing, confirm the same catalog selections remain active, and perform JLCPCB's
+final production-file/placement confirmation. No firmware, protocol, J2-routing,
+DRC/ERC, sourcing, or file-generation blocker remains for the tested hardware
+configuration.

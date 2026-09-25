@@ -205,12 +205,14 @@
           "part": "R"
         },
         "fields": {
-          "Manufacturer": "UNI-ROYAL",
-          "MPN": "0603WAF1001T5E",
-          "JLCPCB/LCSC Part": "C21190",
-          "LCSC": "C21190",
-          "Package": "0603, 1k, +/-1%",
-          "Engineering Note": "Initial bench-configurable series isolation. Limits fault current but does not prove voltage compatibility or arbitrate simultaneous drivers."
+          "Manufacturer": "Yageo",
+          "MPN": "RC0603FR-071KL",
+          "JLCPCB/LCSC Part": "C22548",
+          "LCSC": "C22548",
+          "Package": "0603, 1k, +/-1%, 100mW, 75V",
+          "Engineering Note": "Initial bench-configurable series isolation. Limits fault current but does not prove voltage compatibility or arbitrate simultaneous drivers.",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C22548"
         }
       },
       {
@@ -222,12 +224,14 @@
           "part": "R"
         },
         "fields": {
-          "Manufacturer": "UNI-ROYAL",
-          "MPN": "0603WAF1001T5E",
-          "JLCPCB/LCSC Part": "C21190",
-          "LCSC": "C21190",
-          "Package": "0603, 1k, +/-1%",
-          "Engineering Note": "Initial bench-configurable series protection. Does not level-shift or prove the PS1 TXD voltage is safe for ESP32 GPIO16."
+          "Manufacturer": "Yageo",
+          "MPN": "RC0603FR-071KL",
+          "JLCPCB/LCSC Part": "C22548",
+          "LCSC": "C22548",
+          "Package": "0603, 1k, +/-1%, 100mW, 75V",
+          "Engineering Note": "Initial bench-configurable series protection. Does not level-shift or prove the PS1 TXD voltage is safe for ESP32 GPIO16.",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C22548"
         }
       },
       {
@@ -649,13 +653,13 @@
           "part": "AUTO_R1"
         },
         "fields": {
-          "Manufacturer": "UNI-ROYAL",
-          "MPN": "0603WAF1001T5E",
-          "JLCPCB/LCSC Part": "C21190",
-          "LCSC": "C21190",
-          "Package": "0603, 1k, +/-1%",
+          "Manufacturer": "Yageo",
+          "MPN": "RC0603FR-071KL",
+          "JLCPCB/LCSC Part": "C22548",
+          "LCSC": "C22548",
+          "Package": "0603, 1k, +/-1%, 100mW, 75V",
           "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C21190"
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C22548"
         }
       },
       {
@@ -685,13 +689,13 @@
           "part": "AUTO_R3"
         },
         "fields": {
-          "Manufacturer": "UNI-ROYAL",
-          "MPN": "0603WAF1001T5E",
-          "JLCPCB/LCSC Part": "C21190",
-          "LCSC": "C21190",
-          "Package": "0603, 1k, +/-1%",
+          "Manufacturer": "Yageo",
+          "MPN": "RC0603FR-071KL",
+          "JLCPCB/LCSC Part": "C22548",
+          "LCSC": "C22548",
+          "Package": "0603, 1k, +/-1%, 100mW, 75V",
           "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C21190"
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C22548"
         }
       },
       {
@@ -721,13 +725,13 @@
           "part": "AUTO_R5"
         },
         "fields": {
-          "Manufacturer": "UNI-ROYAL",
-          "MPN": "0603WAF1001T5E",
-          "JLCPCB/LCSC Part": "C21190",
-          "LCSC": "C21190",
-          "Package": "0603, 1k, +/-1%",
+          "Manufacturer": "Yageo",
+          "MPN": "RC0603FR-071KL",
+          "JLCPCB/LCSC Part": "C22548",
+          "LCSC": "C22548",
+          "Package": "0603, 1k, +/-1%, 100mW, 75V",
           "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C21190"
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C22548"
         }
       },
       {
@@ -865,13 +869,13 @@
           "part": "AUTO_R13"
         },
         "fields": {
-          "Manufacturer": "UNI-ROYAL",
-          "MPN": "0603WAF1001T5E",
-          "JLCPCB/LCSC Part": "C21190",
-          "LCSC": "C21190",
-          "Package": "0603, 1k, +/-1%",
+          "Manufacturer": "Yageo",
+          "MPN": "RC0603FR-071KL",
+          "JLCPCB/LCSC Part": "C22548",
+          "LCSC": "C22548",
+          "Package": "0603, 1k, +/-1%, 100mW, 75V",
           "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C21190"
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C22548"
         }
       },
       {
@@ -883,11 +887,13 @@
           "part": "R"
         },
         "fields": {
-          "Manufacturer": "UNI-ROYAL",
-          "MPN": "0603WAF1001T5E",
-          "LCSC": "C21190",
-          "JLCPCB/LCSC Part": "C21190",
-          "Package": "0603, 1 kΩ, ±1%",
+          "Manufacturer": "Yageo",
+          "MPN": "RC0603FR-071KL",
+          "LCSC": "C22548",
+          "JLCPCB/LCSC Part": "C22548",
+          "Package": "0603, 1k, +/-1%, 100mW, 75V",
+          "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C22548",
           "Function": "Series current-limiting resistor for always-on POWER LED"
         }
       },
@@ -900,13 +906,13 @@
           "part": "AUTO_R16"
         },
         "fields": {
-          "Manufacturer": "UNI-ROYAL",
-          "MPN": "0603WAF1001T5E",
-          "JLCPCB/LCSC Part": "C21190",
-          "LCSC": "C21190",
-          "Package": "0603, 1k, +/-1%",
+          "Manufacturer": "Yageo",
+          "MPN": "RC0603FR-071KL",
+          "JLCPCB/LCSC Part": "C22548",
+          "LCSC": "C22548",
+          "Package": "0603, 1k, +/-1%, 100mW, 75V",
           "Procurement Status": "JLCPCB sourcing selection verified 2026-09-25",
-          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C21190"
+          "JLCPCB Part URL": "https://jlcpcb.com/partdetail/C22548"
         }
       },
       {

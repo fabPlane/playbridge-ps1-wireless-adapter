@@ -20,7 +20,15 @@
 - D1: KENTO KT-0603YG / C2289, yellow-green 0603 STATUS LED; polarity and STATUS_LED wiring are unchanged.
 - J1/J2: Hong Cheng HC-USB3.0-L168-ZP / C7501856. JLCPCB listed this as a ready-for-assembly in-stock part during the 2026-09-25 replacement pass; recheck live stock at checkout. Its nine electrical-pad coordinates exactly match the replaced connector, so routing is unchanged. J2 carries the user/team bench-validated three-signal PS1 serial harness on contacts 1 (PS1_RXD), 4 (PS1_TXD) and 7 (GND); all other signal contacts remain NC.
 - D6: KENTO KT-0603R / C2286, red 0603 always-on 3V3 POWER indicator.
-- R29: UNI-ROYAL 0603WAF1001T5E / C21190, 1 kΩ 0603 POWER-LED series resistor.
+- R1/R3/R5/R13/R16/R29/R30/R31: Yageo RC0603FR-071KL / C22548, 1 kΩ +/-1%, 100 mW, 75 V, 0603. This is the quote-time replacement for out-of-stock UNI-ROYAL 0603WAF1001T5E / C21190. Electrical value, tolerance, power rating, voltage rating, and land pattern are unchanged; routing and placement are unchanged.
+
+## Live JLCPCB quote review — 2026-09-25
+
+- JLCPCB initially displayed zero available quantity for C7501856 and C2837195. Searching public PCBA inventory and reselecting the exact same catalog entries resolved the stale matches: J1/J2 remain C7501856 and SW1/SW2 remain C2837195. These were not substitutions.
+- C21190 was genuinely unavailable in the live PCBA quote. All eight 1 kΩ 0603 positions were replaced in the quote with C22548 as documented above.
+- All 34 uploaded BOM rows were confirmed. The portal grouped duplicate catalog selections into 31 charged component items.
+- Placement preview was reviewed before pricing: J1/J2 mouths face the lower board edge, J3 remains on the right edge, and no obvious 180-degree placement error was visible.
+- Five-board quote: PCB $13.10; Standard PCBA $143.95; total $157.05 before shipping and tax. No order was placed and Save to Cart was not clicked.
 
 ## Order files
 
