@@ -35,7 +35,7 @@ The exact firmware GPIO map is in `exports/firmware-handoff.md` and
 | Power mux | TPS2113A | TPS2116 | Power architecture revised; bench-test source switching/backfeed |
 | Programming | CH340C, manual BOOT/RESET, DTR/RTS transistor network | CH340C, manual BOOT/RESET, DTR/RTS transistor network | Manual method retained; V4 automatic behavior is not bench-qualified |
 | PCB | 56.295 × 62.000 mm, four layers, 1.20 mm thick | 68 × 60 mm, two layers, 1.60 mm thick | Dimensions and stackup changed |
-| J1/J2 connector | Molex 48393-0003 / C3197928 | Hong Cheng HC-USB3.0-L168-ZP / C7501856 | Connector model and PCB footprint changed |
+| J1/J2 connector | Hong Cheng HC-USB3.0-L168-ZP / C7501856 | Same connector | Physical connector and signal-pad geometry retained; local footprint definitions and shell-pad net policy differ |
 | Validation | J1 baseline and J2 serial PoC have recorded bench evidence | Digital checks pass; physical bench plan is not yet executed | Complete V4 bench plan before production approval |
 
 ## Electrical and mechanical verification evidence
