@@ -1,6 +1,6 @@
 # PlayBridge V4.0 — controller + serial bridge
 
-Status: **digital release PASS; production HOLD pending physical bench tests**.
+Status: **digital verification PASS; production HOLD pending physical bench tests**.
 
 V4.0 is the self-contained FabDesk/KiCad project for the 68 × 60 mm,
 two-layer PlayBridge board. It combines the PS1 controller interface on J1,
@@ -38,7 +38,7 @@ The exact firmware GPIO map is in `exports/firmware-handoff.md` and
 | J1/J2 connector | Molex 48393-0003 / C3197928 | Hong Cheng HC-USB3.0-L168-ZP / C7501856 | Connector model and PCB footprint changed |
 | Validation | J1 baseline and J2 serial PoC have recorded bench evidence | Digital checks pass; physical bench plan is not yet executed | Complete V4 bench plan before production approval |
 
-## Electrical and mechanical release evidence
+## Electrical and mechanical verification evidence
 
 - ERC: 0 errors and 0 warnings.
 - DRC: 0 violations, 0 unconnected pads, and 0 schematic-parity issues.
@@ -63,12 +63,12 @@ The exact firmware GPIO map is in `exports/firmware-handoff.md` and
   shopping list, firmware handoff, interchange files, and checksum manifest.
 - `ordering/` — convenient vendor-facing copies for bare-board ordering and
   in-house assembly preparation.
-- `reports/` — final electrical, mechanical, procurement, and release evidence.
-- `renders/` — accepted populated-board, connector, and GLB renders.
+- `reports/` — final electrical, mechanical, procurement, and verification evidence.
+- `renders/` — generated populated-board, connector, and GLB renders.
 
 Open this version directory itself in FabDesk; do not open the repository root.
 
-## Release hold
+## Bench-test hold
 
 No assembled V4 board has been bench-qualified. Complete and record the plan
 in `reports/bench-test.md` before production approval. In particular, verify
@@ -76,4 +76,4 @@ current-limited USB and PS1 power, TPS2116 source switching and backfeed,
 manual programming, J1 controller waveforms, J2 UART operation, and L1
 temperature/current margin. Manual BOOT/RESET is the accepted programming path.
 
-See `RELEASE-v4.0.0.md` for the frozen digital-release statement.
+See `RELEASE-v4.0.0.md` for the digitally verified design-checkpoint statement.

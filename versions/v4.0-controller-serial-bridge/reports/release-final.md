@@ -1,10 +1,10 @@
-# NewPlayBridge2 final digital release report
+# NewPlayBridge2 final digital verification report
 
 Date: 2026-09-29
 
 ## Status
 
-**Digital/order package: PASS. Production: HOLD pending physical bench tests.**
+**Digital design/order package: PASS. Production: HOLD pending physical bench tests.**
 
 No bench qualification is claimed. Manual BOOT/RESET is the accepted
 programming path.
@@ -74,12 +74,12 @@ GPIO13/U1 pad 16 and GPIO5/U1 pad 29 are unconnected.
 
 ## Core hashes
 
-- schematic: `7ce5f7498bcddcb09f2b8ab489bdd84fcb28dfdcda212d5895c139b5fd3c524a`
-- PCB: `a51efc281005317147673e8ab14943f6dca07779da8c29555acb792be944ec0b`
-- source netlist: `ef37420dcfda5f1b9d547aefc06cfdf56dd2385433a000cf061ba3007ff43675`
+- schematic: `a37339ff2e3cd012f82b29cc9e7a413b695dbe06d35fb2b2dbc70e65833c2766`
+- PCB: `55547e15ad8372b8ee5ed35aa6e1b8c1242d4903766b599b63c3a6ae3d871c63`
+- source netlist: `7104430e672968607f18d1a9db0ea59e10c2b096bb1d0f0d475dc129700e53ef`
 - GLB: `8cc8613cc6905d297376728690fd6a402aa38cf638dc03a9b4a27a006541b13c`
 - fabrication ZIP: `821d027b0d9d7d508d3c2c3af538216915e23e5e23f13232947d0c2e20bbf30e`
-- assembly BOM: `f4475ef17396974d22d698204594b240eca1df48f25a131734f75bca2f1127bc`
+- assembly BOM: `7c8db1dd1eff2c2cde9a478bdd75c6df08e845f80563c4fcab68b336eed56539`
 - CPL: `688b4a6d6405525f1ae15db4892079bc81b94ff4be9aa11bdee67e2d655c9458`
 
 See `reports/bench-test.md`. Do not release to production until its required

@@ -12,9 +12,9 @@ controller protocol.
 | `v2.0.0` | Modular donor-plug harness through board-mounted 9-contact connectors | Frozen release candidate under [`versions/v2-donor-plug-modular-adapter/`](versions/v2-donor-plug-modular-adapter/) |
 | `v2.1.0` | V2.0 baseline plus status LEDs and UART debug access | Release candidate under [`versions/v2.1-status-leds-uart-debug/`](versions/v2.1-status-leds-uart-debug/) |
 | `v3.0.0` | Combined PS1 controller and serial-harness evaluation | Frozen development checkpoint under [`versions/v3.0-ps1-serial-harness/`](versions/v3.0-ps1-serial-harness/) |
-| `v4.0.0` | New two-layer controller/serial bridge with protected dual-source power | Digital release under [`versions/v4.0-controller-serial-bridge/`](versions/v4.0-controller-serial-bridge/); physical qualification pending |
+| `v4.0.0` | New two-layer controller/serial bridge with protected dual-source power | Digitally verified design under [`versions/v4.0-controller-serial-bridge/`](versions/v4.0-controller-serial-bridge/); physical qualification pending |
 
-Each hardware release is a self-contained FabDesk project under `versions/`.
+Each hardware version is a self-contained FabDesk project under `versions/`.
 Open the version directory itself in FabDesk; the repository root is only the
 project index plus shared firmware and documentation.
 
@@ -35,7 +35,7 @@ project index plus shared firmware and documentation.
   programming, J1, and J2 bench tests are recorded.
 
 See [`versions/v4.0-controller-serial-bridge/README.md`](versions/v4.0-controller-serial-bridge/README.md)
-for the release summary and exact connector/GPIO maps.
+for the design summary and exact connector/GPIO maps.
 
 ## V2.0.0 historical status
 

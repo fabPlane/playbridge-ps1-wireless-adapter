@@ -1,13 +1,13 @@
-# PlayBridge hardware release v4.0.0
+# PlayBridge V4.0.0 digital design checkpoint
 
 Date: 2026-09-29
 
-V4.0.0 freezes the digitally verified two-layer controller/serial bridge and
-its manufacturing outputs. The canonical board is 68 × 60 mm and provides a
-PS1 controller harness on J1, PS1 UART2 serial harness on J2, USB-C
-programming/power, protected PS1 power, and TPS2116 source multiplexing.
+V4.0.0 records the digitally verified two-layer controller/serial bridge and
+its manufacturing outputs for bench testing. The canonical board is 68 × 60 mm
+and provides a PS1 controller harness on J1, PS1 UART2 serial harness on J2,
+USB-C programming/power, protected PS1 power, and TPS2116 source multiplexing.
 
-The digital release gate passes: ERC, DRC, schematic/PCB parity, connectivity,
+The digital verification gate passes: ERC, DRC, schematic/PCB parity, connectivity,
 BOM/CPL consistency, 3D model coverage for fitted parts, fabrication archive
 integrity, and the SHA-256 manifest all pass. Procurement metadata includes
 the final LCSC substitutions and consolidates all nine 1 kΩ 0603 resistors on
