@@ -20,6 +20,24 @@ and automatic source selection.
 The exact firmware GPIO map is in `exports/firmware-handoff.md` and
 `exports/firmware-pin-map.h`.
 
+## V3.0 and V4.0 comparison
+
+| Area | V3.0 | V4.0 | Compatibility / action |
+| --- | --- | --- | --- |
+| J1 harness pins | 2 CMD, 3 CLK, 4 GND, 5 ATT, 6 DATA, 7 ACK, 8 PS1 power; 1/9 NC | Same signal allocation | Harness pin allocation retained |
+| J2 harness pins | 1 ESP32 TX, 4 ESP32 RX, 7 GND; other signal pins NC | Same signal allocation | Harness pin allocation retained |
+| J1/J2 shells | Mechanically anchored and electrically isolated | J1 shells tied to pad 4/GND; J2 shells tied to pad 7/GND | Grounding policy changed |
+| Controller GPIOs | CMD 32, CLK 33, ATT 34, DATA drive 19, ACK drive 21 | CMD 19, CLK 32, ATT 21, DATA drive 33, ACK drive 27, ACK sense 34 | Controller firmware pin map must change |
+| DATA/ACK stages | 2N7002 open-drain drivers | 2N7002 open-drain drivers | Electrical drive method retained; V4 adds separate ACK sensing |
+| J2 UART | GPIO17 TX / GPIO16 RX | GPIO17 TX / GPIO16 RX | Firmware-compatible |
+| Status LED | GPIO4 | GPIO25 | Firmware pin must change |
+| LEDs | Always-on power LED plus firmware status LED | Always-on power LED plus firmware status LED | Function retained |
+| Power mux | TPS2113A | TPS2116 | Power architecture revised; bench-test source switching/backfeed |
+| Programming | CH340C, manual BOOT/RESET, DTR/RTS transistor network | CH340C, manual BOOT/RESET, DTR/RTS transistor network | Manual method retained; V4 automatic behavior is not bench-qualified |
+| PCB | 56.295 × 62.000 mm, four layers, 1.20 mm thick | 68 × 60 mm, two layers, 1.60 mm thick | Dimensions and stackup changed |
+| J1/J2 connector | Molex 48393-0003 / C3197928 | Hong Cheng HC-USB3.0-L168-ZP / C7501856 | Connector model and PCB footprint changed |
+| Validation | J1 baseline and J2 serial PoC have recorded bench evidence | Digital checks pass; physical bench plan is not yet executed | Complete V4 bench plan before production approval |
+
 ## Electrical and mechanical release evidence
 
 - ERC: 0 errors and 0 warnings.
