@@ -41,21 +41,18 @@ for the design summary and exact connector/GPIO maps.
 
 | Area | V3.0 | V4.0 | Compatibility / action |
 | --- | --- | --- | --- |
-| MCU | ESP32-WROOM-32E-N4 | ESP32-WROOM-32E-N4 | Same module |
-| J1 harness pins | 2 CMD, 3 CLK, 4 GND, 5 ATT, 6 DATA, 7 ACK, 8 PS1 power; 1/9 NC | Same signal allocation | Harness pin allocation retained |
-| J2 harness pins | 1 ESP32 TX, 4 ESP32 RX, 7 GND; other signal pins NC | Same signal allocation | Harness pin allocation retained |
-| J1/J2 connector | Hong Cheng HC-USB3.0-L168-ZP / C7501856 | Same connector | Physical connector and nine signal-pad centers retained; local footprint definitions differ |
-| J1/J2 shells | Mechanically anchored and electrically isolated | J1 shells tied to pad 4/GND; J2 shells tied to pad 7/GND | Grounding policy changed |
-| J1/J2 placement | J1 `(8.025, 50.825)` mm; J2 `(26.025, 50.825)` mm | J1 `(14.0, 48.5)` mm; J2 `(39.2, 48.5)` mm | Both face outward at the lower edge, but the PCB/enclosure layout is not drop-in compatible |
-| Controller GPIOs | CMD 32, CLK 33, ATT 34, DATA drive 19, ACK drive 21 | CMD 19, CLK 32, ATT 21, DATA drive 33, ACK drive 27, ACK sense 34 | Controller firmware pin map must change |
-| DATA/ACK stages | 2N7002 open-drain DATA and ACK drivers; no separate ACK input | Same drivers plus dedicated ACK sense on GPIO34 | Drive method retained; V4 firmware must use separate ACK drive/sense pins |
-| J2 UART | GPIO17 TX / GPIO16 RX | GPIO17 TX / GPIO16 RX | Firmware-compatible |
-| USB-C/programming | HRO TYPE-C-31-M-12, CH340C, manual BOOT/RESET, DTR/RTS transistor network | Same connector and programming functions | Manual method retained; V4 automatic behavior is not bench-qualified |
-| Power conversion | AP63203 PS1 buck, AP2112K USB LDO, TPS2113A mux | Same buck/LDO, TPS2116 mux | Mux implementation changed; bench-test source switching and backfeed |
-| Protection | USBLC6 USB ESD, SMBJ12A PS1 TVS, BAT54 clamps on CMD/CLK/ATT | SMAJ5.0A/SMAJ12A input TVS, TPD2EUSB30A arrays, dedicated ACK ESD | Protection architecture changed and requires prototype validation |
-| LEDs | Red power LED; yellow-green status LED on GPIO4 | Green power LED; blue status LED on GPIO25 | Functions retained; status GPIO and colors changed |
-| PCB | 56.295 × 62.000 mm, four layers, 1.20 mm thick | 68 × 60 mm, two layers, 1.60 mm thick | Dimensions and stackup changed |
-| Validation | J1 baseline and J2 three-wire serial PoC have recorded bench evidence; digital/manufacturing gates pass | ERC/DRC/parity/order-package checks pass; physical bench plan is not yet executed | V4 is suitable for first-prototype ordering, not production approval |
+| J1/J2 | Hong Cheng C7501856; same signal pinout | Same | Harness-compatible |
+| Shells | Isolated | J1→GND pad 4; J2→GND pad 7 | Grounding changed |
+| Placement | J1 `(8.025,50.825)`; J2 `(26.025,50.825)` mm | J1 `(14,48.5)`; J2 `(39.2,48.5)` mm | Not mechanically drop-in |
+| Controller GPIO | CMD32, CLK33, ATT34, DATA19, ACK21 | CMD19, CLK32, ATT21, DATA33, ACK27/sense34 | Firmware change |
+| DATA/ACK | 2N7002 open-drain; no ACK sense | Same drivers plus ACK sense | Firmware change |
+| J2 UART | TX17 / RX16 | TX17 / RX16 | Compatible |
+| Power | AP63203 + AP2112K + TPS2113A | AP63203 + AP2112K + TPS2116 | Mux changed |
+| Protection | USBLC6, SMBJ12A, BAT54 clamps | SMAJ TVS, TPD2EUSB30A, ACK ESD | Prototype-test required |
+| LEDs | Red power; yellow-green status GPIO4 | Green power; blue status GPIO25 | GPIO/color change |
+| Programming | CH340C; manual BOOT/RESET; DTR/RTS | Same | Auto mode unqualified |
+| PCB | 56.295 × 62 mm; 4-layer; 1.2 mm | 68 × 60 mm; 2-layer; 1.6 mm | Size/stackup changed |
+| Validation | J1/J2 PoC tested | Digital checks pass; bench pending | First prototype only |
 
 ## V2.0.0 historical status
 
