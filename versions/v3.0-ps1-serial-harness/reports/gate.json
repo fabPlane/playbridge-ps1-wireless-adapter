@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-25T05:37:14.406Z",
+  "pass": true,
+  "reasons": [],
+  "newWarningSignatures": [],
+  "allowedDrcWarnings": [
+    "track_dangling:Track [UART_RX] on F.Cu, length 2.0000 mm",
+    "track_dangling:Track [UART_TX] on F.Cu, length 3.4012 mm",
+    "track_dangling:Track [UART_TX] on F.Cu, length 2.0000 mm"
+  ]
+}
