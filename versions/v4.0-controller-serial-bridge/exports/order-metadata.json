@@ -1,0 +1,31 @@
+{
+  "project": "NewPlayBridge2",
+  "release_date": "2026-09-29",
+  "status": "PRODUCTION_HOLD_PENDING_PHYSICAL_TESTS",
+  "board": {
+    "width_mm": 68.0,
+    "height_mm": 60.0,
+    "copper_layers": 2,
+    "thickness_mm": 1.6
+  },
+  "fabrication": {
+    "archive": "fabrication.zip",
+    "archive_entries": 13,
+    "gerber_layers": 7,
+    "plated_drill": "gerbers/board-PTH.drl",
+    "non_plated_drill": "gerbers/board-NPTH.drl"
+  },
+  "assembly": {
+    "bom": "assembly-bom.csv",
+    "cpl": "cpl.csv",
+    "fitted_references": 77,
+    "dnp_references": ["TP1", "TP2", "TP3"]
+  },
+  "procurement": {
+    "shopping_list": "shopping-list.csv",
+    "destination": "JLCPCB/LCSC",
+    "lines_without_lcsc_code": 0,
+    "online_cart_synced": false
+  },
+  "approval_note": "Do not order for production until the physical bench-test report is completed."
+}

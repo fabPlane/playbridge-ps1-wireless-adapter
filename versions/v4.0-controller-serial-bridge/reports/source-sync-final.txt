@@ -1,0 +1,23 @@
+NEWPLAYBRIDGE2 SOURCE SYNCHRONIZATION - 2026-09-29
+
+Source: circuit.netlist.json
+Schematic export: exports/netlist.xml
+PCB export: exports/board.ipc2581
+
+Source -> schematic
+  populated component references: 80 / 80
+  connected named nets: 53 / 53
+  connected-net node mismatches: 0
+  component value/footprint mismatches: 0
+  MPN/LCSC metadata mismatches: 0
+  compiler-only power flags normalized: #FLG01, #FLG03, #FLG08
+
+Schematic -> PCB
+  component references: 80 / 80
+  connected named nets: 53 / 53
+  connected nodes: 227 / 227
+  connected-net node mismatches: 0
+  missing or extra references: 0
+  KiCad schematic-parity issues: 0
+
+RESULT: PASS
