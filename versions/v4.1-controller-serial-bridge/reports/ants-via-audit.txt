@@ -1,0 +1,25 @@
+PLAYBRIDGE V4.1 ANTS VIA AUDIT - 2026-10-01
+
+Requirement
+  minimum routed-via drill: 0.400 mm
+  minimum via diameter: drill + 0.500 mm
+  resulting minimum diameter for 0.400 mm drill: 0.900 mm
+
+Canonical PCB source
+  routed through-vias found: 190
+  0.900 mm diameter / 0.400 mm drill: 190
+  routed vias below 0.900 mm diameter: 0
+  routed vias below 0.400 mm drill: 0
+  routed vias below 0.250 mm annular ring: 0
+
+Generated plated drill file
+  ViaDrill tool: T2C0.400
+  T2 routed-via hits: 190
+  smaller T1C0.300 hits: 12 component-pad holes, not routed vias
+
+Rule verification
+  ERC violations: 0
+  DRC violations: 0
+  unconnected items: 0
+
+RESULT: PASS

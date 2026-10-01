@@ -1,0 +1,17 @@
+NEWPLAYBRIDGE2 V4.1 3D MODEL COVERAGE - 2026-10-01
+
+Placed footprints: 80
+Footprints with resolvable 3D models: 77
+Coverage: 77/80 (96.25%)
+
+Intentional omissions:
+  TP1 - unpopulated plated service/debug GND hole
+  TP2 - unpopulated plated service/debug TX hole
+  TP3 - unpopulated plated service/debug RX hole
+
+All fitted components have a resolvable model. J1 and J2 use the exact local
+HC-USB3.0-L168-ZP C7501856 WRL at zero offset, unit scale, and zero rotation.
+The KICAD10_3DMODEL_DIR resolver points to:
+/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels
+
+RESULT: PASS

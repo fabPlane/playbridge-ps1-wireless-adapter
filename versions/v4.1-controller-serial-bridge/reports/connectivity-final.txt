@@ -1,0 +1,45 @@
+NEWPLAYBRIDGE2 FINAL CONNECTIVITY / PIN-DIRECTION / METADATA CHECK
+
+PASS: GPIO19_CMD - nodes=[('R7', '1'), ('U1', '31')]
+PASS: GPIO32_CLK - nodes=[('R9', '1'), ('U1', '8')]
+PASS: GPIO21_ATT - nodes=[('R21', '1'), ('U1', '33')]
+PASS: GPIO33_DATA - nodes=[('R8', '1'), ('U1', '9')]
+PASS: GPIO27_ACK_DRIVE - nodes=[('R37', '1'), ('U1', '12')]
+PASS: GPIO34_ACK - nodes=[('R11', '1'), ('U1', '6')]
+PASS: GPIO25_STATUS - nodes=[('R42', '1'), ('U1', '10')]
+PASS: GPIO17_UART2_TX - nodes=[('R14', '1'), ('U1', '28')]
+PASS: GPIO16_UART2_RX - nodes=[('R15', '2'), ('U1', '27')]
+PASS: Q1 gate - pin1 on DATA_GATE
+PASS: Q1 source - pin2 on GND
+PASS: Q2 gate - pin1 on ACK_GATE
+PASS: Q2 source - pin2 on GND
+PASS: Q1 symbol - Transistor_FET:2N7002
+PASS: Q1 drain - pin3 on J1_DATA
+PASS: Q2 symbol - Transistor_FET:2N7002
+PASS: Q2 drain - pin3 on J1_ACK
+PASS: Q4 B/E/C - B=DTR_BASE, E=CH340_RTS, C=ESP_EN
+PASS: Q5 B/E/C - B=RTS_BASE, E=CH340_DTR, C=ESP_BOOT
+PASS: R7 proven value/MPN - 1k PS1 CMD, 0603WAF1001T5E, C21190
+PASS: R9 proven value/MPN - 1k PS1 CLK, 0603WAF1001T5E, C21190
+PASS: R10 proven value/MPN - 1k PS1 ATT, 0603WAF1001T5E, C21190
+PASS: R14 proven value/MPN - 1k UART2 TX, 0603WAF1001T5E, C21190
+PASS: R15 proven value/MPN - 1k UART2 RX, 0603WAF1001T5E, C21190
+PASS: U1 pad 10 - GPIO25_STATUS
+PASS: U1 pad 12 - GPIO27_ACK_DRIVE
+PASS: U1 pad 16 - unconnected-(U1-IO13-Pad16)
+PASS: U1 pad 29 - unconnected-(U1-IO5-Pad29)
+PASS: J1 signal+shell grounds - 3 pads numbered 4 on GND
+PASS: J2 signal+shell grounds - 3 pads numbered 7 on GND
+PASS: J2 pad 1 - J2_TX
+PASS: J2 pad 4 - J2_RX
+PASS: J2 pad 7 - GND
+PASS: J1 pad 2 - J1_CMD
+PASS: J1 pad 3 - J1_CLK
+PASS: J1 pad 4 - GND
+PASS: J1 pad 5 - J1_ATT
+PASS: J1 pad 6 - J1_DATA
+PASS: J1 pad 7 - J1_ACK
+PASS: J1 pad 8 - PS1_7V6_RAW
+
+Checks passed: 40
+Checks failed: 0
