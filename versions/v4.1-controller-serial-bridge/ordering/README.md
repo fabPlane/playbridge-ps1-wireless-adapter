@@ -3,7 +3,10 @@
 The current plan is to order bare PCBs and assemble them in-house on the
 LumenPnP.
 
-- Upload `gerbers-jlcpcb.zip` for the bare-board order.
+- Upload `NewPlayBridge2-v4.1-ANTS-Gerbers.zip` when replying to ANTS PCB.
+  It is a vendor-named copy of the verified 13-file fabrication archive.
+- `gerbers-jlcpcb.zip` remains the generic bare-board-order copy of the same
+  fabrication data.
 - Confirm the drill preview shows 190 routed vias with 0.40 mm drills and
   0.90 mm copper diameters before purchase.
 - `assembly-bom.csv` and `assembly-cpl.csv` contain the 77 fitted references
