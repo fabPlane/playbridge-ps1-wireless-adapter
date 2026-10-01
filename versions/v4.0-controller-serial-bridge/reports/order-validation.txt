@@ -1,0 +1,26 @@
+NEWPLAYBRIDGE2 ORDER PACKAGE VALIDATION - 2026-09-29
+
+Fabrication archive
+  exports/fabrication.zip: PASS (unzip integrity test)
+  archive entries: 13
+  Gerbers: F.Cu, B.Cu, F.Mask, B.Mask, F.Silkscreen, B.Silkscreen, Edge.Cuts
+  drills: plated and non-plated Excellon files
+  drill maps: plated and non-plated PDF maps
+  auxiliary: Gerber job and drill report
+
+BOM / placement consistency
+  engineering BOM references: 80 unique
+  engineering position references: 80 unique
+  assembly BOM references: 77 unique
+  assembly CPL references: 77 unique
+  assembly BOM / CPL reference mismatch: 0
+  assembly rows with blank LCSC code: 0
+  DNP service holes: TP1, TP2, TP3
+
+Board
+  outline: 68.0 x 60.0 mm
+  copper layers: 2
+  ERC errors/warnings: 0 / 0
+  DRC violations/unconnected/parity issues: 0 / 0 / 0
+
+Release status: DIGITAL PACKAGE PASS; PRODUCTION HOLD PENDING PHYSICAL TESTS

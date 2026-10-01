@@ -1,0 +1,2572 @@
+{
+  "netlist": {
+    "components": [
+      {
+        "ref": "U1",
+        "value": "ESP32-WROOM-32E",
+        "footprint": "RF_Module:ESP32-WROOM-32E-N4-PROD",
+        "libSource": {
+          "lib": "RF_Module",
+          "part": "ESP32-WROOM-32E"
+        },
+        "fields": {
+          "Manufacturer": "Espressif Systems",
+          "MPN": "ESP32-WROOM-32E-N4",
+          "LCSC": "C701341"
+        }
+      },
+      {
+        "ref": "U2",
+        "value": "CH340C",
+        "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+        "libSource": {
+          "lib": "Interface_USB",
+          "part": "CH340C"
+        },
+        "fields": {
+          "Manufacturer": "WCH",
+          "MPN": "CH340C",
+          "LCSC": "C84681"
+        }
+      },
+      {
+        "ref": "D4",
+        "value": "TPD2EUSB30A USB ESD",
+        "footprint": "Package_TO_SOT_SMD:Texas_DRT-3",
+        "libSource": {
+          "lib": "Device",
+          "part": "D_TVS_Dual_AAC"
+        },
+        "fields": {
+          "Manufacturer": "TECH PUBLIC",
+          "MPN": "TPD2EUSB30ADRTR-TP",
+          "LCSC": "C2987043"
+        }
+      },
+      {
+        "ref": "U4",
+        "value": "AP2112K-3.3",
+        "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+        "libSource": {
+          "lib": "Regulator_Linear",
+          "part": "MIC5504-3.3YM5"
+        },
+        "fields": {
+          "Manufacturer": "Diodes Incorporated",
+          "MPN": "AP2112K-3.3TRG1",
+          "LCSC": "C51118",
+          "SymbolStatus": "MIC5504 fixed-3.3V pin-compatible wrapper used because compiler rejects AP2112K library alias"
+        }
+      },
+      {
+        "ref": "J5",
+        "value": "AP63203WU-7",
+        "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+        "libSource": {
+          "lib": "Connector_Generic",
+          "part": "Conn_02x03_Odd_Even"
+        },
+        "fields": {
+          "Manufacturer": "Diodes Incorporated",
+          "MPN": "AP63203WU-7",
+          "LCSC": "C780769",
+          "AssemblyRef": "U3",
+          "SymbolStatus": "Pin-numbered wrapper used because compiler rejects AP63203WU library symbol after reload"
+        }
+      },
+      {
+        "ref": "U6",
+        "value": "TPS2116DRLR POWER MUX",
+        "footprint": "Package_TO_SOT_SMD:SOT-583-8",
+        "libSource": {
+          "lib": "Power_Management",
+          "part": "TPS2116DRL"
+        },
+        "fields": {
+          "Manufacturer": "Texas Instruments",
+          "MPN": "TPS2116DRLR",
+          "LCSC": "C3235557",
+          "Pinout": "1=GND 2=VOUT 3=VIN1 4=PR1 5=MODE 6=VIN2 7=VOUT 8=ST",
+          "DesignNote": "Intentional TPS2116 implementation; not pin-compatible with TPS2113A. Priority mode: VIN1=3V3_USB, VIN2=3V3_PS1, MODE tied to VIN1, PR1 driven by R18/R19 divider."
+        }
+      },
+      {
+        "ref": "D5",
+        "value": "TPD2EUSB30A HARNESS ESD",
+        "footprint": "Package_TO_SOT_SMD:Texas_DRT-3",
+        "libSource": {
+          "lib": "Device",
+          "part": "D_TVS_Dual_AAC"
+        },
+        "fields": {
+          "Manufacturer": "TECH PUBLIC",
+          "MPN": "TPD2EUSB30ADRTR-TP",
+          "LCSC": "C2987043"
+        }
+      },
+      {
+        "ref": "D6",
+        "value": "TPD2EUSB30A HARNESS ESD",
+        "footprint": "Package_TO_SOT_SMD:Texas_DRT-3",
+        "libSource": {
+          "lib": "Device",
+          "part": "D_TVS_Dual_AAC"
+        },
+        "fields": {
+          "Manufacturer": "TECH PUBLIC",
+          "MPN": "TPD2EUSB30ADRTR-TP",
+          "LCSC": "C2987043"
+        }
+      },
+      {
+        "ref": "D3",
+        "value": "PESD3V3U1UA ACK ESD",
+        "footprint": "Diode_SMD:D_SOD-323",
+        "libSource": {
+          "lib": "Device",
+          "part": "D_TVS"
+        },
+        "fields": {
+          "Manufacturer": "Nexperia",
+          "MPN": "PESD3V3U1UA,115",
+          "LCSC": "C403915"
+        }
+      },
+      {
+        "ref": "D7",
+        "value": "TPD2EUSB30A HARNESS ESD",
+        "footprint": "Package_TO_SOT_SMD:Texas_DRT-3",
+        "libSource": {
+          "lib": "Device",
+          "part": "D_TVS_Dual_AAC"
+        },
+        "fields": {
+          "Manufacturer": "TECH PUBLIC",
+          "MPN": "TPD2EUSB30ADRTR-TP",
+          "LCSC": "C2987043"
+        }
+      },
+      {
+        "ref": "J1",
+        "value": "J1 PS1 CONTROLLER - NOT USB",
+        "footprint": "Connector_USB:HC-USB3.0-L168-ZP",
+        "libSource": {
+          "lib": "Connector_Generic",
+          "part": "Conn_01x09"
+        },
+        "fields": {
+          "Manufacturer": "Hong Cheng",
+          "MPN": "HC-USB3.0-L168-ZP",
+          "LCSC": "C7501856",
+          "Pinout": "1=NC 2=CMD 3=CLK 4=GND 5=ATT 6=DATA 7=ACK 8=7V6_IN 9=NC"
+        }
+      },
+      {
+        "ref": "J2",
+        "value": "J2 PS1 SERIAL - NOT USB",
+        "footprint": "Connector_USB:HC-USB3.0-L168-ZP",
+        "libSource": {
+          "lib": "Connector_Generic",
+          "part": "Conn_01x09"
+        },
+        "fields": {
+          "Manufacturer": "Hong Cheng",
+          "MPN": "HC-USB3.0-L168-ZP",
+          "LCSC": "C7501856",
+          "Pinout": "1=TX 2=NC 3=NC 4=RX 5=NC 6=NC 7=GND 8=NC 9=NC; shell retention pads tied to grounded pad 7"
+        }
+      },
+      {
+        "ref": "J3",
+        "value": "J3 USB-C POWER / PROGRAM / PC",
+        "footprint": "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12_S1",
+        "fields": {
+          "Manufacturer": "Korean Hroparts",
+          "MPN": "TYPE-C-31-M-12",
+          "LCSC": "C165948"
+        },
+        "libSource": {
+          "lib": "Connector",
+          "part": "USB_C_Receptacle_USB2.0_14P"
+        }
+      },
+      {
+        "ref": "TP1",
+        "value": "SERVICE / DEBUG GND",
+        "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+        "fields": {
+          "DNP": "yes",
+          "AssemblyNote": "Unpopulated plated service hole"
+        },
+        "libSource": {
+          "lib": "Connector",
+          "part": "TestPoint"
+        }
+      },
+      {
+        "ref": "TP2",
+        "value": "TX",
+        "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+        "fields": {
+          "DNP": "yes",
+          "AssemblyNote": "Unpopulated plated service hole"
+        },
+        "libSource": {
+          "lib": "Connector",
+          "part": "TestPoint"
+        }
+      },
+      {
+        "ref": "TP3",
+        "value": "RX",
+        "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+        "fields": {
+          "DNP": "yes",
+          "AssemblyNote": "Unpopulated plated service hole"
+        },
+        "libSource": {
+          "lib": "Connector",
+          "part": "TestPoint"
+        }
+      },
+      {
+        "ref": "F1",
+        "value": "750mA USB PTC",
+        "footprint": "Fuse:Fuse_1206_3216Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "Polyfuse"
+        },
+        "fields": {
+          "Manufacturer": "BHFUSE",
+          "MPN": "BSMD1206-075-30V",
+          "LCSC": "C976305"
+        }
+      },
+      {
+        "ref": "F2",
+        "value": "0.75A PS1 PTC",
+        "footprint": "Fuse:Fuse_1206_3216Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "Polyfuse"
+        },
+        "fields": {
+          "Manufacturer": "BHFUSE",
+          "MPN": "BSMD1206-075-30V",
+          "LCSC": "C976305"
+        }
+      },
+      {
+        "ref": "D1",
+        "value": "SMAJ5.0A USB TVS",
+        "footprint": "Diode_SMD:D_SMA",
+        "libSource": {
+          "lib": "Device",
+          "part": "D_TVS"
+        },
+        "fields": {
+          "Manufacturer": "LRC",
+          "MPN": "SMAJ5.0A",
+          "LCSC": "C140902"
+        }
+      },
+      {
+        "ref": "D2",
+        "value": "SMAJ12A PS1 TVS",
+        "footprint": "Diode_SMD:D_SMA",
+        "libSource": {
+          "lib": "Device",
+          "part": "D_TVS"
+        },
+        "fields": {
+          "Manufacturer": "GOODWORK",
+          "MPN": "SMAJ12A",
+          "LCSC": "C908766"
+        }
+      },
+      {
+        "ref": "L1",
+        "value": "4.7uH +/-20%, 2.5A rated, 4.7A Isat",
+        "footprint": "Inductor_SMD:L_Sunlord_SWPA4020S",
+        "libSource": {
+          "lib": "Device",
+          "part": "L"
+        },
+        "fields": {
+          "Manufacturer": "Magnetsyc",
+          "MPN": "CPN4020H4R7MT",
+          "LCSC": "C52741363",
+          "ProcurementNote": "4.7uH +/-20%; 2.5A rated; 4.7A Isat; SMD 4x4mm",
+          "FootprintStatus": "Verified 4.0x4.0x2.0mm class surrogate; confirm land pattern against vendor drawing before fabrication"
+        }
+      },
+      {
+        "ref": "SW1",
+        "value": "RESET",
+        "footprint": "Button_Switch_SMD:K2-1107ST-A4SW-06",
+        "libSource": {
+          "lib": "Switch",
+          "part": "SW_Push"
+        },
+        "fields": {
+          "Manufacturer": "Korean Hroparts",
+          "MPN": "K2-1107ST-A4SW-06",
+          "LCSC": "C2837195"
+        }
+      },
+      {
+        "ref": "SW2",
+        "value": "BOOT",
+        "footprint": "Button_Switch_SMD:K2-1107ST-A4SW-06",
+        "libSource": {
+          "lib": "Switch",
+          "part": "SW_Push"
+        },
+        "fields": {
+          "Manufacturer": "Korean Hroparts",
+          "MPN": "K2-1107ST-A4SW-06",
+          "LCSC": "C2837195"
+        }
+      },
+      {
+        "ref": "R1",
+        "value": "5.1k CC1",
+        "footprint": "Resistor_SMD:R_0402_1005Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0402WGF5101TCE",
+          "LCSC": "C25905"
+        }
+      },
+      {
+        "ref": "R2",
+        "value": "5.1k CC2",
+        "footprint": "Resistor_SMD:R_0402_1005Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0402WGF5101TCE",
+          "LCSC": "C25905"
+        }
+      },
+      {
+        "ref": "R3",
+        "value": "10k EN PU",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1002T5E",
+          "LCSC": "C25804"
+        }
+      },
+      {
+        "ref": "R4",
+        "value": "10k BOOT PU",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1002T5E",
+          "LCSC": "C25804"
+        }
+      },
+      {
+        "ref": "R5",
+        "value": "1k UART RX SERIES",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1001T5E",
+          "LCSC": "C21190"
+        }
+      },
+      {
+        "ref": "R6",
+        "value": "100k UART RX PULLDOWN",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1003T5E",
+          "LCSC": "C25803"
+        }
+      },
+      {
+        "ref": "R7",
+        "value": "1k PS1 CMD",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1001T5E",
+          "LCSC": "C21190"
+        }
+      },
+      {
+        "ref": "R8",
+        "value": "100R DATA GATE",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1000T5E",
+          "LCSC": "C22775"
+        }
+      },
+      {
+        "ref": "R9",
+        "value": "1k PS1 CLK",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1001T5E",
+          "LCSC": "C21190"
+        }
+      },
+      {
+        "ref": "R10",
+        "value": "1k PS1 ATT",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1001T5E",
+          "LCSC": "C21190"
+        }
+      },
+      {
+        "ref": "R11",
+        "value": "1k PS1 ACK",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1001T5E",
+          "LCSC": "C21190"
+        }
+      },
+      {
+        "ref": "R12",
+        "value": "10k PS1 DATA PU",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1002T5E",
+          "LCSC": "C25804"
+        }
+      },
+      {
+        "ref": "R13",
+        "value": "10k PS1 ACK PU",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1002T5E",
+          "LCSC": "C25804"
+        }
+      },
+      {
+        "ref": "R14",
+        "value": "1k UART2 TX",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1001T5E",
+          "LCSC": "C21190"
+        }
+      },
+      {
+        "ref": "R15",
+        "value": "1k UART2 RX",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1001T5E",
+          "LCSC": "C21190"
+        }
+      },
+      {
+        "ref": "R16",
+        "value": "100k MUX STATUS PU",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1003T5E",
+          "LCSC": "C25803"
+        }
+      },
+      {
+        "ref": "C1",
+        "value": "10uF 10V USB IN",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CL21A106KOQNNNE",
+          "LCSC": "C1713"
+        }
+      },
+      {
+        "ref": "C2",
+        "value": "100nF USB IN",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CC0603KRX7R9BB104",
+          "LCSC": "C14663"
+        }
+      },
+      {
+        "ref": "C3",
+        "value": "1uF AP2112 IN",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CL10A105KA8NNNC",
+          "LCSC": "C5673"
+        }
+      },
+      {
+        "ref": "C4",
+        "value": "10uF AP2112 OUT",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CL21A106KOQNNNE",
+          "LCSC": "C1713"
+        }
+      },
+      {
+        "ref": "C5",
+        "value": "100nF CH340 VCC",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CC0603KRX7R9BB104",
+          "LCSC": "C14663"
+        }
+      },
+      {
+        "ref": "C6",
+        "value": "100nF CH340 V3",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CC0603KRX7R9BB104",
+          "LCSC": "C14663"
+        }
+      },
+      {
+        "ref": "C7",
+        "value": "22uF ESP BULK",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CL21A226MQQNNNE",
+          "LCSC": "C5674"
+        }
+      },
+      {
+        "ref": "C8",
+        "value": "100nF ESP BYPASS",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CC0603KRX7R9BB104",
+          "LCSC": "C14663"
+        }
+      },
+      {
+        "ref": "C9",
+        "value": "1uF EN RESET",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CL10A105KA8NNNC",
+          "LCSC": "C5673"
+        }
+      },
+      {
+        "ref": "C10",
+        "value": "22uF 25V AP63203 IN",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CL31A226KAHNNNE",
+          "LCSC": "C12891"
+        }
+      },
+      {
+        "ref": "C11",
+        "value": "100nF 50V AP63203 IN",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CC0603KRX7R9BB104",
+          "LCSC": "C14663"
+        }
+      },
+      {
+        "ref": "C12",
+        "value": "100nF 50V BOOTSTRAP",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CC0603KRX7R9BB104",
+          "LCSC": "C14663"
+        }
+      },
+      {
+        "ref": "C13",
+        "value": "22uF 25V AP63203 OUT",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CL31A226KAHNNNE",
+          "LCSC": "C12891"
+        }
+      },
+      {
+        "ref": "C14",
+        "value": "22uF 25V AP63203 OUT",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CL31A226KAHNNNE",
+          "LCSC": "C12891"
+        }
+      },
+      {
+        "ref": "C15",
+        "value": "10uF MUX OUT",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CL21A106KOQNNNE",
+          "LCSC": "C1713"
+        }
+      },
+      {
+        "ref": "C16",
+        "value": "100nF MUX OUT",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CC0603KRX7R9BB104",
+          "LCSC": "C14663"
+        }
+      },
+      {
+        "ref": "C17",
+        "value": "1uF MUX VIN1",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CL10A105KA8NNNC",
+          "LCSC": "C5673"
+        }
+      },
+      {
+        "ref": "C18",
+        "value": "1uF MUX VIN2",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "C"
+        },
+        "fields": {
+          "MPN": "CL10A105KA8NNNC",
+          "LCSC": "C5673"
+        }
+      },
+      {
+        "ref": "R17",
+        "value": "0R CH340 3V3 LINK",
+        "footprint": "Resistor_SMD:R_0402_1005Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0402WGF0000TCE",
+          "LCSC": "C17168"
+        }
+      },
+      {
+        "ref": "R18",
+        "value": "10k TPS2116 PR1 TOP",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1002T5E",
+          "LCSC": "C25804"
+        }
+      },
+      {
+        "ref": "R19",
+        "value": "10k TPS2116 PR1 BOTTOM",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1002T5E",
+          "LCSC": "C25804"
+        }
+      },
+      {
+        "ref": "#FLG01",
+        "value": "PWR_FLAG GND",
+        "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "libSource": {
+          "lib": "power",
+          "part": "PWR_FLAG"
+        }
+      },
+      {
+        "ref": "#FLG03",
+        "value": "PWR_FLAG USB_5V_PROTECTED",
+        "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "libSource": {
+          "lib": "power",
+          "part": "PWR_FLAG"
+        }
+      },
+      {
+        "ref": "#FLG08",
+        "value": "PWR_FLAG 3V3_PS1",
+        "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "libSource": {
+          "lib": "power",
+          "part": "PWR_FLAG"
+        }
+      },
+      {
+        "ref": "R21",
+        "value": "0R GPIO21 ROUTE LINK",
+        "footprint": "Resistor_SMD:R_0402_1005Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0402WGF0000TCE",
+          "LCSC": "C17168"
+        }
+      },
+      {
+        "ref": "R22",
+        "value": "0R GPIO21 ROUTE LINK 2",
+        "footprint": "Resistor_SMD:R_0402_1005Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0402WGF0000TCE",
+          "LCSC": "C17168"
+        }
+      },
+      {
+        "ref": "R23",
+        "value": "0R UART TX ROUTE LINK",
+        "footprint": "Resistor_SMD:R_0402_1005Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0402WGF0000TCE",
+          "LCSC": "C17168"
+        }
+      },
+      {
+        "ref": "R24",
+        "value": "0R UART TX LINK 2",
+        "footprint": "Resistor_SMD:R_0402_1005Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0402WGF0000TCE",
+          "LCSC": "C17168"
+        }
+      },
+      {
+        "ref": "R25",
+        "value": "0R UART TX SERVICE LINK",
+        "footprint": "Resistor_SMD:R_0402_1005Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0402WGF0000TCE",
+          "LCSC": "C17168"
+        }
+      },
+      {
+        "ref": "R32",
+        "value": "100k UNUSED INPUT PULLDOWN",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1003T5E",
+          "LCSC": "C25803",
+          "DesignNote": "Biases unused input low; replaces temporary probe termination"
+        }
+      },
+      {
+        "ref": "R35",
+        "value": "100k UNUSED INPUT PULLDOWN",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1003T5E",
+          "LCSC": "C25803",
+          "DesignNote": "Biases unused input low; replaces temporary probe termination"
+        }
+      },
+      {
+        "ref": "Q1",
+        "value": "2N7002 DATA OPEN-DRAIN",
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "libSource": {
+          "lib": "Transistor_FET",
+          "part": "2N7002"
+        },
+        "fields": {
+          "Manufacturer": "Jiangsu Changjing Electronics",
+          "MPN": "2N7002",
+          "LCSC": "C8545",
+          "Direction": "GPIO33 output to gate; drain at J1 DATA; source grounded",
+          "SymbolStatus": "Proper Transistor_FET:2N7002 symbol; pins 1=G 2=S 3=D"
+        }
+      },
+      {
+        "ref": "Q2",
+        "value": "2N7002 ACK OPEN-DRAIN",
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "libSource": {
+          "lib": "Transistor_FET",
+          "part": "2N7002"
+        },
+        "fields": {
+          "Manufacturer": "Jiangsu Changjing Electronics",
+          "MPN": "2N7002",
+          "LCSC": "C8545",
+          "Direction": "GPIO27 output to gate; drain at J1 ACK; source grounded; GPIO34 retains ACK sense",
+          "SymbolStatus": "Proper Transistor_FET:2N7002 symbol; pins 1=G 2=S 3=D"
+        }
+      },
+      {
+        "ref": "Q4",
+        "value": "MMBT3904 AUTO RESET",
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "libSource": {
+          "lib": "Transistor_BJT",
+          "part": "MMBT3904"
+        },
+        "fields": {
+          "Manufacturer": "onsemi",
+          "MPN": "MMBT3904LT1G",
+          "LCSC": "C81464",
+          "Function": "CH340 DTR/RTS automatic ESP_EN reset",
+          "SymbolStatus": "Proper Transistor_BJT:MMBT3904 symbol; pins 1=B 2=E 3=C"
+        }
+      },
+      {
+        "ref": "Q5",
+        "value": "MMBT3904 AUTO BOOT",
+        "footprint": "Package_TO_SOT_SMD:SOT-23",
+        "libSource": {
+          "lib": "Transistor_BJT",
+          "part": "MMBT3904"
+        },
+        "fields": {
+          "Manufacturer": "onsemi",
+          "MPN": "MMBT3904LT1G",
+          "LCSC": "C81464",
+          "Function": "CH340 DTR/RTS automatic GPIO0 boot",
+          "SymbolStatus": "Proper Transistor_BJT:MMBT3904 symbol; pins 1=B 2=E 3=C"
+        }
+      },
+      {
+        "ref": "R36",
+        "value": "100k DATA GATE PULLDOWN",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1003T5E",
+          "LCSC": "C25803"
+        }
+      },
+      {
+        "ref": "R37",
+        "value": "100R ACK GATE",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1000T5E",
+          "LCSC": "C22775"
+        }
+      },
+      {
+        "ref": "R38",
+        "value": "100k ACK GATE PULLDOWN",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1003T5E",
+          "LCSC": "C25803"
+        }
+      },
+      {
+        "ref": "R39",
+        "value": "10k DTR BASE",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1002T5E",
+          "LCSC": "C25804"
+        }
+      },
+      {
+        "ref": "R40",
+        "value": "10k RTS BASE",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1002T5E",
+          "LCSC": "C25804"
+        }
+      },
+      {
+        "ref": "R41",
+        "value": "1k POWER LED",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1001T5E",
+          "LCSC": "C21190"
+        }
+      },
+      {
+        "ref": "R42",
+        "value": "1k STATUS LED",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "R"
+        },
+        "fields": {
+          "MPN": "0603WAF1001T5E",
+          "LCSC": "C21190"
+        }
+      },
+      {
+        "ref": "D8",
+        "value": "GREEN POWER",
+        "footprint": "LED_SMD:LED_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "LED"
+        },
+        "fields": {
+          "MPN": "19-217/GHC-YR1S2/3T",
+          "LCSC": "C2286"
+        }
+      },
+      {
+        "ref": "D9",
+        "value": "BLUE STATUS",
+        "footprint": "LED_SMD:LED_0603_1608Metric",
+        "libSource": {
+          "lib": "Device",
+          "part": "LED"
+        },
+        "fields": {
+          "MPN": "19-217/BHC-ZL1M2RY/3T",
+          "LCSC": "C2293"
+        }
+      }
+    ],
+    "nets": [
+      {
+        "name": "GND",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "1"
+          },
+          {
+            "ref": "U1",
+            "pin": "15"
+          },
+          {
+            "ref": "U1",
+            "pin": "38"
+          },
+          {
+            "ref": "U1",
+            "pin": "39"
+          },
+          {
+            "ref": "U2",
+            "pin": "1"
+          },
+          {
+            "ref": "U2",
+            "pin": "15"
+          },
+          {
+            "ref": "U4",
+            "pin": "2"
+          },
+          {
+            "ref": "J5",
+            "pin": "4"
+          },
+          {
+            "ref": "R19",
+            "pin": "2"
+          },
+          {
+            "ref": "U6",
+            "pin": "1"
+          },
+          {
+            "ref": "J1",
+            "pin": "4"
+          },
+          {
+            "ref": "J2",
+            "pin": "7"
+          },
+          {
+            "ref": "J3",
+            "pin": "A1"
+          },
+          {
+            "ref": "J3",
+            "pin": "A12"
+          },
+          {
+            "ref": "J3",
+            "pin": "B1"
+          },
+          {
+            "ref": "J3",
+            "pin": "B12"
+          },
+          {
+            "ref": "TP1",
+            "pin": "1"
+          },
+          {
+            "ref": "D1",
+            "pin": "2"
+          },
+          {
+            "ref": "D2",
+            "pin": "2"
+          },
+          {
+            "ref": "SW1",
+            "pin": "2"
+          },
+          {
+            "ref": "SW2",
+            "pin": "2"
+          },
+          {
+            "ref": "R1",
+            "pin": "2"
+          },
+          {
+            "ref": "R2",
+            "pin": "2"
+          },
+          {
+            "ref": "R6",
+            "pin": "2"
+          },
+          {
+            "ref": "C1",
+            "pin": "2"
+          },
+          {
+            "ref": "C2",
+            "pin": "2"
+          },
+          {
+            "ref": "C3",
+            "pin": "2"
+          },
+          {
+            "ref": "C4",
+            "pin": "2"
+          },
+          {
+            "ref": "C5",
+            "pin": "2"
+          },
+          {
+            "ref": "C6",
+            "pin": "2"
+          },
+          {
+            "ref": "C7",
+            "pin": "2"
+          },
+          {
+            "ref": "C8",
+            "pin": "2"
+          },
+          {
+            "ref": "C9",
+            "pin": "2"
+          },
+          {
+            "ref": "C10",
+            "pin": "2"
+          },
+          {
+            "ref": "C11",
+            "pin": "2"
+          },
+          {
+            "ref": "C13",
+            "pin": "2"
+          },
+          {
+            "ref": "C14",
+            "pin": "2"
+          },
+          {
+            "ref": "C15",
+            "pin": "2"
+          },
+          {
+            "ref": "C16",
+            "pin": "2"
+          },
+          {
+            "ref": "C17",
+            "pin": "2"
+          },
+          {
+            "ref": "C18",
+            "pin": "2"
+          },
+          {
+            "ref": "D4",
+            "pin": "3"
+          },
+          {
+            "ref": "D5",
+            "pin": "3"
+          },
+          {
+            "ref": "D6",
+            "pin": "3"
+          },
+          {
+            "ref": "D7",
+            "pin": "3"
+          },
+          {
+            "ref": "D3",
+            "pin": "2"
+          },
+          {
+            "ref": "#FLG01",
+            "pin": "1"
+          },
+          {
+            "ref": "J3",
+            "pin": "S1"
+          },
+          {
+            "ref": "R32",
+            "pin": "2"
+          },
+          {
+            "ref": "R35",
+            "pin": "2"
+          },
+          {
+            "ref": "Q1",
+            "pin": "2"
+          },
+          {
+            "ref": "Q2",
+            "pin": "2"
+          },
+          {
+            "ref": "R36",
+            "pin": "2"
+          },
+          {
+            "ref": "R38",
+            "pin": "2"
+          },
+          {
+            "ref": "D8",
+            "pin": "1"
+          },
+          {
+            "ref": "D9",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "USB_VBUS_RAW",
+        "nodes": [
+          {
+            "ref": "J3",
+            "pin": "A4"
+          },
+          {
+            "ref": "J3",
+            "pin": "A9"
+          },
+          {
+            "ref": "J3",
+            "pin": "B4"
+          },
+          {
+            "ref": "J3",
+            "pin": "B9"
+          },
+          {
+            "ref": "F1",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "USB_5V_PROTECTED",
+        "nodes": [
+          {
+            "ref": "F1",
+            "pin": "2"
+          },
+          {
+            "ref": "D1",
+            "pin": "1"
+          },
+          {
+            "ref": "U4",
+            "pin": "1"
+          },
+          {
+            "ref": "U4",
+            "pin": "3"
+          },
+          {
+            "ref": "C1",
+            "pin": "1"
+          },
+          {
+            "ref": "C2",
+            "pin": "1"
+          },
+          {
+            "ref": "C3",
+            "pin": "1"
+          },
+          {
+            "ref": "#FLG03",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "USB_CC1",
+        "nodes": [
+          {
+            "ref": "J3",
+            "pin": "A5"
+          },
+          {
+            "ref": "R1",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "USB_CC2",
+        "nodes": [
+          {
+            "ref": "J3",
+            "pin": "B5"
+          },
+          {
+            "ref": "R2",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "USB_D+",
+        "nodes": [
+          {
+            "ref": "J3",
+            "pin": "A6"
+          },
+          {
+            "ref": "J3",
+            "pin": "B6"
+          },
+          {
+            "ref": "D4",
+            "pin": "1"
+          },
+          {
+            "ref": "U2",
+            "pin": "5"
+          }
+        ]
+      },
+      {
+        "name": "USB_D-",
+        "nodes": [
+          {
+            "ref": "J3",
+            "pin": "A7"
+          },
+          {
+            "ref": "J3",
+            "pin": "B7"
+          },
+          {
+            "ref": "D4",
+            "pin": "2"
+          },
+          {
+            "ref": "U2",
+            "pin": "6"
+          }
+        ]
+      },
+      {
+        "name": "3V3_USB",
+        "nodes": [
+          {
+            "ref": "U4",
+            "pin": "5"
+          },
+          {
+            "ref": "C4",
+            "pin": "1"
+          },
+          {
+            "ref": "R18",
+            "pin": "1"
+          },
+          {
+            "ref": "U6",
+            "pin": "3"
+          },
+          {
+            "ref": "U6",
+            "pin": "5"
+          },
+          {
+            "ref": "C17",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "PS1_7V6_RAW",
+        "nodes": [
+          {
+            "ref": "J1",
+            "pin": "8"
+          },
+          {
+            "ref": "F2",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "PS1_7V6_PROTECTED",
+        "nodes": [
+          {
+            "ref": "F2",
+            "pin": "2"
+          },
+          {
+            "ref": "D2",
+            "pin": "1"
+          },
+          {
+            "ref": "J5",
+            "pin": "3"
+          },
+          {
+            "ref": "J5",
+            "pin": "2"
+          },
+          {
+            "ref": "C10",
+            "pin": "1"
+          },
+          {
+            "ref": "C11",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "BUCK_SW",
+        "nodes": [
+          {
+            "ref": "J5",
+            "pin": "5"
+          },
+          {
+            "ref": "L1",
+            "pin": "1"
+          },
+          {
+            "ref": "C12",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "BUCK_BOOT",
+        "nodes": [
+          {
+            "ref": "J5",
+            "pin": "6"
+          },
+          {
+            "ref": "C12",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "3V3_PS1",
+        "nodes": [
+          {
+            "ref": "L1",
+            "pin": "2"
+          },
+          {
+            "ref": "J5",
+            "pin": "1"
+          },
+          {
+            "ref": "C13",
+            "pin": "1"
+          },
+          {
+            "ref": "C14",
+            "pin": "1"
+          },
+          {
+            "ref": "U6",
+            "pin": "6"
+          },
+          {
+            "ref": "C18",
+            "pin": "1"
+          },
+          {
+            "ref": "#FLG08",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "3V3_SYS",
+        "nodes": [
+          {
+            "ref": "U6",
+            "pin": "2"
+          },
+          {
+            "ref": "U6",
+            "pin": "7"
+          },
+          {
+            "ref": "U1",
+            "pin": "2"
+          },
+          {
+            "ref": "R3",
+            "pin": "1"
+          },
+          {
+            "ref": "R4",
+            "pin": "1"
+          },
+          {
+            "ref": "R12",
+            "pin": "1"
+          },
+          {
+            "ref": "R13",
+            "pin": "1"
+          },
+          {
+            "ref": "R16",
+            "pin": "1"
+          },
+          {
+            "ref": "C7",
+            "pin": "1"
+          },
+          {
+            "ref": "C8",
+            "pin": "1"
+          },
+          {
+            "ref": "C15",
+            "pin": "1"
+          },
+          {
+            "ref": "C16",
+            "pin": "1"
+          },
+          {
+            "ref": "R17",
+            "pin": "1"
+          },
+          {
+            "ref": "R41",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "MUX_STATUS",
+        "nodes": [
+          {
+            "ref": "U6",
+            "pin": "8"
+          },
+          {
+            "ref": "R16",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "MUX_PR1",
+        "nodes": [
+          {
+            "ref": "U6",
+            "pin": "4"
+          },
+          {
+            "ref": "R18",
+            "pin": "2"
+          },
+          {
+            "ref": "R19",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "ESP_EN",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "3"
+          },
+          {
+            "ref": "R3",
+            "pin": "2"
+          },
+          {
+            "ref": "C9",
+            "pin": "1"
+          },
+          {
+            "ref": "SW1",
+            "pin": "1"
+          },
+          {
+            "ref": "Q4",
+            "pin": "3"
+          }
+        ]
+      },
+      {
+        "name": "ESP_BOOT",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "25"
+          },
+          {
+            "ref": "R4",
+            "pin": "2"
+          },
+          {
+            "ref": "SW2",
+            "pin": "1"
+          },
+          {
+            "ref": "Q5",
+            "pin": "3"
+          }
+        ]
+      },
+      {
+        "name": "UART_TX",
+        "nodes": [
+          {
+            "ref": "R23",
+            "pin": "2"
+          },
+          {
+            "ref": "R24",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "CH340_TX_RAW",
+        "nodes": [
+          {
+            "ref": "U2",
+            "pin": "2"
+          },
+          {
+            "ref": "R5",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "UART_RX",
+        "nodes": [
+          {
+            "ref": "R5",
+            "pin": "2"
+          },
+          {
+            "ref": "R6",
+            "pin": "1"
+          },
+          {
+            "ref": "U1",
+            "pin": "34"
+          },
+          {
+            "ref": "TP3",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "GPIO19_CMD",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "31"
+          },
+          {
+            "ref": "R7",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "J1_CMD",
+        "nodes": [
+          {
+            "ref": "R7",
+            "pin": "2"
+          },
+          {
+            "ref": "J1",
+            "pin": "2"
+          },
+          {
+            "ref": "D5",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "GPIO33_DATA",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "9"
+          },
+          {
+            "ref": "R8",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "DATA_GATE",
+        "nodes": [
+          {
+            "ref": "R8",
+            "pin": "2"
+          },
+          {
+            "ref": "Q1",
+            "pin": "1"
+          },
+          {
+            "ref": "R36",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "J1_DATA",
+        "nodes": [
+          {
+            "ref": "J1",
+            "pin": "6"
+          },
+          {
+            "ref": "R12",
+            "pin": "2"
+          },
+          {
+            "ref": "D5",
+            "pin": "2"
+          },
+          {
+            "ref": "Q1",
+            "pin": "3"
+          }
+        ]
+      },
+      {
+        "name": "GPIO32_CLK",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "8"
+          },
+          {
+            "ref": "R9",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "J1_CLK",
+        "nodes": [
+          {
+            "ref": "R9",
+            "pin": "2"
+          },
+          {
+            "ref": "J1",
+            "pin": "3"
+          },
+          {
+            "ref": "D6",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "GPIO21_ATT",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "33"
+          },
+          {
+            "ref": "R21",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "J1_ATT",
+        "nodes": [
+          {
+            "ref": "R10",
+            "pin": "2"
+          },
+          {
+            "ref": "J1",
+            "pin": "5"
+          },
+          {
+            "ref": "D6",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "GPIO34_ACK",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "6"
+          },
+          {
+            "ref": "R11",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "J1_ACK",
+        "nodes": [
+          {
+            "ref": "R11",
+            "pin": "2"
+          },
+          {
+            "ref": "J1",
+            "pin": "7"
+          },
+          {
+            "ref": "R13",
+            "pin": "2"
+          },
+          {
+            "ref": "D3",
+            "pin": "1"
+          },
+          {
+            "ref": "Q2",
+            "pin": "3"
+          }
+        ]
+      },
+      {
+        "name": "GPIO17_UART2_TX",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "28"
+          },
+          {
+            "ref": "R14",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "J2_TX",
+        "nodes": [
+          {
+            "ref": "R14",
+            "pin": "2"
+          },
+          {
+            "ref": "J2",
+            "pin": "1"
+          },
+          {
+            "ref": "D7",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "J2_RX",
+        "nodes": [
+          {
+            "ref": "J2",
+            "pin": "4"
+          },
+          {
+            "ref": "R15",
+            "pin": "1"
+          },
+          {
+            "ref": "D7",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "GPIO16_UART2_RX",
+        "nodes": [
+          {
+            "ref": "R15",
+            "pin": "2"
+          },
+          {
+            "ref": "U1",
+            "pin": "27"
+          }
+        ]
+      },
+      {
+        "name": "CH340_3V3",
+        "nodes": [
+          {
+            "ref": "R17",
+            "pin": "2"
+          },
+          {
+            "ref": "U2",
+            "pin": "4"
+          },
+          {
+            "ref": "U2",
+            "pin": "16"
+          },
+          {
+            "ref": "C5",
+            "pin": "1"
+          },
+          {
+            "ref": "C6",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "UNUSED_ESP_INPUTS",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "4"
+          },
+          {
+            "ref": "U1",
+            "pin": "5"
+          },
+          {
+            "ref": "U1",
+            "pin": "7"
+          },
+          {
+            "ref": "R32",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "GPIO25_STATUS",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "10"
+          },
+          {
+            "ref": "R42",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "DNP_U1_11",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "11"
+          }
+        ]
+      },
+      {
+        "name": "GPIO27_ACK_DRIVE",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "12"
+          },
+          {
+            "ref": "R37",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "ACK_GATE",
+        "nodes": [
+          {
+            "ref": "R37",
+            "pin": "2"
+          },
+          {
+            "ref": "Q2",
+            "pin": "1"
+          },
+          {
+            "ref": "R38",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "DNP_U1_13",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "13"
+          }
+        ]
+      },
+      {
+        "name": "DNP_U1_14",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "14"
+          }
+        ]
+      },
+      {
+        "name": "DNP_U1_16",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "16"
+          }
+        ]
+      },
+      {
+        "name": "DNP_U1_23",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "23"
+          }
+        ]
+      },
+      {
+        "name": "DNP_U1_24",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "24"
+          }
+        ]
+      },
+      {
+        "name": "DNP_U1_26",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "26"
+          }
+        ]
+      },
+      {
+        "name": "DNP_U1_29",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "29"
+          }
+        ]
+      },
+      {
+        "name": "DNP_U1_30",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "30"
+          }
+        ]
+      },
+      {
+        "name": "DNP_U1_36",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "36"
+          }
+        ]
+      },
+      {
+        "name": "DNP_U1_37",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "37"
+          }
+        ]
+      },
+      {
+        "name": "UNUSED_CH340_INPUTS",
+        "nodes": [
+          {
+            "ref": "U2",
+            "pin": "9"
+          },
+          {
+            "ref": "U2",
+            "pin": "10"
+          },
+          {
+            "ref": "U2",
+            "pin": "11"
+          },
+          {
+            "ref": "U2",
+            "pin": "12"
+          },
+          {
+            "ref": "R35",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "CH340_DTR",
+        "nodes": [
+          {
+            "ref": "U2",
+            "pin": "13"
+          },
+          {
+            "ref": "R39",
+            "pin": "1"
+          },
+          {
+            "ref": "Q5",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "CH340_RTS",
+        "nodes": [
+          {
+            "ref": "U2",
+            "pin": "14"
+          },
+          {
+            "ref": "R40",
+            "pin": "1"
+          },
+          {
+            "ref": "Q4",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "DTR_BASE",
+        "nodes": [
+          {
+            "ref": "R39",
+            "pin": "2"
+          },
+          {
+            "ref": "Q4",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "RTS_BASE",
+        "nodes": [
+          {
+            "ref": "R40",
+            "pin": "2"
+          },
+          {
+            "ref": "Q5",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "POWER_LED_A",
+        "nodes": [
+          {
+            "ref": "R41",
+            "pin": "2"
+          },
+          {
+            "ref": "D8",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "STATUS_LED_A",
+        "nodes": [
+          {
+            "ref": "R42",
+            "pin": "2"
+          },
+          {
+            "ref": "D9",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "NC_J1_1",
+        "nodes": [
+          {
+            "ref": "J1",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "NC_J1_9",
+        "nodes": [
+          {
+            "ref": "J1",
+            "pin": "9"
+          }
+        ]
+      },
+      {
+        "name": "NC_J2_2",
+        "nodes": [
+          {
+            "ref": "J2",
+            "pin": "2"
+          }
+        ]
+      },
+      {
+        "name": "NC_J2_3",
+        "nodes": [
+          {
+            "ref": "J2",
+            "pin": "3"
+          }
+        ]
+      },
+      {
+        "name": "NC_J2_5",
+        "nodes": [
+          {
+            "ref": "J2",
+            "pin": "5"
+          }
+        ]
+      },
+      {
+        "name": "NC_J2_6",
+        "nodes": [
+          {
+            "ref": "J2",
+            "pin": "6"
+          }
+        ]
+      },
+      {
+        "name": "NC_J2_8",
+        "nodes": [
+          {
+            "ref": "J2",
+            "pin": "8"
+          }
+        ]
+      },
+      {
+        "name": "NC_J2_9",
+        "nodes": [
+          {
+            "ref": "J2",
+            "pin": "9"
+          }
+        ]
+      },
+      {
+        "name": "GPIO21_ATT_LINK",
+        "nodes": [
+          {
+            "ref": "R21",
+            "pin": "2"
+          },
+          {
+            "ref": "R22",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "GPIO21_ATT_LINK2",
+        "nodes": [
+          {
+            "ref": "R22",
+            "pin": "2"
+          },
+          {
+            "ref": "R10",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "UART_TX_MCU",
+        "nodes": [
+          {
+            "ref": "U1",
+            "pin": "35"
+          },
+          {
+            "ref": "R23",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "UART_TX_CH340",
+        "nodes": [
+          {
+            "ref": "R24",
+            "pin": "2"
+          },
+          {
+            "ref": "U2",
+            "pin": "3"
+          },
+          {
+            "ref": "R25",
+            "pin": "1"
+          }
+        ]
+      },
+      {
+        "name": "UART_TX_SERVICE",
+        "nodes": [
+          {
+            "ref": "R25",
+            "pin": "2"
+          },
+          {
+            "ref": "TP2",
+            "pin": "1"
+          }
+        ]
+      }
+    ]
+  },
+  "board": {
+    "widthMm": 68,
+    "heightMm": 60,
+    "copperLayers": 2,
+    "placements": [
+      {
+        "ref": "Q1",
+        "position": {
+          "x": 12,
+          "y": 36
+        }
+      },
+      {
+        "ref": "R36",
+        "position": {
+          "x": 9,
+          "y": 36
+        }
+      },
+      {
+        "ref": "Q2",
+        "position": {
+          "x": 19,
+          "y": 36
+        }
+      },
+      {
+        "ref": "R37",
+        "position": {
+          "x": 23,
+          "y": 36
+        }
+      },
+      {
+        "ref": "R38",
+        "position": {
+          "x": 19,
+          "y": 33
+        }
+      },
+      {
+        "ref": "Q4",
+        "position": {
+          "x": 44,
+          "y": 35
+        }
+      },
+      {
+        "ref": "R39",
+        "position": {
+          "x": 47,
+          "y": 34
+        }
+      },
+      {
+        "ref": "Q5",
+        "position": {
+          "x": 48,
+          "y": 39
+        }
+      },
+      {
+        "ref": "R40",
+        "position": {
+          "x": 51,
+          "y": 38
+        }
+      },
+      {
+        "ref": "R41",
+        "position": {
+          "x": 36,
+          "y": 6
+        }
+      },
+      {
+        "ref": "D8",
+        "position": {
+          "x": 39,
+          "y": 6
+        }
+      },
+      {
+        "ref": "R42",
+        "position": {
+          "x": 36,
+          "y": 9
+        }
+      },
+      {
+        "ref": "D9",
+        "position": {
+          "x": 39,
+          "y": 9
+        }
+      }
+    ]
+  }
+}
