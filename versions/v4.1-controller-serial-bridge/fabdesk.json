@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "prj_muks27wx4c0f3d12bb",
+  "name": "PlayBridge V4.1 ANTS-compatible controller + serial bridge",
+  "createdAt": "2026-09-28T04:58:56.529Z",
+  "updatedAt": "2026-10-01T13:00:00.000+07:00",
+  "board": {
+    "layers": 2,
+    "widthMm": 68,
+    "heightMm": 60
+  },
+  "router": "capacity",
+  "agent": {},
+  "allowedDrcWarnings": [
+    "silk_edge_clearance:Segment on Edge.Cuts",
+    "lib_footprint_mismatch:Footprint U6",
+    "lib_footprint_mismatch:Footprint D5",
+    "lib_footprint_mismatch:Footprint D7",
+    "lib_footprint_mismatch:Footprint D4",
+    "lib_footprint_mismatch:Footprint D6",
+    "text_height:Footprint text of J2 (MOUTH / PCB EDGE)",
+    "text_height:Footprint text of J1 (MOUTH / PCB EDGE)",
+    "silk_over_copper:Segment of J1 on F.Silkscreen",
+    "silk_over_copper:Segment of J2 on F.Silkscreen"
+  ]
+}

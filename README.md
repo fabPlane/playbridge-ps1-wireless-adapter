@@ -13,6 +13,7 @@ controller protocol.
 | `v2.1.0` | V2.0 baseline plus status LEDs and UART debug access | Release candidate under [`versions/v2.1-status-leds-uart-debug/`](versions/v2.1-status-leds-uart-debug/) |
 | `v3.0.0` | Combined PS1 controller and serial-harness evaluation | Frozen development checkpoint under [`versions/v3.0-ps1-serial-harness/`](versions/v3.0-ps1-serial-harness/) |
 | `v4.0.0` | New two-layer controller/serial bridge with protected dual-source power | Digitally verified design under [`versions/v4.0-controller-serial-bridge/`](versions/v4.0-controller-serial-bridge/); physical qualification pending |
+| `v4.1.0` | V4.0 electrical design with ANTS-compatible enlarged routed vias | Digitally verified fabrication revision under [`versions/v4.1-controller-serial-bridge/`](versions/v4.1-controller-serial-bridge/); physical qualification pending |
 
 Each hardware version is a self-contained FabDesk project under `versions/`.
 Open the version directory itself in FabDesk; the repository root is only the
@@ -36,6 +37,15 @@ project index plus shared firmware and documentation.
 
 See [`versions/v4.0-controller-serial-bridge/README.md`](versions/v4.0-controller-serial-bridge/README.md)
 for the design summary and exact connector/GPIO maps.
+
+## V4.1.0 fabrication revision
+
+V4.1 preserves the V4.0 schematic, component placement, connector mechanics,
+GPIO map, and BOM. Its routed through-vias are enlarged to 0.90 mm copper
+diameter with 0.40 mm drills to satisfy the ANTS PCB production feedback.
+The affected escape routing and manufacturing outputs were regenerated and
+pass ERC, DRC, connectivity, drill, and archive-integrity checks. The same
+physical bench-test hold still applies.
 
 ## V3.0 and V4.0 comparison
 
@@ -85,6 +95,7 @@ rotation previews; see
 - `versions/v2.1-status-leds-uart-debug/` — complete V2.1.0 FabDesk project, debug interface, manufacturing package, reports, tools, and accepted renders.
 - `versions/v3.0-ps1-serial-harness/` — complete V3.0 controller/serial-harness development checkpoint and PoC evidence.
 - `versions/v4.0-controller-serial-bridge/` — complete V4.0 FabDesk project, local libraries, validation evidence, renders, and manufacturing package.
+- `versions/v4.1-controller-serial-bridge/` — V4.1 ANTS-compatible via revision, regenerated validation evidence, renders, and manufacturing package.
 - `firmware/playbridge_wifi_test/` — shared ESP32 Wi-Fi controller firmware and bench instructions.
 - `docs/` — shared protocol and modular-interconnect diagrams.
 

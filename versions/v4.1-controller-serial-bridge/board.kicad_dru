@@ -1,0 +1,14 @@
+(version 1)
+
+(rule "ANTS minimum through-via drill and annular ring"
+  (condition "A.Type == 'Via'")
+  (constraint hole_size (min 0.4mm))
+  (constraint annular_width (min 0.25mm)))
+
+(rule "ANTS enlarged-via copper clearance"
+  (condition "A.Type == 'Via' || B.Type == 'Via'")
+  (constraint clearance (min 0.08mm)))
+
+(rule "USB-C VBUS fanout neckdown"
+  (condition "A.Type == 'Track' && A.NetName == 'USB_VBUS_RAW'")
+  (constraint track_width (min 0.15mm)))

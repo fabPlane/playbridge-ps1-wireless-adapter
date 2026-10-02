@@ -1,0 +1,24 @@
+NEWPLAYBRIDGE2 V4.1 FINAL PARITY CHECK - 2026-10-01
+
+KiCad parity-enabled DRC
+  DRC violations: 0
+  unconnected pads: 0
+  schematic parity issues: 0
+
+Independent schematic XML / PCB IPC-2581 comparison
+  references: 80 / 80
+  connected named nets: 53 / 53
+  connected nodes: 227 / 227
+  missing nodes: 0
+  extra nodes: 0
+  node mismatches: 0
+
+Targeted interface checks
+  J1: pin 2 CMD, 3 CLK, 4 GND, 5 ATT, 6 DATA, 7 ACK, 8 power; 1/9 NC
+  J1: signal ground plus both retention/shell pads are pad 4 / GND
+  J2: pin 1 TX, pin 4 RX, pin 7 GND; all others NC
+  J2: signal ground plus both retention/shell pads are pad 7 / GND
+  Q1/Q2: 2N7002 pin 1 gate, pin 2 source/GND, pin 3 drain
+  Q4/Q5: MMBT3904 B/E/C metadata and nets verified
+
+RESULT: PASS
