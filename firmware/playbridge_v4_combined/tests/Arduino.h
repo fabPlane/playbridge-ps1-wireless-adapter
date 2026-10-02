@@ -9,8 +9,8 @@
 #define OUTPUT 1
 using portMUX_TYPE = int;
 #define portMUX_INITIALIZER_UNLOCKED 0
-#define portENTER_CRITICAL(x) ((void)0)
-#define portEXIT_CRITICAL(x) ((void)0)
+#define portENTER_CRITICAL(x) ((void)(x))
+#define portEXIT_CRITICAL(x) ((void)(x))
 uint32_t mockCycles();
 uint32_t mockLow();
 uint32_t mockHigh();
