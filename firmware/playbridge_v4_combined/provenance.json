@@ -1,0 +1,23 @@
+{
+  "handoff": {
+    "archive": "playbridge-merge-handoff.zip",
+    "manifest_date": "2026-09-25",
+    "all_15_manifest_entries_verified": true,
+    "reference_bridge": "bridge-txqueue-1",
+    "reference_sha256": "64fa7aa89b0bc2d4eb883dbf5381f94fb05d3a5e620d96575e51a6db7d886fca",
+    "starter_sha256": "7d5463b1140196fbff436ac9b7fcf2d80b69d0316aac42a40f50d735d588cd68",
+    "transport_implementation": "Reworked behind a tested platform-independent core; wire protocol retained."
+  },
+  "controller_baseline": {
+    "date": "2026-10-02",
+    "sibling_sketch": "../playbridge_v4_controller",
+    "original_sketch_name": "playbridge_v4_web_polled",
+    "original_flashed_binary_sha256": "2de07f593a034aa4bad382401e602d35ea00886ee9a67e14c32251d42248798b",
+    "evidence": "User confirmed every web UI button works on PS1. Preceding isolated DATA tests: zero errors in 1536 bytes; release to input HIGH max 1.779 us. Diagnostic console run: 1624 complete replies, zero sampled DATA mismatches.",
+    "scope": "Node32 breadboard with CMD34 and DATA readback19; not assembled V4 PCB qualification."
+  },
+  "combined_hardware_tested": false,
+  "hardware_flashed_for_this_pr": false,
+  "sdk": "Arduino-ESP32 3.3.11 / node32s",
+  "ack_timing_reference": "BlueRetro PSX responder and PSX-SPX: 14 us delay, 2 us pulse. Existing upstream attribution is unchanged."
+}
