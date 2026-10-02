@@ -2,8 +2,10 @@
 
 Experimental combined firmware for the PS1 controller port and rear serial
 port. This preserves the console-tested polling controller and adds an opaque
-TCP to UART2 bridge. The combined build is not yet console-tested or approved
-for production. No hardware was flashed for this PR.
+TCP to UART2 bridge. The bench-profile combined build has now been flashed and
+tested with controller input, two small RAM dumps, and a checksum-verified
+128 KiB memory-card download through Wi-Fi to a Mac-mounted SD card. This is
+not production qualification or proof of game loading/simultaneous gameplay.
 
 The unchanged, working controller-only source is preserved in
 [`../playbridge_v4_controller`](../playbridge_v4_controller).
@@ -24,8 +26,8 @@ The default is the **actual working breadboard**, not the assembled PCB.
 | ACK drive | GPIO27 | GPIO27 |
 | DATA diagnostic input | GPIO19 via 1 kΩ | Disabled |
 | ACK diagnostic input | Not used | GPIO34 reserved, not read |
-| J2 TX | GPIO17 via 1 kΩ to J2.1 | Same |
-| J2 RX | J2.4 via 1 kΩ to GPIO16 | Same |
+| J2 TX | GPIO17 via **220 Ω** to console RX (bench equivalent of J2.1) | GPIO17 via 1 kΩ to J2.1; not qualified |
+| J2 RX | Console TX via 1 kΩ to GPIO16; 10 kΩ pull-up at harness-side junction | J2.4 via 1 kΩ to GPIO16; not qualified |
 | J2 GND | J2.7 | Same |
 
 J2.1 connects to **console RX**, J2.4 to **console TX**. These are J2 connector
@@ -39,7 +41,8 @@ Bench controller values verified during debugging: DATA C50 pull-up **1 kΩ** to
 Keep E50 to F50 **1 kΩ** and G50 to GPIO19 for diagnostic readback in profile 1.
 GPIO HIGH turns on the external output stage and pulls the PS1 line LOW.
 The bench NPN circuit is not evidence that V4 PCB component values or its
-2N7002 stages are physically qualified. This PR changes no PCB, BOM, or wiring.
+2N7002 stages are physically qualified. No PCB or BOM files are changed by this
+PR; the breadboard-only serial adjustments above are recorded in TEST-RESULTS.md.
 
 ## Architecture
 
@@ -76,7 +79,43 @@ it with the console. Supported rates: 115200, 230400, 518400, 691200, 1036800,
 TCP 3333 has one owner and carries only raw bytes, with no added framing or
 logs. The PC asset server, patched PS1 launcher/game code, and checksums/retries
 remain external. This is not direct SD access or universal game compatibility.
-The only supplied host tool is the unchanged handoff `host/bridge_baud.py`.
+The unchanged handoff `host/bridge_baud.py` controls bridge baud. The additional
+`host/memcard_backup.py` performs read-only Unirom 8.0.K memory-card backups;
+it is not the game asset server.
+
+### Read-only memory-card backup (Unirom 8.0.K)
+
+Use Python 3 on the host. Boot to the Unirom menu, insert the card, verify the
+three-wire serial harness, remove any loopback, and leave the bridge idle at
+115200. Specify the physical slot (1 or 2) and a **new** output filename in an
+existing writable directory on the mounted destination. For example:
+
+```sh
+python3 firmware/playbridge_v4_combined/host/memcard_backup.py \
+  --host ESP32_IP --slot 1 --output /Volumes/YOUR_SD/ps1-slot1-backup.mcd
+```
+
+The tool sends `MCDN`, negotiates `OKV2`/`UPV2` (or V3), waits for **`OKAY`**,
+sends zero-based card index, and waits for `MCRD` plus RAM address/length.
+It validates a 128 KiB buffer wholly within PS1 RAM, uses `DUMP`, sends `MORE`
+after each 2048 bytes, verifies the negotiated checksum, saves without
+overwriting, and verifies the saved file's SHA-256 by reading it back.
+It prints a JSON result; it does not commit or upload backups anywhere.
+The memory card is read-only; Unirom temporarily stages its data in console RAM.
+Do not disconnect/power off or press controller buttons during the read.
+
+This protocol is pinned to the
+[older official NoPS definitions](https://github.com/JonathanDotCel/NOTPSXSerial/blob/63a47555353404ff067563f26529897bf84cf84c/NOTPSXSERIAL.CS)
+and [transfer implementation](https://github.com/JonathanDotCel/NOTPSXSerial/blob/63a47555353404ff067563f26529897bf84cf84c/TransferLogic.cs).
+The newer client's `HLTD` expectation for MCDN did not match this bench console.
+After a timeout the console may still be waiting for a protocol field: **do not
+blindly retry**. Return it to a fresh Unirom menu first. The published tool has
+no automatic retry or mid-session resume shortcut.
+
+`PING` returned only its own echo on this console, while DUMP and MCDN succeeded.
+Do not treat an echoed PING as a loopback diagnosis or demand PONG as a required
+gate for this setup. A full negotiated, checksum-verified dump is stronger
+evidence. Do not stop a handshake just because the command itself is echoed.
 
 UDP 3334 accepts exactly 20 bytes:
 
@@ -132,10 +171,12 @@ arduino-cli compile --fqbn esp32:esp32:node32s \
   firmware/playbridge_v4_combined
 ```
 
-Native tests need a C++17 compiler with ASan/UBSan and Node.js. They execute the
+Native tests need a C++17 compiler with ASan/UBSan, Node.js and Python 3. They execute the
 actual transport core and actual polled engine, not independent protocol
 reimplementations. The browser script is exercised with a mocked DOM/network.
-No test command opens UART, sends LAN traffic, or flashes hardware.
+The Python backup tests use synthetic data and fake peers. The test runner
+does not open UART, send LAN traffic, or flash hardware. The explicitly invoked
+host backup tool does send serial commands and writes the requested backup file.
 
 Keep the controller-only rollback source and existing verified binary before
 any separately authorized upload. Change wires only with USB unplugged and PS1
@@ -145,9 +186,11 @@ flash the handoff's compile-only harness.
 ## Evidence and remaining acceptance
 
 See [TEST-RESULTS.md](TEST-RESULTS.md) and [provenance.json](provenance.json).
-The user confirmed every controller web button works on the bench before this
-merge. The preceding diagnostic reported 1,624 complete replies with zero
-sampled DATA mismatches. That is controller-only evidence.
+The user confirmed every controller web button on the controller-only baseline,
+then confirmed movement on the flashed combined build. Subsequent combined-build
+testing transferred actual PS1 RAM and slot-1 memory-card data through Wi-Fi.
+The preceding 1,624-complete-reply diagnostic with zero sampled DATA mismatches
+remains controller-only evidence; do not attribute it to the combined build.
 
 Before calling this combined firmware stable:
 

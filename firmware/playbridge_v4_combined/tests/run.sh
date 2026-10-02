@@ -10,3 +10,4 @@ trap 'rm -f "$tmp_dir/pad" "$tmp_dir/pad-pcb" "$tmp_dir/transport"; rmdir "$tmp_
 "${CXX:-c++}" -std=c++17 -Wall -Wextra -Werror -Wno-misleading-indentation -fsanitize=address,undefined transport_test.cpp -o "$tmp_dir/transport"
 "$tmp_dir/transport"
 node web-ui-test.cjs
+PYTHONDONTWRITEBYTECODE=1 python3 test_memcard_backup.py

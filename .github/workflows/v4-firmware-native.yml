@@ -16,5 +16,5 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Controller profiles, transport, and UI
+      - name: Controller profiles, transport, UI, and host backup tool
         run: sh firmware/playbridge_v4_combined/tests/run.sh
