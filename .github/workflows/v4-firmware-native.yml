@@ -1,0 +1,20 @@
+name: V4 firmware native tests
+on:
+  pull_request:
+    paths:
+      - "firmware/playbridge_v4_combined/**"
+      - ".github/workflows/v4-firmware-native.yml"
+  push:
+    paths:
+      - "firmware/playbridge_v4_combined/**"
+      - ".github/workflows/v4-firmware-native.yml"
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controller profiles, transport, UI, and host backup tool
+        run: sh firmware/playbridge_v4_combined/tests/run.sh
