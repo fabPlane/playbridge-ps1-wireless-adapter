@@ -20,3 +20,7 @@ PlayBridge.3dshapes/PROVISIONAL_DATASHEET_ENVELOPE_*
 *.kicad_prl
 AGENTS.md
 CLAUDE.md
+**/__pycache__/
+# Personal console memory-card backups are never source artifacts.
+*.mcd
+*.mcr
