@@ -1,5 +1,11 @@
 # V4.0 ordering package
 
+For the October 2026 JLCPCB assembly corrections, see
+[`jlc-2026-10-26/README.md`](jlc-2026-10-26/README.md). That package contains
+an order-specific BOM and records placement corrections made in the JLC
+viewer. Its corrected CPL is still pending reconciliation; the original
+`assembly-cpl.csv` does not reproduce those viewer edits.
+
 The current plan is to order bare PCBs and assemble them in-house on the
 LumenPnP.
 
