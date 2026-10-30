@@ -19,7 +19,11 @@
     "bom": "assembly-bom.csv",
     "cpl": "cpl.csv",
     "fitted_references": 77,
-    "dnp_references": ["TP1", "TP2", "TP3"]
+    "dnp_references": [
+      "TP1",
+      "TP2",
+      "TP3"
+    ]
   },
   "procurement": {
     "shopping_list": "shopping-list.csv",
@@ -27,5 +31,12 @@
     "lines_without_lcsc_code": 0,
     "online_cart_synced": false
   },
-  "approval_note": "Do not order for production until the physical bench-test report is completed."
+  "approval_note": "Do not order for production until the physical bench-test report is completed.",
+  "jlc_order_record": {
+    "path": "../ordering/jlc-2026-10-26/order-record.json",
+    "status": "PROTOTYPE_ORDER_RECORDED_FINAL_CPL_PENDING",
+    "pcb_production_file_confirmed_on": "2026-10-28",
+    "assembly_placement_approval": "not_submitted_in_recorded_session",
+    "final_cpl_available": false
+  }
 }

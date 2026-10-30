@@ -2114,7 +2114,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2286"
+		(property "LCSC" "C2986059"
 			(at 0 0 360)
 			(layer "F.Fab")
 			(hide yes)
@@ -2126,7 +2126,7 @@
 				)
 			)
 		)
-		(property "MPN" "19-217/GHC-YR1S2/3T"
+		(property "MPN" "19-217/GHC-YR1S2/6T"
 			(at 0 0 360)
 			(layer "F.Fab")
 			(hide yes)
@@ -11727,7 +11727,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2293"
+		(property "LCSC" "C2986058"
 			(at 0 0 360)
 			(layer "F.Fab")
 			(hide yes)
@@ -11739,7 +11739,7 @@
 				)
 			)
 		)
-		(property "MPN" "19-217/BHC-ZL1M2RY/3T"
+		(property "MPN" "19-217/BHC-ZL1M2RY/6T"
 			(at 0 0 360)
 			(layer "F.Fab")
 			(hide yes)

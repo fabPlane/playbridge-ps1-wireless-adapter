@@ -1750,9 +1750,9 @@
 			(footprint "LED_SMD:LED_0603_1608Metric")
 			(fields
 				(field
-					(name "MPN") "19-217/GHC-YR1S2/3T")
+					(name "MPN") "19-217/GHC-YR1S2/6T")
 				(field
-					(name "LCSC") "C2286")
+					(name "LCSC") "C2986059")
 				(field
 					(name "Footprint") "LED_SMD:LED_0603_1608Metric")
 				(field
@@ -1769,11 +1769,11 @@
 			)
 			(property
 				(name "MPN")
-				(value "19-217/GHC-YR1S2/3T")
+				(value "19-217/GHC-YR1S2/6T")
 			)
 			(property
 				(name "LCSC")
-				(value "C2286")
+				(value "C2986059")
 			)
 			(property
 				(name "Sheetname")
@@ -1816,9 +1816,9 @@
 			(footprint "LED_SMD:LED_0603_1608Metric")
 			(fields
 				(field
-					(name "MPN") "19-217/BHC-ZL1M2RY/3T")
+					(name "MPN") "19-217/BHC-ZL1M2RY/6T")
 				(field
-					(name "LCSC") "C2293")
+					(name "LCSC") "C2986058")
 				(field
 					(name "Footprint") "LED_SMD:LED_0603_1608Metric")
 				(field
@@ -1835,11 +1835,11 @@
 			)
 			(property
 				(name "MPN")
-				(value "19-217/BHC-ZL1M2RY/3T")
+				(value "19-217/BHC-ZL1M2RY/6T")
 			)
 			(property
 				(name "LCSC")
-				(value "C2293")
+				(value "C2986058")
 			)
 			(property
 				(name "Sheetname")

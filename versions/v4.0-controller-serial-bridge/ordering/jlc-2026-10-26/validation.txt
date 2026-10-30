@@ -1,0 +1,13 @@
+Order reconciliation validation — 2026-10-30
+
+PASS: PCB/schematic/circuit JSON and textual netlist/IPC exports differ from prior PR head only by exact approved LED identifier substitutions.
+PASS: 77 unique fitted references match the source CPL and order BOM; 80 engineering BOM references; DNP TP1/TP2/TP3 excluded from assembly.
+PASS: Every canonical assembly MPN/LCSC selection matches the dated JLC BOM; 29 purchasing groups total 77 components per board.
+PASS: Ordering and export assembly BOMs/shopping lists agree.
+PASS: Gerbers, fabrication ZIP, drills, original CPL/positions and IPC-D-356 connectivity remain byte-identical.
+PASS: Original export-manifest entries and dated order-package manifest match actual SHA-256 values.
+PASS: order record retains final_cpl=null, reorder_ready=false and physical qualification hold.
+PASS: git diff --check.
+
+ERC/DRC and physical bench tests were not rerun for this metadata-only change.
+Final JLC coordinate export and Q4/Q5 engineering mapping confirmation remain missing.

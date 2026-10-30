@@ -1094,8 +1094,8 @@
           "part": "LED"
         },
         "fields": {
-          "MPN": "19-217/GHC-YR1S2/3T",
-          "LCSC": "C2286"
+          "MPN": "19-217/GHC-YR1S2/6T",
+          "LCSC": "C2986059"
         }
       },
       {
@@ -1107,8 +1107,8 @@
           "part": "LED"
         },
         "fields": {
-          "MPN": "19-217/BHC-ZL1M2RY/3T",
-          "LCSC": "C2293"
+          "MPN": "19-217/BHC-ZL1M2RY/6T",
+          "LCSC": "C2986058"
         }
       }
     ],

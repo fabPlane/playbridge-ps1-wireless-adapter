@@ -11,7 +11,15 @@ Date: 2026-09-29
 | U2 | WCH CH340C | C84681 | 1 |
 | R5, R7, R9, R10, R11, R14, R15, R41, R42 | 0603WAF1001T5E | C21190 | 9 |
 
-The red power LED D8 remains MPN 19-217/GHC-YR1S2/3T, LCSC C2286.
+October 30 order reconciliation: D8 is the green power LED, MPN
+19-217/GHC-YR1S2/6T, LCSC C2986059. D9 is the blue status LED, MPN
+19-217/BHC-ZL1M2RY/6T, LCSC C2986058. These are the parts selected for the
+October 26 JLC prototype order; inventory observations are historical, not a
+new ready-stock verification. See `../ordering/jlc-2026-10-26/README.md`.
+The source and textual BOM/netlist/IPC metadata are synchronized; geometry,
+connectivity and the original CPL are unchanged. Rendered schematic/PCB
+previews and the September electrical checks below remain checkpoint
+evidence and have not been rerun as part of this metadata-only update.
 No C22548, C98363, C20526, or C7464026 identifiers remain in the canonical
 source, schematic, PCB metadata, engineering BOM, assembly BOM, or shopping
 list.
@@ -35,7 +43,7 @@ existing production HOLD and current/temperature verification during bench
 qualification. It must not be represented as qualified for continuous 2.0 A
 operation without thermal testing or a higher-current inductor.
 
-## No-functional-change guard
+## September 29 no-functional-change guard (historical)
 
 - ERC: 0 errors, 0 warnings.
 - DRC: 0 violations, 0 unconnected pads, 0 schematic parity issues.
