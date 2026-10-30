@@ -743,15 +743,15 @@
       <value>GREEN POWER</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN">19-217/GHC-YR1S2/3T</field>
-        <field name="LCSC">C2286</field>
+        <field name="MPN">19-217/GHC-YR1S2/6T</field>
+        <field name="LCSC">C2986059</field>
         <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
-      <property name="MPN" value="19-217/GHC-YR1S2/3T"/>
-      <property name="LCSC" value="C2286"/>
+      <property name="MPN" value="19-217/GHC-YR1S2/6T"/>
+      <property name="LCSC" value="C2986059"/>
       <property name="Sheetname" value="board"/>
       <property name="Sheetfile" value="board.kicad_sch"/>
       <property name="ki_keywords" value="diode TVS thyrector"/>
@@ -771,15 +771,15 @@
       <value>BLUE STATUS</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN">19-217/BHC-ZL1M2RY/3T</field>
-        <field name="LCSC">C2293</field>
+        <field name="MPN">19-217/BHC-ZL1M2RY/6T</field>
+        <field name="LCSC">C2986058</field>
         <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
-      <property name="MPN" value="19-217/BHC-ZL1M2RY/3T"/>
-      <property name="LCSC" value="C2293"/>
+      <property name="MPN" value="19-217/BHC-ZL1M2RY/6T"/>
+      <property name="LCSC" value="C2986058"/>
       <property name="Sheetname" value="board"/>
       <property name="Sheetfile" value="board.kicad_sch"/>
       <property name="ki_keywords" value="diode TVS thyrector"/>

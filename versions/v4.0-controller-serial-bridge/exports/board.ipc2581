@@ -1401,8 +1401,8 @@
       <RefDes name="D9" packageRef="LED_0603_1608Metric_7" populate="true" layerRef="F.Cu"/>
       <Characteristics category="ELECTRICAL">
         <Textual definitionSource="KICAD" textualCharacteristicName="KiLib_Generator" textualCharacteristicValue="SMD_2terminal_chip_molded"/>
-        <Textual definitionSource="KICAD" textualCharacteristicName="LCSC" textualCharacteristicValue="C2293"/>
-        <Textual definitionSource="KICAD" textualCharacteristicName="MPN" textualCharacteristicValue="19-217/BHC-ZL1M2RY/3T"/>
+        <Textual definitionSource="KICAD" textualCharacteristicName="LCSC" textualCharacteristicValue="C2986058"/>
+        <Textual definitionSource="KICAD" textualCharacteristicName="MPN" textualCharacteristicValue="19-217/BHC-ZL1M2RY/6T"/>
         <Textual definitionSource="KICAD" textualCharacteristicName="Value" textualCharacteristicValue="BLUE STATUS"/>
       </Characteristics>
     </BomItem>
@@ -1410,8 +1410,8 @@
       <RefDes name="D8" packageRef="LED_0603_1608Metric_7" populate="true" layerRef="F.Cu"/>
       <Characteristics category="ELECTRICAL">
         <Textual definitionSource="KICAD" textualCharacteristicName="KiLib_Generator" textualCharacteristicValue="SMD_2terminal_chip_molded"/>
-        <Textual definitionSource="KICAD" textualCharacteristicName="LCSC" textualCharacteristicValue="C2286"/>
-        <Textual definitionSource="KICAD" textualCharacteristicName="MPN" textualCharacteristicValue="19-217/GHC-YR1S2/3T"/>
+        <Textual definitionSource="KICAD" textualCharacteristicName="LCSC" textualCharacteristicValue="C2986059"/>
+        <Textual definitionSource="KICAD" textualCharacteristicName="MPN" textualCharacteristicValue="19-217/GHC-YR1S2/6T"/>
         <Textual definitionSource="KICAD" textualCharacteristicName="Value" textualCharacteristicValue="GREEN POWER"/>
       </Characteristics>
     </BomItem>
@@ -59839,11 +59839,11 @@
     </AvlItem>
     <AvlItem OEMDesignNumber="LED_SMD_LED_0603_1608Metric_GREEN POWER">
       <AvlVmpn qualified="false" chosen="false">
-        <AvlMpn name="19-217/GHC-YR1S2/3T"/>
+        <AvlMpn name="19-217/GHC-YR1S2/6T"/>
         <AvlVendor enterpriseRef="VENDOR_2"/>
       </AvlVmpn>
       <AvlVmpn qualified="false" chosen="false">
-        <AvlMpn name="C2286"/>
+        <AvlMpn name="C2986059"/>
         <AvlVendor enterpriseRef="VENDOR_1"/>
       </AvlVmpn>
     </AvlItem>
@@ -60371,11 +60371,11 @@
     </AvlItem>
     <AvlItem OEMDesignNumber="LED_SMD_LED_0603_1608Metric_BLUE STATUS">
       <AvlVmpn qualified="false" chosen="false">
-        <AvlMpn name="19-217/BHC-ZL1M2RY/3T"/>
+        <AvlMpn name="19-217/BHC-ZL1M2RY/6T"/>
         <AvlVendor enterpriseRef="VENDOR_2"/>
       </AvlVmpn>
       <AvlVmpn qualified="false" chosen="false">
-        <AvlMpn name="C2293"/>
+        <AvlMpn name="C2986058"/>
         <AvlVendor enterpriseRef="VENDOR_1"/>
       </AvlVmpn>
     </AvlItem>

@@ -1,0 +1,72 @@
+{
+  "record_updated_on": "2026-10-30",
+  "last_order_observed_on": "2026-10-28",
+  "design_version": "v4.0",
+  "source_checkpoint_commit": "125f885f2d6745c09e983acd62535c28e34251d1",
+  "batch_order": "W2026102619497291",
+  "pcb_order": "Y103-13044587A",
+  "pcba_order": "SMT026102662404-13044587A",
+  "stencil_order": "SO12610260666-13044587A",
+  "pcb": {
+    "quantity": 5,
+    "board_dimensions_mm": [
+      68,
+      60
+    ],
+    "layers": 2,
+    "thickness_mm": 1.6,
+    "solder_mask": "green",
+    "surface_finish": "HASL with lead",
+    "uploaded_archive": "../gerbers-jlcpcb.zip",
+    "uploaded_archive_sha256": "821d027b0d9d7d508d3c2c3af538216915e23e5e23f13232947d0c2e20bbf30e",
+    "production_file_confirmation": {
+      "status": "confirmed",
+      "date": "2026-10-28",
+      "scope": "bare PCB manufacturing only"
+    }
+  },
+  "assembly": {
+    "quantity": 5,
+    "service": "Standard PCBA",
+    "side": "top",
+    "fitted_references": 77,
+    "unassembled_references": 0,
+    "bom": "jlc-bom.csv",
+    "final_cpl": null,
+    "original_uploaded_cpl_note": "JLC header conversion of ../assembly-cpl.csv; website and engineering corrections are not captured in that source CPL.",
+    "j1_j2_assembly": "wave soldering",
+    "rails_and_fiducials": "added by JLCPCB",
+    "depanel_and_remove_rails_before_delivery": true,
+    "confirm_parts_placement_service": true,
+    "automatic_placement_confirmation": false,
+    "placement_approval_record": "not submitted by this assistant; Q4/Q5 marker discrepancy unresolved as of last observation",
+    "engineer_revised_references": [
+      "R16",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "U6",
+      "U1",
+      "J5",
+      "Q4",
+      "Q5",
+      "U2",
+      "Q2",
+      "Q1"
+    ],
+    "last_observed_stage": "Data Finished (13%); printing and soldering pending on 2026-10-28"
+  },
+  "stencil": {
+    "quantity": 1,
+    "side": "top",
+    "size_mm": [
+      380,
+      280
+    ],
+    "frame": "none",
+    "ordered_separately": true
+  },
+  "qualification_status": "PRODUCTION_HOLD_PENDING_PHYSICAL_TESTS",
+  "reorder_ready": false
+}
