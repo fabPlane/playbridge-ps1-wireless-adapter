@@ -1,50 +1,49 @@
 #pragma once
 static const char CONTROLLER_PAGE[] PROGMEM = R"HTML(
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#171b20">
 <title>PlayBridge Controller</title><style>
-body{font:18px system-ui;max-width:38rem;margin:2rem auto;padding:1rem}
-button{font:inherit;padding:.8rem;margin:.25rem;touch-action:none;user-select:none}
-.held{background:#1769e0;color:white}.dpad{display:grid;grid-template-columns:repeat(3, max-content)}
-section{margin:1rem 0}#diagnostics{font-size:14px;color:#444;white-space:pre-wrap}
-</style></head><body><h1>PlayBridge Controller</h1>
-<p>Hold to press; release to stop. Disconnecting releases buttons automatically.</p>
-<section><button data-bit="8">L2</button><button data-bit="10">L1</button><button data-bit="11">R1</button><button data-bit="9">R2</button></section>
-<section class="dpad"><span></span><button data-bit="4">Up</button><span></span>
-<button data-bit="7">Left</button><button id="neutral">Neutral</button><button data-bit="5">Right</button>
-<span></span><button data-bit="6">Down</button><span></span></section>
-<section><button data-bit="0">Select</button><button data-bit="3">Start</button></section>
-<section><button data-bit="12">Triangle</button><button data-bit="13">Circle</button><button data-bit="14">Cross</button><button data-bit="15">Square</button></section>
-<p id="result">Connecting…</p><p id="diagnostics"></p>
+:root{color-scheme:dark;--muted:#9aa6b5;--mint:#b5f1d4}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 30%,#2b323b,transparent 65%),#171b20;color:#edf0f4;font:15px system-ui,sans-serif;min-height:100vh}main{max-width:960px;margin:auto;padding:28px 26px 44px}header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:22px;border-bottom:1px solid #ffffff16}.brand{font-weight:800;font-size:20px;letter-spacing:-.6px}.brand span{color:var(--mint)}.badge{color:var(--mint);font-size:12px;border:1px solid #b5f1d433;border-radius:30px;padding:7px 12px}h1{font-size:clamp(26px,4vw,36px);letter-spacing:-1px;margin:28px 0 6px}p{color:var(--muted);line-height:1.6;margin:0}.intro{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:28px}button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:none;user-select:none;-webkit-user-select:none}button:focus-visible{outline:3px solid #418bff;outline-offset:5px}.reset{border:1px solid #ffffff26;background:#ffffff07;border-radius:9px;color:#d9e1e9;padding:9px 12px;font-size:12px;white-space:nowrap}.reset:hover{background:#ffffff12}kbd{display:inline-block;font:11px ui-monospace,monospace;min-width:21px;text-align:center;padding:3px 5px;color:#d7dfe7;background:#ffffff08;border:1px solid #ffffff20;border-bottom-width:2px;border-radius:4px}
+.controller{position:relative;margin:0 auto 28px;max-width:810px;padding:94px 40px 34px;border-radius:110px 110px 120px 120px;background:linear-gradient(145deg,#e0e3e1,#b9bec2 70%,#afb7bd);border:2px solid #ecf0ed;box-shadow:inset 0 -13px 0 #899399,0 24px 50px #0005;color:#303941}.controller:after{content:'';position:absolute;bottom:16px;left:38%;right:38%;height:3px;border-radius:10px;background:#88939b}.shoulders{position:absolute;top:13px;left:9%;right:9%;display:flex;justify-content:space-between}.shoulder-pair{display:grid;gap:7px;width:105px}.shoulder{display:flex;justify-content:space-between;align-items:center;background:linear-gradient(#555d68,#323a46);border:1px solid #202732;border-bottom:4px solid #202732;border-radius:12px 12px 7px 7px;padding:7px 13px;color:#e7ebef;font-weight:700;font-size:13px}.shoulder kbd{font-size:9px;padding:0 3px;min-width:17px}.padrow{display:grid;grid-template-columns:1fr .85fr 1fr;align-items:center;gap:12px}.cluster{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);aspect-ratio:1;gap:2px;max-width:208px;width:100%;justify-self:center;padding:10px;border-radius:50%;background:linear-gradient(145deg,#a6aeb4,#d5d9dc);box-shadow:inset 0 2px 5px #0002,0 1px 0 #fff9}.top{grid-area:1/2}.left{grid-area:2/1}.right{grid-area:2/3}.down{grid-area:3/2}.pad{display:grid;place-items:center;border:1px solid #222c36;border-bottom:4px solid #202934;background:linear-gradient(145deg,#505b68,#333d4b);box-shadow:0 3px 4px #0003;min-height:0;min-width:0;padding:9px}.direction{border-radius:8px;font-size:24px;line-height:1;color:#d8e0e7}.face{border-radius:50%;padding:11px}.face svg{width:100%;height:100%;max-height:34px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}.triangle{color:#75e0bf}.square{color:#ef9bd0}.cross{color:#88baf9}.circle{color:#f699a0}.held{background:#183d35!important;box-shadow:0 0 0 3px #7ce5bf,inset 0 3px 5px #0005!important;transform:translateY(2px);border-bottom-width:1px!important}.center{text-align:center}.wordmark{font-weight:800;letter-spacing:-.4px;font-size:16px;color:#495662}.submark{font-size:8px;text-transform:uppercase;letter-spacing:1.4px;margin-top:4px;color:#5c6974}.system{display:flex;justify-content:center;gap:21px;margin-top:26px}.system label{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:9px;letter-spacing:1px;color:#56616b;font-weight:700}.system button{height:17px;width:39px;background:linear-gradient(#64707c,#3b4654);border:1px solid #2d3743;border-bottom:3px solid #27323e;border-radius:9px;color:transparent;box-shadow:0 3px 4px #0003}.system .start{border-radius:4px 13px 13px 4px}.port{margin-top:22px;color:#546270;font-size:9px;text-transform:uppercase;letter-spacing:1px}.port span{color:#238c64}
+.connection{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 6px 24px}.connection p{font-size:12px}.connection strong{font-size:12px;color:var(--mint)}.guide{padding:23px 25px;border:1px solid #ffffff12;border-radius:16px;background:#ffffff03}.guide h2{font-size:16px;margin:0 0 6px}.guide>p{font-size:12px;margin-bottom:20px}.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.keygroup{display:grid;gap:10px;align-content:start}.keygroup h3{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);margin:0 0 3px}.binding{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;color:#d2dbe4}.binding>span:last-child{white-space:nowrap}.guide .hint{font-size:11px;margin:20px 0 0}details{margin:22px 4px 0;font-size:11px;color:var(--muted)}summary{cursor:pointer}#diagnostics{white-space:pre-wrap;margin-top:10px;font:11px/1.7 ui-monospace,monospace}footer{text-align:center;color:#667483;font-size:10px;margin-top:22px;letter-spacing:.4px}
+@media(max-width:620px){main{padding:18px 14px 28px}.intro{display:block}.reset{margin-top:13px}.controller{padding:90px 14px 30px;border-radius:66px 66px 76px 76px}.padrow{gap:6px;grid-template-columns:1fr .7fr 1fr}.cluster{padding:6px;gap:1px}.face{padding:8px}.direction{padding:5px;font-size:20px}.wordmark{font-size:11px}.submark{font-size:7px;letter-spacing:.3px}.system{gap:13px;margin-top:18px}.system button{width:27px;height:14px}.system label{font-size:7px}.shoulder-pair{width:82px}.shoulder{padding:6px 10px}.port{font-size:7px;letter-spacing:0}.guide{padding:19px 16px}.keys{grid-template-columns:1fr 1fr;gap:22px}.connection{align-items:start;flex-direction:column;gap:3px}.badge{font-size:10px;padding:6px 8px}}
+@media(prefers-reduced-motion:no-preference){.pad,.shoulder,.system button{transition:background .08s,box-shadow .08s,transform .08s}}
+</style></head><body><main>
+<header><div class="brand"><span>▣</span> PlayBridge</div><div class="badge">Keyboard · mouse · touch</div></header>
+<div class="intro"><div><h1>Your player one.</h1><p>Click here to focus, then play. Hold buttons to keep them pressed.</p></div><button id="neutral" class="reset">Release all <kbd>Esc</kbd></button></div>
+<section class="controller" aria-label="PlayStation controller"><div class="shoulders"><div class="shoulder-pair"><button class="shoulder" data-bit="8" aria-label="L2, key 1">L2 <kbd>1</kbd></button><button class="shoulder" data-bit="10" aria-label="L1, key Q">L1 <kbd>Q</kbd></button></div><div class="shoulder-pair"><button class="shoulder" data-bit="9" aria-label="R2, key 3">R2 <kbd>3</kbd></button><button class="shoulder" data-bit="11" aria-label="R1, key E">R1 <kbd>E</kbd></button></div></div>
+<div class="padrow"><div class="cluster" aria-label="Directional pad"><button class="pad direction top" data-bit="4" aria-label="Up, W or up arrow">▲</button><button class="pad direction left" data-bit="7" aria-label="Left, A or left arrow">◀</button><button class="pad direction right" data-bit="5" aria-label="Right, D or right arrow">▶</button><button class="pad direction down" data-bit="6" aria-label="Down, S or down arrow">▼</button></div>
+<div class="center"><div class="wordmark">PLAYBRIDGE</div><div class="submark">Digital controller</div><div class="system"><label><button data-bit="0" aria-label="Select, Shift">Select</button>SELECT</label><label><button class="start" data-bit="3" aria-label="Start, Enter">Start</button>START</label></div><div class="port"><span>●</span> Player 1</div></div>
+<div class="cluster" aria-label="Action buttons"><button class="pad face triangle top" data-bit="12" aria-label="Triangle, I"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 29 27H3Z"/></svg></button><button class="pad face square left" data-bit="15" aria-label="Square, J"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 5H27V27H5Z"/></svg></button><button class="pad face circle right" data-bit="13" aria-label="Circle, L"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/></svg></button><button class="pad face cross down" data-bit="14" aria-label="Cross, K"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m6 6 20 20M26 6 6 26"/></svg></button></div></div></section>
+<div class="connection"><strong id="result" role="status">Connecting…</strong><p>Inputs release when you leave this page.</p></div>
+<section class="guide" aria-labelledby="guide-title"><h2 id="guide-title">Your keyboard, mapped.</h2><p>Keep this page focused. Combine keys for diagonal movement and button combos.</p><div class="keys"><div class="keygroup"><h3>Movement</h3><div class="binding"><span>Up / down</span><span><kbd>W</kbd> <kbd>S</kbd> or <kbd>↑</kbd> <kbd>↓</kbd></span></div><div class="binding"><span>Left / right</span><span><kbd>A</kbd> <kbd>D</kbd> or <kbd>←</kbd> <kbd>→</kbd></span></div><div class="binding"><span>Release all</span><kbd>Esc</kbd></div></div><div class="keygroup"><h3>Action buttons</h3><div class="binding"><span class="triangle">△ Triangle</span><kbd>I</kbd></div><div class="binding"><span class="square">□ Square</span><kbd>J</kbd></div><div class="binding"><span class="cross">× Cross</span><kbd>K</kbd></div><div class="binding"><span class="circle">○ Circle</span><kbd>L</kbd></div></div><div class="keygroup"><h3>Shoulders & menus</h3><div class="binding"><span>L1 / R1</span><span><kbd>Q</kbd> <kbd>E</kbd></span></div><div class="binding"><span>L2 / R2</span><span><kbd>1</kbd> <kbd>3</kbd></span></div><div class="binding"><span>Select / Start</span><span><kbd>Shift</kbd> <kbd>Enter</kbd></span></div></div></div><p class="hint">Touch: hold several buttons at once. Keyboard combinations depend on your keyboard’s rollover support.</p></section>
+<details><summary>Connection diagnostics</summary><p id="diagnostics"></p></details><footer>PLAYBRIDGE · CONTROLLER UI 1.1</footer></main>
 <script>
 const result=document.getElementById('result'), diagnostics=document.getElementById('diagnostics');
-const held=new Map(); let pending=false, sending=false;
-function mask(){let m=65535; for(const b of held.values())m &= ~(1<<Number(b.dataset.bit)); return m;}
-async function sendState(){
- pending=true;if(sending)return;sending=true;
- try{while(pending){pending=false;const m=mask();
-   const r=await fetch('/state',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'mask='+m,signal:AbortSignal.timeout(700)});
-   if(!r.ok)throw new Error('HTTP '+r.status);
-   await r.text();result.textContent=m===65535?'Released — ESP32 received':'Held — ESP32 received';
- }}catch(e){held.clear();paint();pending=false;result.textContent='Connection lost — automatic release within 0.8 s';}
- finally{sending=false;}
-}
-function paint(){document.querySelectorAll('[data-bit]').forEach(b=>b.classList.toggle('held',[...held.values()].includes(b)));}
+const buttons=[...document.querySelectorAll('[data-bit]')],byBit=new Map(buttons.map(b=>[Number(b.dataset.bit),b]));
+const keyBits={ArrowUp:4,KeyW:4,ArrowRight:5,KeyD:5,ArrowDown:6,KeyS:6,ArrowLeft:7,KeyA:7,KeyI:12,KeyL:13,KeyK:14,KeyJ:15,KeyQ:10,KeyE:11,Digit1:8,Digit3:9,ShiftLeft:0,ShiftRight:0,Enter:3};
+const held=new Map();let pending=false,sending=false;
+function mask(){let m=65535;for(const b of held.values())m &= ~(1<<Number(b.dataset.bit));return m;}
+async function sendState(){pending=true;if(sending)return;sending=true;
+ try{while(pending){pending=false;const m=mask();const r=await fetch('/state',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'mask='+m,signal:AbortSignal.timeout(700)});
+ if(!r.ok)throw Error('HTTP '+r.status);await r.text();result.textContent=m===65535?'Ready · all buttons released':'Input active · ESP32 received';}}
+ catch(e){held.clear();paint();pending=false;result.textContent='Connection lost — automatic release within 0.8 s';}finally{sending=false;}}
+function paint(){buttons.forEach(b=>{const active=[...held.values()].includes(b);b.classList.toggle('held',active);b.setAttribute('aria-pressed',String(active));});}
 function releaseAll(){held.clear();paint();sendState();}
-document.querySelectorAll('[data-bit]').forEach(b=>{
- b.addEventListener('pointerdown',e=>{e.preventDefault();held.set(e.pointerId,b);b.setPointerCapture(e.pointerId);paint();sendState();});
- const release=e=>{if(held.delete(e.pointerId)){paint();sendState();}};
- b.addEventListener('pointerup',release);b.addEventListener('pointercancel',release);b.addEventListener('lostpointercapture',release);
- b.addEventListener('contextmenu',e=>e.preventDefault());
-});
-document.getElementById('neutral').addEventListener('click',releaseAll);
-window.addEventListener('blur',releaseAll);
+buttons.forEach(b=>{b.addEventListener('pointerdown',e=>{if(e.button!==undefined&&e.button!==0)return;e.preventDefault();held.set('pointer:'+e.pointerId,b);b.setPointerCapture(e.pointerId);paint();sendState();});
+ const release=e=>{if(held.delete('pointer:'+e.pointerId)){paint();sendState();}};
+ b.addEventListener('pointerup',release);b.addEventListener('pointercancel',release);b.addEventListener('lostpointercapture',release);b.addEventListener('contextmenu',e=>e.preventDefault());});
+function editable(e){return e.target?.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(e.target?.tagName||'');}
+window.addEventListener('keydown',e=>{if(editable(e)||e.ctrlKey||e.altKey||e.metaKey)return;
+ if(e.code==='Escape'){e.preventDefault();if(!e.repeat)releaseAll();return;}
+ if(e.target?.id==='neutral'&&(e.code==='Enter'||e.code==='Space'))return;
+ if(!(e.code in keyBits))return;e.preventDefault();const source='key:'+e.code;if(e.repeat||held.has(source))return;
+ held.set(source,byBit.get(keyBits[e.code]));paint();sendState();});
+window.addEventListener('keyup',e=>{if(held.delete('key:'+e.code)){e.preventDefault();paint();sendState();}});
+document.getElementById('neutral').addEventListener('click',releaseAll);window.addEventListener('blur',releaseAll);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)releaseAll();});
 window.addEventListener('pagehide',()=>{held.clear();navigator.sendBeacon('/state',new URLSearchParams({mask:'65535'}));});
 setInterval(()=>{if(held.size)sendState();},200);
-async function status(){try{const r=await fetch('/status',{cache:'no-store',signal:AbortSignal.timeout(900)});const s=await r.json();
- diagnostics.textContent='Polled firmware | complete replies: '+s.fullReplies+' | DATA mismatches: '+s.dataMismatches+'\nLast received: '+s.rx+' | DATA readback: '+s.data+'\nHTTP success alone does not confirm console response.';
- }catch(e){diagnostics.textContent='Diagnostics unavailable';}finally{setTimeout(status,1000);}}
-sendState();status();
+async function status(){try{const r=await fetch('/status',{cache:'no-store',signal:AbortSignal.timeout(900)});if(!r.ok)throw Error('status');const s=await r.json();diagnostics.textContent='Complete controller replies: '+s.fullReplies+' | DATA mismatches: '+s.dataMismatches+'\nLast received: '+s.rx+' | DATA readback: '+s.data+'\nESP32 receipt alone does not confirm the console response.';}catch(e){diagnostics.textContent='Diagnostics unavailable';}finally{setTimeout(status,1500);}}
+paint();sendState();status();
 </script></body></html>
 )HTML";

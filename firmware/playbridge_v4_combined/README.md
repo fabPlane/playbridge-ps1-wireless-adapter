@@ -71,6 +71,43 @@ integrity and throughput on hardware.
 
 ## Serial protocol
 
+### Controller page 1.1
+
+The embedded controller page now has a PlayStation-style layout with a left
+D-pad, middle Select/Start, shoulder buttons, and the colored action-button
+diamond (Triangle above, Square left, Circle right, Cross below). The keyboard
+guide is always visible below it. There are no external fonts, images or CDN
+dependencies. Touch and keyboard inputs can be combined.
+
+| PS1 input | Keyboard |
+| --- | --- |
+| D-pad | Arrow keys or WASD |
+| Triangle / Square / Cross / Circle | I / J / K / L |
+| L1 / R1 | Q / E |
+| L2 / R2 | 1 / 3 |
+| Select / Start | Shift / Enter |
+| Release everything | Escape |
+
+Keep the browser page focused. Held keys and pointers are tracked separately,
+so releasing an alias or one input source does not release another held input.
+Key repeat does not flood HTTP. Blur, hiding the page, pointer cancellation,
+and Escape release inputs. The existing 200 ms hold refresh and firmware's
+800 ms expiry are retained. Browser shortcuts and text entry are ignored.
+Keyboard rollover limits still depend on the user's physical keyboard.
+
+Only the embedded page and its tests change; the polled bus engine, pin profile,
+serial transport and game protocol remain unchanged. A header-only page change
+still requires a firmware flash because there is no runtime UI-upload endpoint.
+
+`node firmware/playbridge_v4_combined/tests/web-ui-test.cjs` checks all mappings,
+mixed pointer/key chords, aliases, repeat suppression and release/error paths.
+`python firmware/playbridge_v4_combined/tests/preview_ui.py` serves an explicitly
+offline preview on localhost:8788; its buttons never contact the ESP32.
+
+The Node tests and Arduino-ESP32 3.3.11 Node32s compile passed on 2026-10-08.
+Desktop and 390 px browser layouts were visually checked. This validation
+precedes flashing and is not a claim of console gameplay verification.
+
 UART starts at **115200 8N1**, with no hardware flow control. The existing
 PC launcher coordinates the PS1-side baud switch; the bridge does not negotiate
 it with the console. Supported rates: 115200, 230400, 518400, 691200, 1036800,
